@@ -1,6 +1,6 @@
 # erikskoppde
 
-Personal blog for **erik-skopp.de**, built with [Astro](https://astro.build) on
+Personal blog for **erikskopp.de**, built with [Astro](https://astro.build) on
 top of [AstroBlogTheme](https://github.com/eskopp/AstroBlogTheme) (pulled in from
 GitHub as a package).
 
@@ -40,7 +40,7 @@ in `astro.config.mjs`.
 ## Deployment
 
 Every push to `main` triggers `.github/workflows/deploy-pages.yml`, which builds
-the site and publishes it to **GitHub Pages**. The custom domain `erik-skopp.de`
+the site and publishes it to **GitHub Pages**. The custom domain `erikskopp.de`
 is pinned via `public/CNAME`.
 
 ## Mirrored to GitLab

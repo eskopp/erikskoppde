@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://erik-skopp.de/sitemap-index.xml
+Sitemap: https://erikskopp.de/sitemap-index.xml

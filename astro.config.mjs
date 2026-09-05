@@ -2,7 +2,7 @@ import { defineConfig } from "astro/config";
 import blogTheme from "astro-blog-theme";
 
 export default defineConfig({
-  site: "https://erik-skopp.de",
+  site: "https://erikskopp.de",
   integrations: [
     blogTheme({
       title: "Erik Skopp",
