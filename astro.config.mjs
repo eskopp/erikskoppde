@@ -20,6 +20,10 @@ export default defineConfig({
         contact: "https://erikskopp.de/impressum/",
         preferredLanguages: ["de", "en"],
       },
+      pwa: {
+        themeColor: "#fbfbfc",
+        backgroundColor: "#fbfbfc",
+      },
       nav: [
         { href: "/", label: "Home" },
         { href: "/blog", label: "Blog" },
