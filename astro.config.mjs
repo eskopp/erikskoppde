@@ -16,6 +16,10 @@ export default defineConfig({
       chessEngine: true,
       colorScheme: "light",
       postList: "rows",
+      security: {
+        contact: "https://erikskopp.de/impressum/",
+        preferredLanguages: ["de", "en"],
+      },
       nav: [
         { href: "/", label: "Home" },
         { href: "/blog", label: "Blog" },
