@@ -25,9 +25,15 @@ jobs:
         with:
           node-version: 22
 
+      # Chrome for the theme's build-time Mermaid prerendering (mermaid: "prerender")
+      - uses: browser-actions/setup-chrome@v1
+        id: chrome
+
       - run: npm install
 
       - name: Build
+        env:
+          CHROME_PATH: ${{ steps.chrome.outputs.chrome-path }}
         run: npm run build
 
       - name: Upload Pages artifact

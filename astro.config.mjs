@@ -10,7 +10,7 @@ export default defineConfig({
       author: "Erik Skopp",
       locales: ["de", "en"],
       errorLocale: "en",
-      mermaid: true,
+      mermaid: "prerender",
       math: true,
       chess: true,
       chessEngine: true,
