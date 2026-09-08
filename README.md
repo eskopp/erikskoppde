@@ -46,4 +46,4 @@ is pinned via `public/CNAME`.
 ## Mirrored to GitLab
 
 Every push to `main`, every tag and every release is mirrored to
-`gitlab.erik-skopp.de/Web/erikskoppde` by `.github/workflows/mirror-to-gitlab.yml`.
+`gitlab.erikskopp.de/Web/erikskoppde` by `.github/workflows/mirror-to-gitlab.yml`.

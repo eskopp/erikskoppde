@@ -33,7 +33,7 @@ export default defineConfig({
       ],
       social: [
         { href: "https://github.com/eskopp", label: "GitHub" },
-        { href: "https://gitlab.erik-skopp.de", label: "GitLab" },
+        { href: "https://gitlab.erikskopp.de", label: "GitLab" },
         { href: "/rss/de.xml", label: "RSS (DE)" },
         { href: "/rss/en.xml", label: "RSS (EN)" },
       ],
