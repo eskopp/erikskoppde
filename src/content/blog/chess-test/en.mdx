@@ -4,6 +4,8 @@ description: "Test post for FEN diagrams — rendered as SVG at build time, no c
 pubDate: 2026-09-05
 heroImage: ./hero.jpg
 heroAlt: "Stylised knight beside a fading chessboard pattern"
+heroCredit: "Graphic: Erik Skopp"
+heroAi: false
 tags: ["code"]
 series:
   - { name: feature-tour, order: 6 }
@@ -74,4 +76,9 @@ an optimised image plus an optional caption.
   src={diagramm}
   alt="Chessboard with the pawn moving from e2 to e4"
   caption="A static image next to the SVG boards rendered above at build time."
+  credit="Graphic: Erik Skopp"
+  ai={false}
 />
+
+Every `<Figure>` requires `credit` (rights holder) and `ai` (`true`/`false`).
+With `ai={true}` an "AI" badge appears next to the caption.

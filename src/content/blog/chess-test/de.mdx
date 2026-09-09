@@ -4,6 +4,8 @@ description: "Testbeitrag für FEN-Diagramme – zur Build-Zeit als SVG gerender
 pubDate: 2026-09-05
 heroImage: ./hero.jpg
 heroAlt: "Stilisierter Springer neben einem verblassenden Schachbrettmuster"
+heroCredit: "Grafik: Erik Skopp"
+heroAi: false
 tags: ["code"]
 series:
   - { name: feature-tour, order: 6 }
@@ -77,4 +79,9 @@ Bildunterschrift.
   src={diagramm}
   alt="Schachbrett, der Bauer zieht von e2 nach e4"
   caption="Ein statisches Bild neben den oben zur Build-Zeit gerenderten SVG-Brettern."
+  credit="Grafik: Erik Skopp"
+  ai={false}
 />
+
+Jede `<Figure>` verlangt `credit` (Rechteinhaber) und `ai` (`true`/`false`).
+Mit `ai={true}` erscheint ein „AI"-Abzeichen an der Bildunterschrift.
