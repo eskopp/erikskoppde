@@ -10,6 +10,9 @@ series:
 ai: true
 ---
 
+import Figure from "astro-blog-theme/components/Figure.astro";
+import diagramm from "./board.png";
+
 A `fen` code block containing a FEN string is rendered into an SVG chessboard
 at build time. No JavaScript, no external library in the browser. The side to
 move always sits at the bottom — the small circle next to it shows the same
@@ -60,3 +63,15 @@ with `white` or `black` if you also want a fixed orientation.
 ```fen noengine
 r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 4 4
 ```
+
+## A fixed image alongside
+
+When you mean a finished graphic or a screenshot rather than a FEN board, the
+`<Figure>` component handles it. It works because this post is saved as `.mdx`:
+an optimised image plus an optional caption.
+
+<Figure
+  src={diagramm}
+  alt="Chessboard with the pawn moving from e2 to e4"
+  caption="A static image next to the SVG boards rendered above at build time."
+/>

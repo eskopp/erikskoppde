@@ -11,6 +11,9 @@ urlSlug: "schachstellungen"
 ai: true
 ---
 
+import Figure from "astro-blog-theme/components/Figure.astro";
+import diagramm from "./board.png";
+
 Ein `fen`-Codeblock mit einer FEN-Zeichenkette wird beim Bauen zu einem
 SVG-Schachbrett gerendert. Kein JavaScript, keine externe Bibliothek im Browser.
 Unten steht immer die Seite, die am Zug ist – der kleine Kreis daneben zeigt es
@@ -62,3 +65,16 @@ kombinieren.
 ```fen noengine
 r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 4 4
 ```
+
+## Ein festes Bild dazu
+
+Wenn kein FEN-Brett gemeint ist, sondern eine fertige Grafik oder ein
+Screenshot, hilft die `<Figure>`-Komponente. Sie funktioniert, weil dieser
+Beitrag als `.mdx` gespeichert ist: optimiertes Bild plus optionale
+Bildunterschrift.
+
+<Figure
+  src={diagramm}
+  alt="Schachbrett, der Bauer zieht von e2 nach e4"
+  caption="Ein statisches Bild neben den oben zur Build-Zeit gerenderten SVG-Brettern."
+/>
