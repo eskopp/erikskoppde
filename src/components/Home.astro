@@ -1,9 +1,11 @@
 ---
+import { Image } from "astro:assets";
 import config from "virtual:astro-blog-theme/config";
 import BaseLayout from "astro-blog-theme/layouts/BaseLayout.astro";
 import PostCard from "astro-blog-theme/components/PostCard.astro";
 import { getPosts } from "astro-blog-theme/posts";
 import { t } from "astro-blog-theme/i18n";
+import headerImage from "../assets/header.jpg";
 
 interface Props {
   locale: string;
@@ -26,9 +28,30 @@ const recent = posts.slice(0, config.postsPerPage);
   needsChess={false}
 >
   <section class="hero">
+    <Image
+      class="hero__image"
+      src={headerImage}
+      alt=""
+      widths={[640, 960, 1280, 1600]}
+      sizes="(min-width: 42rem) 40rem, 100vw"
+      loading="eager"
+      fetchpriority="high"
+    />
     <h1>{config.title}</h1>
     <p>{config.description}</p>
   </section>
+
+  <style>
+    .hero__image {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 8 / 3;
+      object-fit: cover;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      margin-bottom: 1.5rem;
+    }
+  </style>
   <section>
     <h2 class="section-title">{t("latestPosts", locale)}</h2>
     <ul class="post-list">
