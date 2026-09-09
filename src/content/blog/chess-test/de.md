@@ -2,6 +2,8 @@
 title: "Schachstellungen"
 description: "Testbeitrag für FEN-Diagramme – zur Build-Zeit als SVG gerendert, ohne Client-JS."
 pubDate: 2026-09-05
+heroImage: ./hero.jpg
+heroAlt: "Stilisierter Springer neben einem verblassenden Schachbrettmuster"
 tags: ["code"]
 series:
   - { name: feature-tour, order: 6 }

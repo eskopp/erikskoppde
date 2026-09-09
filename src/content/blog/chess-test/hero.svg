@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="600" viewBox="0 0 1600 600">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eef0fb"/>
+      <stop offset="0.55" stop-color="#e6e8f8"/>
+      <stop offset="1" stop-color="#dcdef1"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#5e6ad2" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#5e6ad2" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#b98fd6" stop-opacity="0.38"/>
+      <stop offset="1" stop-color="#b98fd6" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="26"/>
+    </filter>
+    <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fff" stop-opacity="1"/>
+      <stop offset="0.55" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="boardmask">
+      <rect width="1600" height="600" fill="url(#fade)"/>
+    </mask>
+  </defs>
+
+  <rect width="1600" height="600" fill="url(#bg)"/>
+
+  <!-- soft accent glows -->
+  <g filter="url(#soft)">
+    <ellipse cx="240" cy="140" rx="460" ry="380" fill="url(#glow)"/>
+    <ellipse cx="1380" cy="480" rx="520" ry="420" fill="url(#glow2)"/>
+  </g>
+
+  <!-- faint chessboard, fading left to right -->
+  <g mask="url(#boardmask)" fill="#5e6ad2" fill-opacity="0.13">
+    <!-- 8 columns x 5 rows of 120px squares, checker pattern -->
+    <g>
+      <rect x="0"    y="0"   width="120" height="120"/><rect x="240"  y="0"   width="120" height="120"/><rect x="480"  y="0"   width="120" height="120"/><rect x="720"  y="0"   width="120" height="120"/>
+      <rect x="120"  y="120" width="120" height="120"/><rect x="360"  y="120" width="120" height="120"/><rect x="600"  y="120" width="120" height="120"/><rect x="840"  y="120" width="120" height="120"/>
+      <rect x="0"    y="240" width="120" height="120"/><rect x="240"  y="240" width="120" height="120"/><rect x="480"  y="240" width="120" height="120"/><rect x="720"  y="240" width="120" height="120"/>
+      <rect x="120"  y="360" width="120" height="120"/><rect x="360"  y="360" width="120" height="120"/><rect x="600"  y="360" width="120" height="120"/><rect x="840"  y="360" width="120" height="120"/>
+      <rect x="0"    y="480" width="120" height="120"/><rect x="240"  y="480" width="120" height="120"/><rect x="480"  y="480" width="120" height="120"/><rect x="720"  y="480" width="120" height="120"/>
+    </g>
+  </g>
+
+  <!-- large knight glyph on the right -->
+  <text x="1230" y="470" font-family="Georgia, 'Times New Roman', serif" font-size="620"
+        fill="#5e6ad2" fill-opacity="0.16" text-anchor="middle">&#9822;</text>
+</svg>
