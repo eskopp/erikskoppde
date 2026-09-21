@@ -194,5 +194,7 @@ For full documentation on all features (i18n, dark mode, math, comments, OG imag
 
 ## License
 
-MIT — see [LICENSE](./LICENSE).
+GPL-3.0-or-later — see [LICENSE](./LICENSE). Includes code from
+[chirping-astro-starter](https://github.com/kannansuresh/chirping-astro-starter)
+(MIT) — see [NOTICE.md](./NOTICE.md).
 
