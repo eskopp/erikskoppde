@@ -6,9 +6,13 @@
  * no separate generation step or network access required.
  */
 import { readFileSync, existsSync } from 'node:fs';
-import { fileURLToPath } from 'node:url';
+import { join } from 'node:path';
 
-const rootDir = fileURLToPath(new URL('../../', import.meta.url));
+// `astro build` always runs with the project root as its working
+// directory. We can't derive this from `import.meta.url` because Astro
+// bundles this module into a chunk under `dist/.prerender/`, which would
+// resolve relative paths against `dist/` instead of the project root.
+const rootDir = process.cwd();
 
 export interface PackageInfo {
   name: string;
@@ -27,7 +31,7 @@ function readJson(path: string): unknown {
 function readBunLock(): {
   packages: Record<string, [string, string, unknown, string?]>;
 } {
-  const raw = readFileSync(`${rootDir}bun.lock`, 'utf8').replace(/,(\s*[}\]])/g, '$1');
+  const raw = readFileSync(join(rootDir, 'bun.lock'), 'utf8').replace(/,(\s*[}\]])/g, '$1');
   return JSON.parse(raw);
 }
 
@@ -37,7 +41,7 @@ function buildInfo(name: string, requestedRange: string, lockPackages: Record<st
   const integrity = entry?.[3] ?? null;
 
   let description = '';
-  const pkgJsonPath = `${rootDir}node_modules/${name}/package.json`;
+  const pkgJsonPath = join(rootDir, 'node_modules', name, 'package.json');
   if (existsSync(pkgJsonPath)) {
     const installed = readJson(pkgJsonPath) as { description?: string };
     description = installed.description ?? '';
@@ -60,7 +64,7 @@ export interface DependencyGroups {
 }
 
 export function getDirectDependencies(): DependencyGroups {
-  const pkg = readJson(`${rootDir}package.json`) as {
+  const pkg = readJson(join(rootDir, 'package.json')) as {
     dependencies?: Record<string, string>;
     devDependencies?: Record<string, string>;
   };
