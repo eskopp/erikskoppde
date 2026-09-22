@@ -19,7 +19,7 @@ Ich habe im Krankenhaus angefangen den Blog zu schreiben. Ehrlich gesagt gab es 
 Ich möchte hier über alles schreiben was mich so beschäftigt, was ich erlebe und was mich im Gganzen so Antreibt. 
 
 #### Schach
-Aktuell spiele ich Schach nur online. Das möchte ich in den kommenden Monaten und Jahren wieder ändern. Zusammen mit dem [Ilmenauer Schachverein](https://ilmenauer-schachverein.de) haben wir schon viele Turniere ausgerichtet. Ich werde auch dort von Events berichten. Ein weiteres jährliches Turnier ist das Schach Open in [Bad Königshofen](https://schachclub1957.de/turniere/turnier-archiv/bad-koenigshofen-open-2026/) zwischen den Feiertagen.
+Aktuell spiele ich Schach nur online. Das möchte ich in den kommenden Monaten und Jahren wieder ändern. Zusammen mit dem Ilmenauer Schachverein[^1] haben wir schon viele Turniere ausgerichtet. Ich werde auch dort von Events berichten. Ein weiteres jährliches Turnier ist das Schach Open in Bad Königshofen[^2] zwischen den Feiertagen.
 
 #### Schach Training
 Nicht nur möchte ich mich im Schach nach Jahren wieder deutlich verbessern sondern auch den Kindern wieder helfen sich zu verbessern. Kindertraining ist eine sehr dankbare und lehrreiche Aufgabe. Nur wenn man ein Thema sauber erklären kann, hat man es verstanden. Auf dieser Reise möchte ich Euch mitnehmen. 
@@ -30,7 +30,7 @@ Aber ich freue mich eig schon sehr auf die Experimente.
 
 
 #### Linux und Programmierung
-In meiner Freizeit habe ich einen großen Debian 13 Server. Ich denke, dass das immer ein Debian Server bleiben wird. Er hat 16 GB RAM und 8 Kerne und ist ein Root Server. Gehostet ist dieser bei netcup. Dort mache ich selber viele Experimente und Tests. Aktuell laufen auf dem Server verschiedene Dienste wie bspw [Grafana](grafana.erikskopp.de) oder [Gitlab](gitlab.erikskopp.de). Über die Reise des Servers möchte ich euch mitnehmen
+In meiner Freizeit habe ich einen großen Debian 13 Server. Ich denke, dass das immer ein Debian Server bleiben wird. Er hat 16 GB RAM und 8 Kerne und ist ein Root Server. Gehostet ist dieser bei netcup. Dort mache ich selber viele Experimente und Tests. Aktuell laufen auf dem Server verschiedene Dienste wie bspw Grafana[^3] oder Gitlab[^4]. Über die Reise des Servers möchte ich euch mitnehmen
 
 
 Es gibt also viele Themen von denen ich Berichten kann. Einen gewissen Fahrplan kann ich hier noch nicht geben, da es zufällig ist was mich gerade beschäftigt.
@@ -41,11 +41,11 @@ Gerne könnt ihr mich auch auf Themen ansprechen oder mir Fehler bzw Probleme au
 
 ### Kommentare 
 
-Jeder Blog hat Kommentare? Dieser nicht. Das liegt weniger daran, dass ich das nicht kann, sondern daran, dass ich das nicht möchte. An der Stelle möchte ich den Blog von dem Uni-Bekannten Marco Gonzalez loben ([Link zum Blog](https://blog.mrgonzalez.de/)). Er hat eine der besten Ideen für Kommentare zu statischen Blogs die ich je gesehen habe. 
+Jeder Blog hat Kommentare? Dieser nicht. Das liegt weniger daran, dass ich das nicht kann, sondern daran, dass ich das nicht möchte. An der Stelle möchte ich den Blog von dem Uni-Bekannten Marco Gonzalez loben[^5]. Er hat eine der besten Ideen für Kommentare zu statischen Blogs die ich je gesehen habe. 
 
 #### Kommentare ohne JS
 Er hat in seinem JS-freien Hugo-Blog ein sehr einfaches Formular erstellt. In diesem kann jeder seinen Kommentar eingeben und ihn abschicken. Auf dem Server nimmt dann ein kleiner Go-Handler die Anfrage an und schreibt diese in eine JSON. Danach baut er die Seite neu und jeder kann den Kommentar lesen. Das ist sehr effizient und muss gelobt werden. 
-Den Artikel von ihm findet ihr [HIER](https://blog.mrgonzalez.de/posts/post-10/#das-kommentarsystem)
+Den Artikel von ihm findet ihr hier[^6].
 
 #### Warum gibt es dann hier keine?
 Ich habe eig viel zu viel Angst vor euren Kommentaren. Ich habe ohnehin sehr starke Bauchschmerzen dabei meine Gedanken so offen hier aufzuschreiben, doch ich hoffe, dass ihr es mir nachseht.
@@ -53,3 +53,10 @@ Ich habe eig viel zu viel Angst vor euren Kommentaren. Ich habe ohnehin sehr sta
 Ich wünsche Euch nun viel Spaß hier auf dem Blog.
 
 ![Kyubey](../../../assets/images/posts/erster-beitrag/kyubey.gif)
+
+[^1]: https://ilmenauer-schachverein.de
+[^2]: https://schachclub1957.de/turniere/turnier-archiv/bad-koenigshofen-open-2026/
+[^3]: https://grafana.erikskopp.de
+[^4]: https://gitlab.erikskopp.de
+[^5]: https://blog.mrgonzalez.de/
+[^6]: https://blog.mrgonzalez.de/posts/post-10/#das-kommentarsystem

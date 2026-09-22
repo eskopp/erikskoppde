@@ -593,6 +593,25 @@
     @apply text-base-content/70 mt-2 text-center text-xs italic;
   }
 
+  /* Per-article footnotes (GFM `[^1]` syntax) — a small footer section
+     distinct from the site-wide <Footer>, listing every reference used
+     inline in the article. */
+  .prose-chirpy sup [data-footnote-ref] {
+    @apply text-primary no-underline;
+  }
+  .prose-chirpy section[data-footnotes] {
+    @apply border-base-300 text-base-content/70 mt-10 border-t pt-4 text-sm;
+  }
+  .prose-chirpy section[data-footnotes] ol {
+    @apply mb-0 pl-5;
+  }
+  .prose-chirpy section[data-footnotes] li {
+    @apply mb-1;
+  }
+  .prose-chirpy section[data-footnotes] a[data-footnote-backref] {
+    @apply text-base-content/50 ml-1 no-underline;
+  }
+
   /* Video embeds — responsive 16:9 iframe container */
   .video-embed__frame {
     @apply relative overflow-hidden rounded-md;
