@@ -6,6 +6,7 @@ import { getAlbums, albumSlug, galleryIndexPath, type Album } from '~/utils/gall
 import GalleryPhotoGrid from '~/components/GalleryPhotoGrid.astro';
 import GalleryLightbox from '~/components/islands/GalleryLightbox.astro';
 import { Icon } from 'astro-icon/components';
+import { renderInlineMarkdown, stripInlineMarkdown } from '~/utils/inline-markdown';
 
 export async function getStaticPaths() {
   const paths = [];
@@ -28,7 +29,7 @@ const t = useTranslations(locale);
 
 <BaseLayout
   title={album.data.title}
-  description={album.data.description}
+  description={stripInlineMarkdown(album.data.description)}
   pathWithoutLocale={`/galerie/${albumSlug(album)}/`}
   crumbs={[
     { label: t('gallery.title'), href: galleryIndexPath(locale) },
@@ -44,7 +45,7 @@ const t = useTranslations(locale);
       {t('gallery.back')}
     </a>
     <h1 class="text-3xl leading-tight font-extrabold tracking-tight">{album.data.title}</h1>
-    <p class="text-base-content/70 mt-2">{album.data.description}</p>
+    <p class="text-base-content/70 mt-2" set:html={renderInlineMarkdown(album.data.description)} />
     <time class="text-base-content/60 mt-1 block text-xs" datetime={isoDate(album.data.date)}>
       {formatDate(album.data.date, locale, { year: 'numeric', month: 'long', day: 'numeric' })}
     </time>

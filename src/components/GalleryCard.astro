@@ -5,6 +5,7 @@ import { type Album, albumPath, albumCover } from '../utils/galleries';
 import { useTranslations } from '../i18n/utils';
 import SmartImage from './SmartImage.astro';
 import { Icon } from 'astro-icon/components';
+import { stripInlineMarkdown } from '../utils/inline-markdown';
 
 interface Props {
   album: Album;
@@ -40,7 +41,9 @@ const count = album.data.images.length;
     </div>
     <div class="gallery-card-body">
       <h2 class="gallery-card-title">{album.data.title}</h2>
-      <p class="text-base-content/70 mt-1 mb-2 line-clamp-2 text-sm">{album.data.description}</p>
+      <p class="text-base-content/70 mt-1 mb-2 line-clamp-2 text-sm">
+        {stripInlineMarkdown(album.data.description)}
+      </p>
       <time class="text-base-content/60 text-xs" datetime={isoDate(album.data.date)}>
         {formatDate(album.data.date, locale, { year: 'numeric', month: 'short', day: 'numeric' })}
       </time>

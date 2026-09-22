@@ -15,6 +15,24 @@ In diesem Blog möchte ich hauptsächlich eine Art Erinnerung für das Erlebte u
 Ich habe im Krankenhaus angefangen den Blog zu schreiben. Ehrlich gesagt gab es dafür keinen Anlass. Keiner wird gezwungen, das Ganze hier zu lesen. Ehrlich gesagt, kann ich auch nicht gut schreiben. Ich weiß nicht warum ihr da seid :)
 
 
+### Inhalt 
+Ich möchte hier über alles schreiben was mich so beschäftigt, was ich erlebe und was mich im Gganzen so Antreibt. 
+
+#### Schach
+Aktuell spiele ich Schach nur online. Das möchte ich in den kommenden Monaten und Jahren wieder ändern. Zusammen mit dem [Ilmenauer Schachverein](https://ilmenauer-schachverein.de) haben wir schon viele Turniere ausgerichtet. Ich werde auch dort von Events berichten. Ein weiteres jährliches Turnier ist das Schach Open in [Bad Königshofen](https://schachclub1957.de/turniere/turnier-archiv/bad-koenigshofen-open-2026/) zwischen den Feiertagen.
+
+#### Schach Training
+Nicht nur möchte ich mich im Schach nach Jahren wieder deutlich verbessern sondern auch den Kindern wieder helfen sich zu verbessern. Kindertraining ist eine sehr dankbare und lehrreiche Aufgabe. Nur wenn man ein Thema sauber erklären kann, hat man es verstanden. Auf dieser Reise möchte ich Euch mitnehmen. 
+
+#### Experimente
+Im Rahmen des Studiums haben wir sehr viele Experimente in verschiedenen Bereiche der Physik und der Chemie. Gerne möchte ich hier darüber berichten. Mir ist bekannt, dass ich Studnent bin. Manches wird auch Inhaltlich falsch oder nicht ganz sauber sein. Seht mir das bitte nach. 
+Aber ich freue mich eig schon sehr auf die Experimente.
+
+
+####
+
+
+
 ### Kommentare 
 
 Jeder Blog hat Kommentare? Dieser nicht. Das liegt weniger daran, dass ich das nicht kann, sondern daran, dass ich das nicht möchte. An der Stelle möchte ich den Blog von dem Uni-Bekannten Marco Gonzalez loben ([Link zum Blog](https://blog.mrgonzalez.de/)). Er hat eine der besten Ideen für Kommentare zu statischen Blogs die ich je gesehen habe. 
