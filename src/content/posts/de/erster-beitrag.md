@@ -1,12 +1,12 @@
 ---
 title: 'Mein erster Beitrag'
-description: 'TODO'
+description: 'Warum gibt es diesen Blog ?'
 pubDate: 2025-10-02
 tags: []
 categories: []
 draft: false
-math: true
+math: false
 ---
 
 
-Hallo Welt
+Ich bin ein Test
