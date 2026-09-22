@@ -29,7 +29,13 @@ Im Rahmen des Studiums haben wir sehr viele Experimente in verschiedenen Bereich
 Aber ich freue mich eig schon sehr auf die Experimente.
 
 
-####
+#### Linux und Programmierung
+In meiner Freizeit habe ich einen großen Debian 13 Server. Ich denke, dass das immer ein Debian Server bleiben wird. Er hat 16 GB RAM und 8 Kerne und ist ein Root Server. Gehostet ist dieser bei netcup. Dort mache ich selber viele Experimente und Tests. Aktuell laufen auf dem Server verschiedene Dienste wie bspw [Grafana](grafana.erikskopp.de) oder [Gitlab](gitlab.erikskopp.de). Über die Reise des Servers möchte ich euch mitnehmen
+
+
+Es gibt also viele Themen von denen ich Berichten kann. Einen gewissen Fahrplan kann ich hier noch nicht geben, da es zufällig ist was mich gerade beschäftigt.
+Gerne könnt ihr mich auch auf Themen ansprechen oder mir Fehler bzw Probleme aufzeigen. 
+
 
 
 
@@ -44,4 +50,6 @@ Den Artikel von ihm findet ihr [HIER](https://blog.mrgonzalez.de/posts/post-10/#
 #### Warum gibt es dann hier keine?
 Ich habe eig viel zu viel Angst vor euren Kommentaren. Ich habe ohnehin sehr starke Bauchschmerzen dabei meine Gedanken so offen hier aufzuschreiben, doch ich hoffe, dass ihr es mir nachseht.
 
-Ich wünsche Euch nun viel Spaß hier auf dem Blog. 
+Ich wünsche Euch nun viel Spaß hier auf dem Blog.
+
+![Kyubey](../../../assets/images/posts/erster-beitrag/kyubey.gif)
