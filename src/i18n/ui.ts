@@ -16,6 +16,7 @@ export const messages = {
     'nav.archives': 'Archiv',
     'nav.gallery': 'Galerie',
     'nav.about': 'Über',
+    'nav.gpg': 'GPG',
     'nav.search': 'Suche',
     'nav.toggleMenu': 'Menü umschalten',
 
