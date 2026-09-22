@@ -1,6 +1,6 @@
 ---
-title: 'Getting Started'
-description: 'Your first post with Chirping Astro. Learn how to configure your site, write posts, and deploy.'
+title: 'Erste Schritte'
+description: 'Dein erster Beitrag mit Chirping Astro. Erfahre, wie du deine Seite konfigurierst, Beiträge schreibst und deployest.'
 pubDate: 2026-05-03
 tags: [getting-started, tutorial]
 categories: [Guide]
@@ -9,72 +9,72 @@ pinned: true
 toc: true
 ---
 
-Welcome to your new blog! This sample post walks you through the basics of using **Chirping Astro**.
+Willkommen auf deinem neuen Blog! Dieser Beispielbeitrag zeigt dir die Grundlagen von **Chirping Astro**.
 
-## Configure your site
+## Seite konfigurieren
 
-Open `src/config.ts` and update:
+Öffne `src/config.ts` und passe an:
 
-- **title** — your site/blog name
-- **description** — shown in search engines and RSS
-- **author.name** — displayed in the sidebar and footer
-- **url** — your production URL (set via `SITE_URL` env var for deploys)
+- **title** — Name deiner Seite/deines Blogs
+- **description** — wird in Suchmaschinen und im RSS-Feed angezeigt
+- **author.name** — erscheint in Sidebar und Footer
+- **url** — deine Produktions-URL (per `SITE_URL`-Umgebungsvariable beim Deploy setzen)
 
-## Environment variables
+## Umgebungsvariablen
 
-Copy `.env.example` to `.env`:
+Kopiere `.env.example` nach `.env`:
 
 ```bash
 cp .env.example .env
 ```
 
-Key variables:
+Wichtige Variablen:
 
-| Variable               | Purpose                                                    |
-| ---------------------- | ---------------------------------------------------------- |
-| `SITE_URL`             | Your production URL (e.g., `https://myblog.com`)           |
-| `BASE_PATH`            | Set to `/<repo-name>` for GitHub Pages, blank otherwise    |
-| `PUBLIC_GITHUB_HANDLE` | Shows GitHub icon in sidebar                               |
-| `PUBLIC_GISCUS_*`      | Enable Giscus comments ([setup guide](https://giscus.app)) |
+| Variable               | Zweck                                                        |
+| ---------------------- | ------------------------------------------------------------- |
+| `SITE_URL`             | Deine Produktions-URL (z. B. `https://meinblog.de`)            |
+| `BASE_PATH`            | Für GitHub Pages auf `/<repo-name>` setzen, sonst leer lassen |
+| `PUBLIC_GITHUB_HANDLE` | Zeigt das GitHub-Icon in der Sidebar                          |
+| `PUBLIC_GISCUS_*`      | Aktiviert Giscus-Kommentare ([Setup-Anleitung](https://giscus.app)) |
 
-## Writing posts
+## Beiträge schreiben
 
-Create Markdown files in `src/content/posts/en/`:
+Lege Markdown-Dateien in `src/content/posts/de/` an:
 
 ```markdown
 ---
-title: 'My Post Title'
-description: 'A brief description for SEO and listings.'
+title: 'Titel meines Beitrags'
+description: 'Eine kurze Beschreibung für SEO und Listenansichten.'
 pubDate: 2026-05-03
 tags: [tag1, tag2]
-categories: [Category]
+categories: [Kategorie]
 ---
 
-Write your content here using standard Markdown.
+Schreibe deinen Inhalt hier mit gewöhnlichem Markdown.
 ```
 
-### Available frontmatter fields
+### Verfügbare Frontmatter-Felder
 
-| Field         | Required | Description                    |
-| ------------- | -------- | ------------------------------ |
-| `title`       | Yes      | Post title (1–140 chars)       |
-| `description` | Yes      | Meta description (1–280 chars) |
-| `pubDate`     | Yes      | Publication date (ISO format)  |
-| `tags`        | No       | Array of tags                  |
-| `categories`  | No       | Array of categories            |
-| `heroImage`   | No       | Path to featured image         |
-| `pinned`      | No       | Pin to top of listings         |
-| `toc`         | No       | Show table of contents         |
-| `draft`       | No       | Hide from production           |
+| Feld          | Erforderlich | Beschreibung                        |
+| ------------- | ------------ | ------------------------------------ |
+| `title`       | Ja           | Titel des Beitrags (1–140 Zeichen)   |
+| `description` | Ja           | Meta-Beschreibung (1–280 Zeichen)    |
+| `pubDate`     | Ja           | Veröffentlichungsdatum (ISO-Format)  |
+| `tags`        | Nein         | Array von Tags                       |
+| `categories`  | Nein         | Array von Kategorien                 |
+| `heroImage`   | Nein         | Pfad zum Titelbild                   |
+| `pinned`      | Nein         | An den Anfang der Liste anheften     |
+| `toc`         | Nein         | Inhaltsverzeichnis anzeigen          |
+| `draft`       | Nein         | In Produktion ausblenden             |
 
-## Using MDX
+## MDX verwenden
 
-For richer content, use `.mdx` files to include components:
+Für umfangreichere Inhalte kannst du `.mdx`-Dateien nutzen, um Komponenten einzubinden:
 
 ```mdx
 ---
-title: 'MDX Example'
-description: 'Using components in posts.'
+title: 'MDX-Beispiel'
+description: 'Komponenten in Beiträgen verwenden.'
 pubDate: 2026-05-03
 tags: [mdx]
 categories: [Guide]
@@ -82,21 +82,21 @@ categories: [Guide]
 
 import Callout from '../../components/Callout.astro';
 
-<Callout type="tip">You can embed Astro components directly in your posts!</Callout>
+<Callout type="tip">Du kannst Astro-Komponenten direkt in deinen Beiträgen einbetten!</Callout>
 ```
 
 ## Deploy
 
-Push to `main` on GitHub. The included workflow builds and deploys to GitHub Pages automatically.
+Push auf `main` bei GitHub. Der mitgelieferte Workflow baut die Seite und deployt sie automatisch auf GitHub Pages.
 
-For custom domains, set `SITE_URL` in your repository's environment variables under **Settings → Environments → github-pages**.
+Für eigene Domains setze `SITE_URL` in den Umgebungsvariablen deines Repositories unter **Settings → Environments → github-pages**.
 
-## Learn more
+## Mehr erfahren
 
-- [Full documentation](https://github.com/kannansuresh/chirping-astro)
-- [Live demo](https://kannansuresh.github.io/chirping-astro)
-- [Astro docs](https://docs.astro.build)
+- [Vollständige Dokumentation](https://github.com/kannansuresh/chirping-astro)
+- [Live-Demo](https://kannansuresh.github.io/chirping-astro)
+- [Astro-Dokumentation](https://docs.astro.build)
 
 ---
 
-Happy blogging! Delete this post when you're ready to publish your own content.
+Viel Spaß beim Bloggen! Lösche diesen Beitrag, sobald du bereit bist, eigene Inhalte zu veröffentlichen.

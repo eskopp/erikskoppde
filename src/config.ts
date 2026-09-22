@@ -15,7 +15,7 @@ export const SITE_IMAGES = {
   ogDefault: ogDefaultImg,
 } as const;
 
-export const locales = ['de'] as const;
+export const locales = ['de', 'en'] as const;
 export type Locale = (typeof locales)[number];
 
 /**
@@ -111,7 +111,7 @@ export const SITE: SiteConfig = {
   /** Default locale. Changing this is a breaking, atomic, multi-file operation. */
   defaultLocale: 'de',
   /** Show the language switcher and link to translated pages. */
-  multilingual: false,
+  multilingual: true,
 };
 
 export const NAV: readonly NavItem[] = [

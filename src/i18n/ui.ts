@@ -26,7 +26,9 @@ export const messages = {
 
     'lang.switcher': 'Sprache',
     'lang.en': 'Englisch',
-    'lang.fr': 'Französisch',
+
+    'panel.recentlyUpdated': 'Zuletzt aktualisiert',
+    'panel.trendingTags': 'Beliebte Tags',
 
     'post.publishedOn': 'Veröffentlicht am',
     'post.updatedOn': 'Aktualisiert am',
@@ -112,6 +114,114 @@ export const messages = {
     'footer.theme': 'Theme',
     'footer.privacy': 'Datenschutz',
     'footer.copyright': 'Alle Rechte vorbehalten.',
+  },
+  en: {
+    'site.skipToContent': 'Skip to content',
+    'nav.home': 'Home',
+    'nav.posts': 'Posts',
+    'nav.tags': 'Tags',
+    'nav.categories': 'Categories',
+    'nav.archives': 'Archives',
+    'nav.gallery': 'Gallery',
+    'nav.about': 'About',
+    'nav.search': 'Search',
+    'nav.toggleMenu': 'Toggle menu',
+
+    'theme.toggle': 'Toggle theme',
+    'theme.light': 'Light',
+    'theme.dark': 'Dark',
+    'theme.system': 'System',
+
+    'lang.switcher': 'Language',
+    'lang.en': 'English',
+
+    'panel.recentlyUpdated': 'Recently Updated',
+    'panel.trendingTags': 'Trending Tags',
+
+    'post.publishedOn': 'Published on',
+    'post.updatedOn': 'Updated on',
+    'post.readingTime': 'min read',
+    'post.toc': 'Table of Contents',
+    'post.tags': 'Tags',
+    'post.categories': 'Categories',
+    'post.previous': 'Previous',
+    'post.next': 'Next',
+    'post.comments': 'Comments',
+    'post.commentsDisabled': 'Comments are disabled for this post.',
+    'post.commentsSetupTitle': 'Comments need to be configured',
+    'post.commentsSetupBody':
+      'Giscus is enabled but not yet configured. Fill in the repository details below to start collecting comments.',
+    'post.commentsSetupStep1':
+      'Visit `giscus.app` and select your public GitHub repository (Discussions must be enabled).',
+    'post.commentsSetupStep2':
+      'Copy the generated values for `data-repo-id`, `data-category`, and `data-category-id`.',
+    'post.commentsSetupStep3':
+      'Set the `PUBLIC_GISCUS_ENABLED`, `PUBLIC_GISCUS_REPO`, `PUBLIC_GISCUS_REPO_ID`, `PUBLIC_GISCUS_CATEGORY`, and `PUBLIC_GISCUS_CATEGORY_ID` environment variables in your `.env` file.',
+    'post.commentsSetupStep4':
+      'Rebuild the site — this notice will then be replaced by the real comment section.',
+    'post.commentsSetupDocs': 'Open giscus.app',
+    'post.share': 'Share',
+    'post.copyLink': 'Copy link',
+    'post.copied': 'Copied!',
+    'post.author': 'Author',
+
+    'list.allPosts': 'All Posts',
+    'list.empty': 'No posts found.',
+    'list.tagPosts': 'Posts tagged',
+    'list.categoryPosts': 'Posts in',
+    'list.totalPosts': 'posts',
+    'list.totalPostsOne': 'post',
+
+    'pagination.previous': 'Previous page',
+    'pagination.next': 'Next page',
+    'pagination.page': 'Page',
+    'pagination.of': 'of',
+
+    'archives.title': 'Archives',
+    'archives.empty': 'No posts yet.',
+
+    'tags.title': 'Tags',
+    'tags.empty': 'No tags yet.',
+
+    'categories.title': 'Categories',
+    'categories.empty': 'No categories yet.',
+
+    'gallery.title': 'Gallery',
+    'gallery.empty': 'No albums yet.',
+    'gallery.back': 'Back to gallery',
+    'gallery.imageCount': 'images',
+    'gallery.imageCountOne': 'image',
+    'gallery.close': 'Close',
+    'gallery.previous': 'Previous image',
+    'gallery.next': 'Next image',
+
+    'search.title': 'Search',
+    'search.placeholder': 'Search the site',
+    'search.openLabel': 'Open search',
+    'search.closeLabel': 'Close search',
+    'search.empty': 'No results.',
+    'search.loading': 'Loading search…',
+    'search.typeToStart': 'Type to start searching…',
+    'search.hintShortcut': 'Press / to open search',
+    'search.searching': 'Searching…',
+    'search.noResultsFor': 'No results for',
+    'search.resultsCount': 'results',
+    'search.resultsCountOne': 'result',
+    'search.hintNavigate': 'to navigate',
+    'search.hintSelect': 'to open',
+    'search.clearLabel': 'Clear',
+
+    'code.copy': 'Copy',
+    'code.copied': 'Copied',
+
+    '404.title': 'Page not found',
+    '404.description': "The page you're looking for can't be found.",
+    '404.cta': 'Back to home',
+
+    'footer.poweredBy': 'Powered by',
+    'footer.theme': 'Theme',
+    'footer.privacy': 'Privacy',
+    'footer.copyright': 'All rights reserved.',
   },
 } as const satisfies Record<Locale, Record<string, string>>;
 
