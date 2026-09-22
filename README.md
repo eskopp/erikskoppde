@@ -26,10 +26,6 @@ bun run lint        # ESLint
 bun run format      # Prettier
 ```
 
-## Beiträge schreiben
-
-Markdown-Dateien liegen unter `src/content/posts/de/`. Statische Seiten (Über, Datenschutz, GPG, …) unter `src/content/pages/de/`.
-
 ## Deploy
 
 Push nach `main` löst automatisch den Build + Deploy nach GitHub Pages aus (`.github/workflows/deploy.yml`). Ein zweiter Workflow spiegelt den Stand zusätzlich nach GitLab (`.github/workflows/mirror-to-gitlab.yml`).
