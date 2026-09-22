@@ -49,7 +49,6 @@ const baseFrontmatter = ({ image }: SchemaContext) =>
     /** Per-post override of SITE.dynamicPostCardHeight on listing cards. */
     dynamicPostCardHeight: z.boolean().optional(),
     canonicalURL: z.url().optional(),
-    comments: z.boolean().optional(),
     toc: z.boolean().default(true),
     /** Pin to top of listings. */
     pinned: z.boolean().default(false),

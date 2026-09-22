@@ -37,20 +37,6 @@ export const messages = {
     'post.categories': 'Kategorien',
     'post.previous': 'Zurück',
     'post.next': 'Weiter',
-    'post.comments': 'Kommentare',
-    'post.commentsDisabled': 'Kommentare sind für diesen Beitrag deaktiviert.',
-    'post.commentsSetupTitle': 'Kommentare müssen konfiguriert werden',
-    'post.commentsSetupBody':
-      'Giscus ist aktiviert, aber noch nicht konfiguriert. Trage unten die Repository-Details ein, um Kommentare zu sammeln.',
-    'post.commentsSetupStep1':
-      'Besuche `giscus.app` und wähle dein öffentliches GitHub-Repository aus (Discussions müssen aktiviert sein).',
-    'post.commentsSetupStep2':
-      'Kopiere die generierten Werte für `data-repo-id`, `data-category` und `data-category-id`.',
-    'post.commentsSetupStep3':
-      'Setze die Umgebungsvariablen `PUBLIC_GISCUS_ENABLED`, `PUBLIC_GISCUS_REPO`, `PUBLIC_GISCUS_REPO_ID`, `PUBLIC_GISCUS_CATEGORY` und `PUBLIC_GISCUS_CATEGORY_ID` in deiner `.env`-Datei.',
-    'post.commentsSetupStep4':
-      'Baue die Seite neu — dieser Hinweis wird dann durch den echten Kommentarbereich ersetzt.',
-    'post.commentsSetupDocs': 'giscus.app öffnen',
     'post.share': 'Teilen',
     'post.copyLink': 'Link kopieren',
     'post.copied': 'Kopiert!',

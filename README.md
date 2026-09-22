@@ -8,7 +8,6 @@ Gebaut mit [Astro](https://astro.build) auf Basis des [Chirping Astro](https://g
 
 - **Astro v7** + **Tailwind CSS v4** / **daisyUI v5**
 - **Pagefind** für die Suche
-- **Giscus** für Kommentare (GitHub Discussions)
 - Einsprachig Deutsch
 
 ## Lokal entwickeln
