@@ -1,9 +1,9 @@
 ---
 title: 'Mein erstes Experiment'
 description: 'TODO'
-pubDate: 2026-09-22
+pubDate: 2025-10-15
 tags: []
 categories: []
-draft: true
+draft: false
 math: true
 ---
