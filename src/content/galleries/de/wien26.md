@@ -1,6 +1,8 @@
 ---
 title: 'Wien 2026'
-description: 'Streifzug durch Wien im April 2026: Stephansdom, Josephinum, Technisches Museum, Prater, Planetarium und Nationalbibliothek.'
+description: 'Streifzug durch Wien im April 2026: Stephansdom, Josephinum, Technisches Museum, Prater, Planetarium und Nationalbibliothek.
+
+Den Artikel dazu finden Sie [HIER](/posts/prater-planetarium-technik/).'
 date: 2026-09-22
 images:
   - src: ../../../assets/images/galleries/wien26/2026_04_Wien_0077.jpg
