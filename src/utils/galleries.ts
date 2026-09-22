@@ -39,13 +39,13 @@ export function albumSlug(entry: Album): string {
 /** Full localized URL path for an album. */
 export function albumPath(entry: Album, locale: Locale): string {
   const slug = albumSlug(entry);
-  const path = locale === SITE.defaultLocale ? `/gallery/${slug}/` : `/${locale}/gallery/${slug}/`;
+  const path = locale === SITE.defaultLocale ? `/galerie/${slug}/` : `/${locale}/galerie/${slug}/`;
   return withBase(path);
 }
 
 /** URL for the gallery index page. */
 export function galleryIndexPath(locale: Locale): string {
-  const path = locale === SITE.defaultLocale ? '/gallery/' : `/${locale}/gallery/`;
+  const path = locale === SITE.defaultLocale ? '/galerie/' : `/${locale}/galerie/`;
   return withBase(path);
 }
 

@@ -29,7 +29,7 @@ const t = useTranslations(locale);
 <BaseLayout
   title={album.data.title}
   description={album.data.description}
-  pathWithoutLocale={`/gallery/${albumSlug(album)}/`}
+  pathWithoutLocale={`/galerie/${albumSlug(album)}/`}
   crumbs={[{ label: t('gallery.title'), href: galleryIndexPath(locale) }, { label: album.data.title }]}
 >
   <header class="mb-6">
