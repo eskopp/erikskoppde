@@ -1,0 +1,41 @@
+---
+import { SITE } from '~/config';
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import { useTranslations } from '~/i18n/utils';
+import { getAlbums } from '~/utils/galleries';
+import GalleryCard from '~/components/GalleryCard.astro';
+
+export function getStaticPaths() {
+  return SITE.locales.map((l) => ({
+    params: { locale: l === SITE.defaultLocale ? undefined : l },
+    props: { locale: l },
+  }));
+}
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+const albums = await getAlbums(locale);
+---
+
+<BaseLayout
+  title={t('gallery.title')}
+  description={SITE.description}
+  pathWithoutLocale="/gallery/"
+  crumbs={[{ label: t('gallery.title') }]}
+>
+  <header class="mb-6">
+    <h1 class="text-3xl font-bold tracking-tight">{t('gallery.title')}</h1>
+  </header>
+  {
+    albums.length === 0 ? (
+      <p class="border-base-300 text-base-content/70 rounded-md border border-dashed px-6 py-10 text-center">
+        {t('gallery.empty')}
+      </p>
+    ) : (
+      <div class="gallery-index-grid">
+        {albums.map((album, index) => (
+          <GalleryCard album={album} locale={locale} prioritizeLcp={index === 0} />
+        ))}
+      </div>
+    )
+  }
+</BaseLayout>

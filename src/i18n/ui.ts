@@ -14,6 +14,7 @@ export const messages = {
     'nav.tags': 'Tags',
     'nav.categories': 'Kategorien',
     'nav.archives': 'Archiv',
+    'nav.gallery': 'Galerie',
     'nav.about': 'Über',
     'nav.search': 'Suche',
     'nav.toggleMenu': 'Menü umschalten',
@@ -74,6 +75,15 @@ export const messages = {
 
     'categories.title': 'Kategorien',
     'categories.empty': 'Noch keine Kategorien.',
+
+    'gallery.title': 'Galerie',
+    'gallery.empty': 'Noch keine Alben.',
+    'gallery.back': 'Zurück zur Galerie',
+    'gallery.imageCount': 'Bilder',
+    'gallery.imageCountOne': 'Bild',
+    'gallery.close': 'Schließen',
+    'gallery.previous': 'Vorheriges Bild',
+    'gallery.next': 'Nächstes Bild',
 
     'search.title': 'Suche',
     'search.placeholder': 'Seite durchsuchen',

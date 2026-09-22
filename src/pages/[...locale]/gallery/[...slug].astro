@@ -1,0 +1,49 @@
+---
+import { SITE } from '~/config';
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import { useTranslations, formatDate, isoDate } from '~/i18n/utils';
+import { getAlbums, albumSlug, galleryIndexPath, type Album } from '~/utils/galleries';
+import GalleryPhotoGrid from '~/components/GalleryPhotoGrid.astro';
+import GalleryLightbox from '~/components/islands/GalleryLightbox.astro';
+import { Icon } from 'astro-icon/components';
+
+export async function getStaticPaths() {
+  const paths = [];
+  for (const locale of SITE.locales) {
+    const albums = await getAlbums(locale);
+    const localeParams = { locale: locale === SITE.defaultLocale ? undefined : locale };
+    paths.push(
+      ...albums.map((album) => ({
+        params: { ...localeParams, slug: albumSlug(album) },
+        props: { album, locale },
+      })),
+    );
+  }
+  return paths;
+}
+
+const { album, locale } = Astro.props as { album: Album; locale: (typeof SITE.locales)[number] };
+const t = useTranslations(locale);
+---
+
+<BaseLayout
+  title={album.data.title}
+  description={album.data.description}
+  pathWithoutLocale={`/gallery/${albumSlug(album)}/`}
+  crumbs={[{ label: t('gallery.title'), href: galleryIndexPath(locale) }, { label: album.data.title }]}
+>
+  <header class="mb-6">
+    <a href={galleryIndexPath(locale)} class="text-primary mb-3 inline-flex items-center gap-1 text-sm">
+      <Icon name="lucide:arrow-left" width={14} height={14} />
+      {t('gallery.back')}
+    </a>
+    <h1 class="text-3xl leading-tight font-extrabold tracking-tight">{album.data.title}</h1>
+    <p class="text-base-content/70 mt-2">{album.data.description}</p>
+    <time class="text-base-content/60 mt-1 block text-xs" datetime={isoDate(album.data.date)}>
+      {formatDate(album.data.date, locale, { year: 'numeric', month: 'long', day: 'numeric' })}
+    </time>
+  </header>
+
+  <GalleryPhotoGrid images={album.data.images} />
+  <GalleryLightbox locale={locale} />
+</BaseLayout>

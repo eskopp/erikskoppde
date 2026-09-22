@@ -435,6 +435,82 @@
   }
 }
 
+/* ---------- Gallery: album index grid ---------- */
+@layer components {
+  .gallery-index-grid {
+    @apply grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3;
+  }
+
+  .gallery-card {
+    @apply border-base-300 bg-base-100 overflow-hidden rounded-md border transition hover:-translate-y-0.5 hover:shadow-[0_2px_4px_-1px_rgba(0,0,0,0.05),0_4px_12px_rgba(0,0,0,0.08)];
+  }
+  .gallery-card-link {
+    @apply flex h-full flex-col;
+  }
+  .gallery-card-image-wrap {
+    @apply relative overflow-hidden;
+  }
+  .gallery-card-image {
+    @apply block aspect-[4/3] w-full object-cover;
+  }
+  .gallery-card-count {
+    @apply bg-base-100/85 text-base-content absolute right-2 bottom-2 inline-flex items-center gap-1 rounded-full px-2 py-1 text-xs font-medium backdrop-blur;
+  }
+  .gallery-card-body {
+    @apply flex flex-1 flex-col p-4;
+  }
+  .gallery-card-title {
+    @apply text-base-content text-lg leading-snug font-bold tracking-tight;
+  }
+
+  /* ---------- Gallery: album photo grid ---------- */
+  .gallery-photo-grid {
+    @apply grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4;
+  }
+  .gallery-photo {
+    @apply list-none;
+  }
+  .gallery-photo-btn {
+    @apply border-base-300 block aspect-square w-full cursor-zoom-in overflow-hidden rounded-md border p-0 transition hover:opacity-90;
+  }
+  .gallery-photo-thumb {
+    @apply h-full w-full object-cover;
+  }
+
+  /* ---------- Gallery: lightbox ---------- */
+  .gallery-lightbox {
+    @apply m-auto max-h-[92vh] max-w-[92vw] overflow-visible rounded-md border-0 bg-transparent p-0;
+  }
+  .gallery-lightbox::backdrop {
+    @apply bg-black/85 backdrop-blur-sm;
+  }
+  .gallery-lightbox-stage {
+    @apply flex max-h-[92vh] max-w-[92vw] items-center justify-center;
+  }
+  .gallery-lightbox-stage figure {
+    @apply m-0 flex max-h-[92vh] flex-col items-center;
+  }
+  .gallery-lightbox-stage img {
+    @apply max-h-[85vh] max-w-full rounded-md object-contain;
+  }
+  .gallery-lightbox-stage figcaption {
+    @apply mt-3 text-center text-sm text-white/80;
+  }
+  .gallery-lightbox-close,
+  .gallery-lightbox-nav {
+    @apply fixed flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition hover:bg-white/20;
+  }
+  .gallery-lightbox-close {
+    @apply top-4 right-4;
+  }
+  .gallery-lightbox-prev {
+    @apply top-1/2 left-4 -translate-y-1/2;
+  }
+  .gallery-lightbox-next {
+    @apply top-1/2 right-4 -translate-y-1/2;
+  }
+}
+
 /* ---------- Prose tuning for the post body ---------- */
 @layer components {
   .prose-chirpy {

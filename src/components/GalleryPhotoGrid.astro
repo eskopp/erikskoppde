@@ -1,0 +1,51 @@
+---
+/**
+ * Justified-ish thumbnail grid for a single album. Each thumbnail is a
+ * trigger button; its full-size image + caption sit in a `<template>`
+ * so `GalleryLightbox` can clone them into the dialog without a second
+ * network request or re-fetch — everything is already in the static HTML,
+ * optimized by Astro's image pipeline at build time.
+ */
+import type { AlbumImage } from '../utils/galleries';
+import { resolveImageSrc } from '../utils/galleries';
+import SmartImage from './SmartImage.astro';
+
+interface Props {
+  images: AlbumImage[];
+}
+
+const { images } = Astro.props;
+---
+
+<ul class="gallery-photo-grid" data-gallery>
+  {
+    images.map((img, index) => (
+      <li class="gallery-photo">
+        <button type="button" class="gallery-photo-btn" data-gallery-trigger data-index={index}>
+          <SmartImage
+            src={resolveImageSrc(img.src)}
+            alt={img.alt}
+            class="gallery-photo-thumb"
+            loading={index < 6 ? 'eager' : 'lazy'}
+            widths={[240, 400, 560]}
+            sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+            quality={70}
+          />
+        </button>
+        <template data-gallery-full>
+          <figure>
+            <SmartImage
+              src={resolveImageSrc(img.src)}
+              alt={img.alt}
+              widths={[640, 960, 1280, 1600]}
+              sizes="90vw"
+              quality={85}
+              loading="eager"
+            />
+            {img.caption && <figcaption>{img.caption}</figcaption>}
+          </figure>
+        </template>
+      </li>
+    ))
+  }
+</ul>

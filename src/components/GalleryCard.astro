@@ -1,0 +1,48 @@
+---
+import type { Locale } from '../config';
+import { formatDate, isoDate } from '../i18n/utils';
+import { type Album, albumPath, albumCover } from '../utils/galleries';
+import { useTranslations } from '../i18n/utils';
+import SmartImage from './SmartImage.astro';
+import { Icon } from 'astro-icon/components';
+
+interface Props {
+  album: Album;
+  locale: Locale;
+  prioritizeLcp?: boolean;
+}
+
+const { album, locale, prioritizeLcp = false } = Astro.props;
+const t = useTranslations(locale);
+const href = albumPath(album, locale);
+const cover = albumCover(album);
+const count = album.data.images.length;
+---
+
+<article class="gallery-card">
+  <a href={href} class="gallery-card-link">
+    <div class="gallery-card-image-wrap">
+      <SmartImage
+        src={cover}
+        alt=""
+        class="gallery-card-image"
+        loading={prioritizeLcp ? 'eager' : 'lazy'}
+        fetchpriority={prioritizeLcp ? 'high' : 'auto'}
+        widths={[384, 640, 800]}
+        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+        quality={75}
+      />
+      <span class="gallery-card-count">
+        <Icon name="lucide:image" width={12} height={12} />
+        {count} {count === 1 ? t('gallery.imageCountOne') : t('gallery.imageCount')}
+      </span>
+    </div>
+    <div class="gallery-card-body">
+      <h2 class="gallery-card-title">{album.data.title}</h2>
+      <p class="text-base-content/70 mt-1 mb-2 line-clamp-2 text-sm">{album.data.description}</p>
+      <time class="text-base-content/60 text-xs" datetime={isoDate(album.data.date)}>
+        {formatDate(album.data.date, locale, { year: 'numeric', month: 'short', day: 'numeric' })}
+      </time>
+    </div>
+  </a>
+</article>

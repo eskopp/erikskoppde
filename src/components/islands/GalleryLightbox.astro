@@ -1,0 +1,90 @@
+---
+/**
+ * Native <dialog>-based lightbox for GalleryPhotoGrid. Clones the
+ * full-size <figure> out of the clicked thumbnail's <template> (see
+ * GalleryPhotoGrid.astro) so no image data is duplicated in JSON and
+ * Astro's build-time image optimization still applies to the full view.
+ */
+import { useTranslations } from '../../i18n/utils';
+import type { Locale } from '../../config';
+import { Icon } from 'astro-icon/components';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+---
+
+<dialog class="gallery-lightbox" data-gallery-lightbox aria-label={t('gallery.title')}>
+  <div class="gallery-lightbox-stage" data-gallery-stage></div>
+  <button type="button" class="gallery-lightbox-close" data-gallery-close aria-label={t('gallery.close')}>
+    <Icon name="lucide:x" width={20} height={20} />
+  </button>
+  <button
+    type="button"
+    class="gallery-lightbox-nav gallery-lightbox-prev"
+    data-gallery-prev
+    aria-label={t('gallery.previous')}
+  >
+    <Icon name="lucide:chevron-left" width={24} height={24} />
+  </button>
+  <button
+    type="button"
+    class="gallery-lightbox-nav gallery-lightbox-next"
+    data-gallery-next
+    aria-label={t('gallery.next')}
+  >
+    <Icon name="lucide:chevron-right" width={24} height={24} />
+  </button>
+</dialog>
+
+<script>
+  function setupGalleryLightbox() {
+    const dialog = document.querySelector<HTMLDialogElement>('[data-gallery-lightbox]');
+    const stage = dialog?.querySelector<HTMLElement>('[data-gallery-stage]');
+    if (!dialog || !stage) return;
+
+    let triggers: HTMLButtonElement[] = [];
+    let current = -1;
+
+    function show(index: number) {
+      if (!triggers.length) return;
+      current = (index + triggers.length) % triggers.length;
+      const grid = triggers[current].closest('li');
+      const template = grid?.querySelector<HTMLTemplateElement>('[data-gallery-full]');
+      if (!template || !stage) return;
+      stage.replaceChildren(template.content.cloneNode(true));
+      if (!dialog!.open) dialog!.showModal();
+    }
+
+    function bind() {
+      triggers = Array.from(document.querySelectorAll<HTMLButtonElement>('[data-gallery-trigger]'));
+      triggers.forEach((btn) => {
+        btn.addEventListener('click', () => show(Number(btn.dataset.index ?? 0)));
+      });
+    }
+
+    dialog.querySelector('[data-gallery-close]')?.addEventListener('click', () => dialog.close());
+    dialog.querySelector('[data-gallery-prev]')?.addEventListener('click', () => show(current - 1));
+    dialog.querySelector('[data-gallery-next]')?.addEventListener('click', () => show(current + 1));
+
+    // Clicking the dialog backdrop (not the stage/content) closes it.
+    dialog.addEventListener('click', (e) => {
+      if (e.target === dialog) dialog.close();
+    });
+
+    dialog.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft') show(current - 1);
+      if (e.key === 'ArrowRight') show(current + 1);
+    });
+
+    dialog.addEventListener('close', () => stage!.replaceChildren());
+
+    bind();
+  }
+
+  setupGalleryLightbox();
+  document.addEventListener('astro:page-load', setupGalleryLightbox);
+</script>

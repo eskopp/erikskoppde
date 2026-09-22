@@ -120,4 +120,37 @@ const pages = defineCollection({
       }),
 });
 
-export const collections = { posts, pages };
+/**
+ * Photo galleries ("albums"). Each entry is one album; `images` lists its
+ * photos in display order. `src` on both `cover` and each image accepts
+ * the same three shapes as `heroImage` above (imported asset, public path,
+ * or allow-listed remote URL).
+ */
+const galleries = defineCollection({
+  loader: glob({
+    pattern: '**/*.{md,mdx}',
+    base: './src/content/galleries',
+  }),
+  schema: ({ image }: SchemaContext) =>
+    z.object({
+      title: z.string().min(1).max(140),
+      description: z.string().min(1).max(280),
+      date: z.coerce.date(),
+      draft: z.boolean().default(false),
+      /** Pin to top of the gallery index. */
+      pinned: z.boolean().default(false),
+      /** Optional cover image; defaults to the first entry in `images`. */
+      cover: z.union([image(), z.string()]).optional(),
+      images: z
+        .array(
+          z.object({
+            src: z.union([image(), z.string()]),
+            alt: z.string(),
+            caption: z.string().optional(),
+          }),
+        )
+        .min(1),
+    }),
+});
+
+export const collections = { posts, pages, galleries };
