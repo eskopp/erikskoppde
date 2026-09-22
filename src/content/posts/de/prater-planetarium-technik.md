@@ -1,13 +1,13 @@
 ---
-title: 'Josephium, Planetarium und Technik'
-description: 'Reise durch Wien 2026'
-pubDate: 2026-04-10
-tags: ['Reise','Wien']
-categories: []
+title: 'Josephinum, Planetarium und Technik'
+description: 'Ein Tag in Wien: Josephinum, Technisches Museum, Prater und Planetarium'
+pubDate: 2026-04-11
+tags: ['Wien', 'Josephinum', 'Technisches Museum', 'Prater', 'Planetarium']
+categories: ['Reise']
 draft: false
 math: false
 pinned: false
 ---
 
 
-Ich bin ein Test
+Mehr Bilder: [Galerie: Wien 2026](/galerie/wien26/)
