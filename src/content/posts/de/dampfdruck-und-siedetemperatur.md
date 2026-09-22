@@ -10,5 +10,7 @@ math: true
 
 Ich bin eine Mathematische Formel
 
-$$\frac{dp_S}{dT} = \frac{Q_{m,v}}{T\left(V_{m,G} - V_{m,Fl}\right)}.$$
+$$
+\frac{dp_S}{dT} = \frac{Q_{m,v}}{T\left(V_{m,G} - V_{m,Fl}\right)}.
+$$
 
