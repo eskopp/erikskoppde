@@ -16,7 +16,7 @@ Ich habe im Krankenhaus angefangen den Blog zu schreiben. Ehrlich gesagt gab es 
 
 
 ### Inhalt 
-Ich möchte hier über alles schreiben was mich so beschäftigt, was ich erlebe und was mich im Gganzen so Antreibt. 
+Ich möchte hier über alles schreiben was mich so beschäftigt, was ich erlebe und was mich im Ganzen so antreibt. 
 
 #### Schach
 Aktuell spiele ich Schach nur online. Das möchte ich in den kommenden Monaten und Jahren wieder ändern. Zusammen mit dem Ilmenauer Schachverein[^1] haben wir schon viele Turniere ausgerichtet. Ich werde auch dort von Events berichten. Ein weiteres jährliches Turnier ist das Schach Open in Bad Königshofen[^2] zwischen den Feiertagen.
@@ -25,16 +25,16 @@ Aktuell spiele ich Schach nur online. Das möchte ich in den kommenden Monaten u
 Nicht nur möchte ich mich im Schach nach Jahren wieder deutlich verbessern sondern auch den Kindern wieder helfen sich zu verbessern. Kindertraining ist eine sehr dankbare und lehrreiche Aufgabe. Nur wenn man ein Thema sauber erklären kann, hat man es verstanden. Auf dieser Reise möchte ich Euch mitnehmen. 
 
 #### Experimente
-Im Rahmen des Studiums haben wir sehr viele Experimente in verschiedenen Bereiche der Physik und der Chemie. Gerne möchte ich hier darüber berichten. Mir ist bekannt, dass ich Studnent bin. Manches wird auch Inhaltlich falsch oder nicht ganz sauber sein. Seht mir das bitte nach. 
+Im Rahmen des Studiums haben wir sehr viele Experimente in verschiedenen Bereichen der Physik und der Chemie. Gerne möchte ich hier darüber berichten. Mir ist bekannt, dass ich Student bin. Manches wird auch inhaltlich falsch oder nicht ganz sauber sein. Seht mir das bitte nach. 
 Aber ich freue mich eig schon sehr auf die Experimente.
 
 
 #### Linux und Programmierung
-In meiner Freizeit habe ich einen großen Debian 13 Server. Ich denke, dass das immer ein Debian Server bleiben wird. Er hat 16 GB RAM und 8 Kerne und ist ein Root Server. Gehostet ist dieser bei netcup. Dort mache ich selber viele Experimente und Tests. Aktuell laufen auf dem Server verschiedene Dienste wie bspw Grafana[^3] oder Gitlab[^4]. Über die Reise des Servers möchte ich euch mitnehmen
+In meiner Freizeit habe ich einen großen Debian-13-Server. Ich denke, dass das immer ein Debian-Server bleiben wird. Er hat 16 GB RAM und 8 Kerne und ist ein Root-Server. Gehostet ist dieser bei netcup. Dort mache ich selber viele Experimente und Tests. Aktuell laufen auf dem Server verschiedene Dienste wie bspw. Grafana[^3] oder Gitlab[^4]. Über die Reise des Servers möchte ich euch mitnehmen.
 
 
-Es gibt also viele Themen von denen ich Berichten kann. Einen gewissen Fahrplan kann ich hier noch nicht geben, da es zufällig ist was mich gerade beschäftigt.
-Gerne könnt ihr mich auch auf Themen ansprechen oder mir Fehler bzw Probleme aufzeigen. 
+Es gibt also viele Themen von denen ich berichten kann. Einen gewissen Fahrplan kann ich hier noch nicht geben, da es zufällig ist was mich gerade beschäftigt.
+Gerne könnt ihr mich auch auf Themen ansprechen oder mir Fehler bzw. Probleme aufzeigen. 
 
 
 
