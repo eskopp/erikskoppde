@@ -91,7 +91,7 @@ export const SITE: SiteConfig = {
     /** Whether to show the Privacy Policy link in the footer. */
     showPrivacyPolicy: true,
     /** Whether to show theme credits in the footer right side. Theme <themeName> */
-    showThemeCredits: true,
+    showThemeCredits: false,
     /** Label for the theme repository link in the right footer line. */
     themeName: 'Chirping Astro',
     /** Default upstream theme repository. */
