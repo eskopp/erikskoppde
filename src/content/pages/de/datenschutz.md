@@ -45,13 +45,20 @@ Diese Information verlässt das Gerät nicht und wird an keinen Server
 Es werden keine Analyse-, Tracking- oder Werbedienste eingesetzt. Es
 findet keine Erstellung von Nutzungsprofilen statt.
 
-## 6. Schriftarten
+## 6. Verwendete Software-Pakete
+
+Eine vollständige, bei jedem Build automatisch aktualisierte Übersicht
+der Software-Pakete, aus denen diese Website gebaut wird (Name, Version,
+Prüfsumme, Link und Beschreibung), finden Sie unter
+[Verwendete Pakete](/pakete).
+
+## 7. Schriftarten
 
 Alle auf dieser Website verwendeten Schriftarten sind lokal eingebunden.
 Es werden keine Anfragen an externe Schriftarten-Dienste (z. B. Google
 Fonts) gestellt.
 
-## 7. Eingebettete Inhalte
+## 8. Eingebettete Inhalte
 
 Einzelne Beiträge können YouTube-Videos im datenschutzfreundlichen
 Modus (`youtube-nocookie.com`) einbetten. Beim Abspielen eines solchen
@@ -60,20 +67,20 @@ aufgebaut werden, wobei technische Daten wie die IP-Adresse übertragen
 werden können. Informationen dazu bietet die Datenschutzerklärung von
 Google: <https://policies.google.com/privacy>
 
-## 8. Kommentarfunktion
+## 9. Kommentarfunktion
 
 Diese Website bietet derzeit keine Kommentarfunktion an. Sollte eine
 Kommentarfunktion eingeführt werden, wird diese Datenschutzerklärung
 entsprechend aktualisiert.
 
-## 9. Ihre Rechte
+## 10. Ihre Rechte
 
 Nach der Datenschutz-Grundverordnung (DSGVO) haben Sie unter anderem das
 Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der
 Verarbeitung Ihrer personenbezogenen Daten sowie ein Beschwerderecht bei
 einer Datenschutz-Aufsichtsbehörde.
 
-## 10. Änderungen dieser Erklärung
+## 11. Änderungen dieser Erklärung
 
 Diese Datenschutzerklärung kann angepasst werden, wenn sich die
 Datenverarbeitung auf dieser Website ändert.

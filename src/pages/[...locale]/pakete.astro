@@ -1,0 +1,76 @@
+---
+import { getEntry, render } from 'astro:content';
+import PageLayout from '~/layouts/PageLayout.astro';
+import { SITE } from '~/config';
+import { getDirectDependencies, type PackageInfo } from '~/utils/dependencies';
+
+export function getStaticPaths() {
+  return SITE.locales.map((l) => ({
+    params: { locale: l === SITE.defaultLocale ? undefined : l },
+    props: { locale: l },
+  }));
+}
+const { locale } = Astro.props;
+const entry = await getEntry('pages', `${locale}/pakete`);
+if (!entry) return Astro.rewrite('/404');
+const { Content } = await render(entry);
+
+const { dependencies, devDependencies } = getDirectDependencies();
+
+function shortSha(integrity: string | null): string {
+  if (!integrity) return '–';
+  return integrity.length > 24 ? `${integrity.slice(0, 24)}…` : integrity;
+}
+---
+
+<PageLayout
+  title={entry.data.title}
+  description={entry.data.description ?? SITE.description}
+  locale={locale}
+  math={entry.data.math}
+>
+  <Content />
+
+  {
+    (
+      [
+        ['Abhängigkeiten', dependencies],
+        ['Entwicklungs-Abhängigkeiten', devDependencies],
+      ] as [string, PackageInfo[]][]
+    ).map(([heading, list]) => (
+      <section class="mt-8">
+        <h2>{heading}</h2>
+        <div class="overflow-x-auto">
+          <table>
+            <thead>
+              <tr>
+                <th>Paket</th>
+                <th>Version</th>
+                <th>SHA-512</th>
+                <th>Beschreibung</th>
+              </tr>
+            </thead>
+            <tbody>
+              {list.map((pkg) => (
+                <tr>
+                  <td>
+                    <a href={pkg.npmUrl} rel="noopener" target="_blank">
+                      {pkg.name}
+                    </a>
+                  </td>
+                  <td>{pkg.version}</td>
+                  <td>
+                    <code title={pkg.integrity ?? undefined} class="text-xs break-all">
+                      {shortSha(pkg.integrity)}
+                    </code>
+                  </td>
+                  <td>{pkg.description || '–'}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+    ))
+  }
+</PageLayout>
