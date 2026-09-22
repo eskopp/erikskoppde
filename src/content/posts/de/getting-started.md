@@ -30,11 +30,11 @@ cp .env.example .env
 
 Key variables:
 
-| Variable               | Purpose                                                    |
-| ---------------------- | ---------------------------------------------------------- |
-| `SITE_URL`             | Your production URL (e.g., `https://myblog.com`)           |
-| `BASE_PATH`            | Set to `/<repo-name>` for GitHub Pages, blank otherwise    |
-| `PUBLIC_GITHUB_HANDLE` | Shows GitHub icon in sidebar                               |
+| Variable               | Purpose                                                 |
+| ---------------------- | ------------------------------------------------------- |
+| `SITE_URL`             | Your production URL (e.g., `https://myblog.com`)        |
+| `BASE_PATH`            | Set to `/<repo-name>` for GitHub Pages, blank otherwise |
+| `PUBLIC_GITHUB_HANDLE` | Shows GitHub icon in sidebar                            |
 
 ## Writing posts
 
