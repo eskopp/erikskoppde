@@ -27,6 +27,3 @@ Den Artikel von ihm findet ihr [HIER](https://blog.mrgonzalez.de/posts/post-10/#
 Ich habe eig viel zu viel Angst vor euren Kommentaren. Ich habe ohnehin sehr starke Bauchschmerzen dabei meine Gedanken so offen hier aufzuschreiben, doch ich hoffe, dass ihr es mir nachseht.
 
 Ich wünsche Euch nun viel Spaß hier auf dem Blog. 
-
-
-### 
