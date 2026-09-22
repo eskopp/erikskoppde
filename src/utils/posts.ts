@@ -174,7 +174,9 @@ export function groupByYearMonth(
   months: Array<{ month: number; label: string; posts: Post[] }>;
 }> {
   const buckets = new Map<number, Map<number, Post[]>>();
-  for (const post of posts) {
+  // Archive order must be strictly chronological, independent of `pinned`
+  // (which only affects listing pages), so re-sort by date here.
+  for (const post of sortPostsByDate(posts)) {
     const date = post.data.pubDate;
     if (!date) continue;
     const y = date.getFullYear();
