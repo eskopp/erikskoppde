@@ -1,6 +1,6 @@
 ---
 import { SITE } from '../config';
-import { localizedPath, ogLocale, withBase } from '../i18n/utils';
+import { localizedPath, withBase } from '../i18n/utils';
 import type { SeoMeta } from '../utils/seo';
 
 interface Props {
@@ -9,24 +9,20 @@ interface Props {
 
 const { meta } = Astro.props;
 
-/** " (EN)" for any non-default locale, "" for the default locale. */
-const localeSuffix = (locale: (typeof SITE.locales)[number]) =>
-  locale === SITE.defaultLocale ? '' : ` (${locale.toUpperCase()})`;
-
 // Feed auto-discovery — feed readers and browser extensions look for
 // these <link rel="alternate"> tags in <head>. We advertise the active
 // locale's feed as the primary one, and (when multilingual) every other
 // locale's feed too.
 const primaryFeed = {
   href: localizedPath('/rss.xml', meta.locale),
-  title: `${SITE.title}${localeSuffix(meta.locale)} — RSS`,
+  title: `${SITE.title}${meta.locale === 'fr' ? ' (FR)' : ''} — RSS`,
 };
 const otherFeeds = SITE.multilingual
   ? SITE.locales
       .filter((l) => l !== meta.locale)
       .map((l) => ({
         href: localizedPath('/rss.xml', l),
-        title: `${SITE.title}${localeSuffix(l)} — RSS`,
+        title: `${SITE.title}${l === 'fr' ? ' (FR)' : ''} — RSS`,
       }))
   : [];
 const sitemapHref = withBase('/sitemap-index.xml');
@@ -58,7 +54,7 @@ const sitemapHref = withBase('/sitemap-index.xml');
 <meta property="og:type" content={meta.type} />
 <meta property="og:url" content={meta.canonical} />
 <meta property="og:image" content={meta.ogImage} />
-<meta property="og:locale" content={ogLocale(meta.locale)} />
+<meta property="og:locale" content={meta.locale === 'fr' ? 'fr_FR' : 'en_US'} />
 
 {/* Twitter */}
 <meta name="twitter:card" content="summary_large_image" />

@@ -3,8 +3,8 @@
  * i18n utilities.
  *
  * Routing rules:
- *  - DE is the default locale and serves at the URL root with NO prefix.
- *  - EN is served under `/en/...`.
+ *  - EN is the default locale and serves at the URL root with NO prefix.
+ *  - FR is served under `/fr/...`.
  *
  * Source-of-truth: `src/config.ts` -> SITE.locales / SITE.defaultLocale.
  */
@@ -37,9 +37,9 @@ export function localePrefix(locale: Locale): string {
 /**
  * Build a localized URL for the given pathname (without locale prefix).
  *
- *   localizedPath('/posts/foo', 'de') -> '/posts/foo'
- *   localizedPath('/posts/foo', 'en') -> '/en/posts/foo'
- *   localizedPath('/', 'en')          -> '/en/'
+ *   localizedPath('/posts/foo', 'en') -> '/posts/foo'
+ *   localizedPath('/posts/foo', 'fr') -> '/fr/posts/foo'
+ *   localizedPath('/', 'fr')          -> '/fr/'
  *
  * The configured `base` (e.g. `/chirping-astro`) is automatically
  * prefixed when set.
@@ -53,7 +53,7 @@ export function localizedPath(path: string, locale: Locale): string {
 
 /**
  * Detect the current locale from a URL or Astro.url.pathname.
- * Anything starting with `/en` or `/en/` resolves to 'en'; otherwise
+ * Anything starting with `/fr` or `/fr/` resolves to 'fr'; otherwise
  * the default locale is returned.
  */
 export function detectLocale(pathname: string): Locale {
@@ -78,9 +78,9 @@ function stripBase(pathname: string): string {
 /**
  * Strip the locale prefix from a pathname so it can be relocalized.
  *
- *   stripLocale('/en/posts/foo')  -> '/posts/foo'
+ *   stripLocale('/fr/posts/foo')  -> '/posts/foo'
  *   stripLocale('/posts/foo')     -> '/posts/foo'
- *   stripLocale('/en')            -> '/'
+ *   stripLocale('/fr')            -> '/'
  */
 export function stripLocale(pathname: string): string {
   const p = stripBase(pathname);
@@ -96,8 +96,8 @@ export function stripLocale(pathname: string): string {
  * Translation helper. Returns the localized string for the given key,
  * falling back to the default locale, then to the key itself.
  *
- *   const t = useTranslations('en');
- *   t('nav.home') // 'Home'
+ *   const t = useTranslations('fr');
+ *   t('nav.home') // 'Accueil'
  */
 // eslint-disable-next-line no-unused-vars
 export function useTranslations(locale: Locale): (key: UIKey) => string {
@@ -118,7 +118,8 @@ export function formatDate(
   const d = typeof date === 'string' ? new Date(date) : date;
   if (Number.isNaN(d.getTime())) return '';
   if (SITE.isoDates) return d.toISOString().slice(0, 10);
-  return new Intl.DateTimeFormat(htmlLang(locale), options).format(d);
+  const lang = locale === 'fr' ? 'fr-FR' : 'en-US';
+  return new Intl.DateTimeFormat(lang, options).format(d);
 }
 
 /** Short ISO 8601 date used for <time datetime="..."> attributes. */
@@ -167,8 +168,6 @@ export function canonicalUrl(pathname: string): string {
 /** Pretty label for the language switcher. */
 export function localeLabel(locale: Locale): string {
   switch (locale) {
-    case 'en':
-      return 'English';
     case 'de':
     default:
       return 'Deutsch';
@@ -178,15 +177,8 @@ export function localeLabel(locale: Locale): string {
 /** ISO BCP 47 language tag for `<html lang>` and date formatters. */
 export function htmlLang(locale: Locale): string {
   switch (locale) {
-    case 'en':
-      return 'en-US';
     case 'de':
     default:
       return 'de-DE';
   }
-}
-
-/** Open Graph `og:locale` value (underscore-separated, e.g. `de_DE`). */
-export function ogLocale(locale: Locale): string {
-  return htmlLang(locale).replace('-', '_');
 }
