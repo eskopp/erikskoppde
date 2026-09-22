@@ -99,6 +99,9 @@ export const messages = {
     'footer.theme': 'Theme',
     'footer.privacy': 'Datenschutz',
     'footer.copyright': 'Alle Rechte vorbehalten.',
+
+    'panel.recentlyUpdated': 'Zuletzt aktualisiert',
+    'panel.trendingTags': 'Beliebte Tags',
   },
 } as const satisfies Record<Locale, Record<string, string>>;
 
