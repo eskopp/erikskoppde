@@ -17,9 +17,6 @@ images:
   - src: ../../../assets/images/galleries/dreamlight-und-vangogh/2026_01_Dreamlight_VanGogh_0016.jpg
     alt: 'Luftaufnahme des Ausstellungsgebäudes mit rundem Zufahrtsweg'
     caption: 'Das Ausstellungsgebäude'
-  - src: ../../../assets/images/galleries/dreamlight-und-vangogh/2026_01_Dreamlight_VanGogh_0024.jpg
-    alt: 'Eingang zur Ausstellung "Van Gogh – The Immersive Experience" mit Sonnenblumen-Kulisse'
-    caption: 'Eingang zur Ausstellung'
   - src: ../../../assets/images/galleries/dreamlight-und-vangogh/2026_01_Dreamlight_VanGogh_0037.jpg
     alt: 'Abstrakte Projektion in Van-Gogh-Farben'
     caption: 'Farbprojektion'
