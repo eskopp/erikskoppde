@@ -9,13 +9,26 @@ interface Props {
   pgn: string;
   /** Optional stable id if multiple viewers are on the same page. */
   id?: string;
+  /**
+   * Standard PGN header tags (Event, Site, Date, White, Black, Result, …).
+   * Without these a PGN is technically incomplete — the viewer itself gets
+   * by without them, but the no-JS fallback text should still be a proper,
+   * self-contained PGN that any other chess program can read correctly.
+   */
+  headers?: Record<string, string>;
 }
 
-const { pgn, id = 'pgn-viewer' } = Astro.props;
+const { pgn, id = 'pgn-viewer', headers } = Astro.props;
 
-// Word-wrap the PGN at a readable width (same convention chess software
-// uses when exporting PGN files) for the no-JS fallback below, so it's
-// still usable pasted into any PGN reader instead of one giant line.
+const headerLines = Object.entries(headers ?? {}).map(([key, value]) => `[${key} "${value}"]`);
+// The div's data-pgn feeds the interactive viewer too, so it also picks up
+// player names, date, etc. for its metadata (aria labels, result display).
+const fullPgn = headerLines.length ? `${headerLines.join('\n')}\n\n${pgn}` : pgn;
+
+// Word-wrap the movetext at a readable width (same convention chess
+// software uses when exporting PGN files) for the no-JS fallback below, so
+// it's still usable pasted into any PGN reader instead of one giant line.
+// Header tags are already one per line and are left as-is.
 function wrapPgn(text: string, width = 80): string {
   const words = text.split(/\s+/);
   const lines: string[] = [];
@@ -32,10 +45,12 @@ function wrapPgn(text: string, width = 80): string {
   return lines.join('\n');
 }
 
-const wrappedPgn = wrapPgn(pgn);
+const wrappedPgn = [...headerLines, ...(headerLines.length ? [''] : []), ...wrapPgn(pgn).split('\n')].join(
+  '\n',
+);
 ---
 
-<div id={id} class="chirpy-pgn-viewer" data-pgn={pgn}>
+<div id={id} class="chirpy-pgn-viewer" data-pgn={fullPgn}>
   <noscript>
     <div class="chirpy-pgn-noscript">
       <p>
@@ -79,5 +94,15 @@ const wrappedPgn = wrapPgn(pgn);
     white-space: pre-wrap;
     word-break: break-word;
     font-size: 0.875em;
+  }
+</style>
+
+<style is:global>
+  /* lichess-pgn-viewer.css ships no board theme — light squares are
+     --board-color as-is, dark squares are the same color with a 20% black
+     overlay baked into the CSS. Unset, the board defaults to a near-black
+     mush. This is the classic lichess "brown" theme's light-square hex. */
+  .lpv {
+    --board-color: #f0d9b5;
   }
 </style>
