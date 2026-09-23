@@ -32,6 +32,9 @@ images:
   - src: ../../../assets/images/galleries/dreamlight-und-vangogh/2026_01_Dreamlight_VanGogh_0050.jpg
     alt: 'Projiziertes, gerahmtes Van-Gogh-Selbstporträt'
     caption: 'Selbstporträt'
+  - src: ../../../assets/images/galleries/dreamlight-und-vangogh/2026_01_Dreamlight_VanGogh_0040.jpg
+    alt: 'Gang mit gerahmten Sonnenblumen-Gemälden an dunkler Wand'
+    caption: 'Sonnenblumen-Gang'
   - src: ../../../assets/images/galleries/dreamlight-und-vangogh/2026_01_Dreamlight_VanGogh_0068.jpg
     alt: 'Wellen-Projektion aus anderer Perspektive'
     caption: 'Wellen, Raumecke'
