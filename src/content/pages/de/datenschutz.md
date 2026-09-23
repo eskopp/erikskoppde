@@ -80,7 +80,16 @@ Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der
 Verarbeitung Ihrer personenbezogenen Daten sowie ein Beschwerderecht bei
 einer Datenschutz-Aufsichtsbehörde.
 
-## 11. Änderungen dieser Erklärung
+## 11. KI-Unterstützung bei der Texterstellung
+
+Bei fast allen Texten auf dieser Website nutze ich KI-Werkzeuge (z. B.
+ChatGPT, Claude Code) zur Unterstützung bei Grammatik und Formulierung,
+damit die Texte flüssiger lesbar sind und weniger Fehler enthalten. Die
+Inhalte selbst stammen aus meinen eigenen Gedanken und Erfahrungen. Dabei
+werden keine personenbezogenen Daten von Besuchern dieser Website an
+diese Dienste übermittelt.
+
+## 12. Änderungen dieser Erklärung
 
 Diese Datenschutzerklärung kann angepasst werden, wenn sich die
 Datenverarbeitung auf dieser Website ändert.
