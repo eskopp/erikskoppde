@@ -23,9 +23,6 @@ images:
   - src: ../../../assets/images/galleries/dreamlight-und-vangogh/2026_01_Dreamlight_VanGogh_0039.jpg
     alt: 'Projiziertes Van-Gogh-Selbstporträt in Nahaufnahme'
     caption: 'Selbstporträt, projiziert'
-  - src: ../../../assets/images/galleries/dreamlight-und-vangogh/2026_01_Dreamlight_VanGogh_0045.jpg
-    alt: 'Gemälde "Iris" als Projektion'
-    caption: 'Iris'
   - src: ../../../assets/images/galleries/dreamlight-und-vangogh/2026_01_Dreamlight_VanGogh_0046.jpg
     alt: 'Gerahmtes Gemälde mit Fischerbooten am Strand'
     caption: 'Fischerboote am Strand'
