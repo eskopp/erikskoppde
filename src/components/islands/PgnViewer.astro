@@ -9,31 +9,15 @@ interface Props {
   pgn: string;
   /** Optional stable id if multiple viewers are on the same page. */
   id?: string;
-  /** Add an on-demand "Analyze with Stockfish" button below the board. */
-  engine?: boolean;
 }
 
-const { pgn, id = 'pgn-viewer', engine = false } = Astro.props;
+const { pgn, id = 'pgn-viewer' } = Astro.props;
 ---
 
-<div class="chirpy-pgn-viewer-wrap" data-engine={engine ? 'true' : undefined}>
-  <div id={id} class="chirpy-pgn-viewer" data-pgn={pgn}></div>
-  {
-    engine && (
-      <div class="chirpy-pgn-engine">
-        <button type="button" class="chirpy-pgn-engine__button btn btn-sm">
-          Stellung analysieren (Stockfish)
-        </button>
-        <span class="chirpy-pgn-engine__eval" />
-      </div>
-    )
-  }
-</div>
+<div id={id} class="chirpy-pgn-viewer" data-pgn={pgn}></div>
 
 <script>
   import LichessPgnViewer from '@lichess-org/pgn-viewer';
-  import type PgnViewerCtrl from '@lichess-org/pgn-viewer/pgnViewer';
-  import type { Key } from '@lichess-org/chessground/types';
 
   // LichessPgnViewer replaces the target element with a new DOM node on
   // mount, so a `data-rendered` flag on the element itself would be lost
@@ -44,79 +28,9 @@ const { pgn, id = 'pgn-viewer', engine = false } = Astro.props;
   function renderViewers() {
     if (rendered) return;
     rendered = true;
-    document.querySelectorAll<HTMLElement>('.chirpy-pgn-viewer-wrap').forEach((wrap) => {
-      const el = wrap.querySelector<HTMLElement>('.chirpy-pgn-viewer');
-      if (!el) return;
+    document.querySelectorAll<HTMLElement>('.chirpy-pgn-viewer').forEach((el) => {
       const pgn = el.dataset.pgn ?? '';
-      const ctrl = LichessPgnViewer(el, { pgn });
-      if (wrap.dataset.engine === 'true') setupEngine(wrap, ctrl);
-    });
-  }
-
-  // Lazily-loaded single-threaded Stockfish (WASM) running in a Web Worker.
-  // Analysis is on-demand only (button click), not live, to keep it cheap.
-  let worker: Worker | undefined;
-  let ready: Promise<void> | undefined;
-
-  function getEngine(): { worker: Worker; ready: Promise<void> } {
-    if (!worker) {
-      worker = new Worker(`${import.meta.env.BASE_URL}stockfish/stockfish-19-lite-single.js`);
-      ready = new Promise((resolve) => {
-        const onReady = (e: MessageEvent<string>) => {
-          if (e.data === 'uciok') worker!.postMessage('isready');
-          if (e.data === 'readyok') {
-            worker!.removeEventListener('message', onReady);
-            resolve();
-          }
-        };
-        worker!.addEventListener('message', onReady);
-        worker!.postMessage('uci');
-      });
-    }
-    return { worker, ready: ready! };
-  }
-
-  function setupEngine(wrap: HTMLElement, ctrl: PgnViewerCtrl) {
-    const button = wrap.querySelector<HTMLButtonElement>('.chirpy-pgn-engine__button');
-    const evalEl = wrap.querySelector<HTMLElement>('.chirpy-pgn-engine__eval');
-    if (!button || !evalEl) return;
-
-    button.addEventListener('click', async () => {
-      button.disabled = true;
-      evalEl.textContent = 'Analysiere…';
-
-      const { worker: w, ready: r } = getEngine();
-      await r;
-
-      const fen = ctrl.curData().fen;
-      const whiteToMove = fen.split(' ')[1] !== 'b';
-
-      const onAnalysis = (e: MessageEvent<string>) => {
-        const line = e.data;
-        const scoreMatch = line.match(/\bscore (cp|mate) (-?\d+)/);
-        if (scoreMatch) {
-          const [, kind, valueStr] = scoreMatch;
-          const value = Number(valueStr);
-          evalEl.textContent =
-            kind === 'mate'
-              ? `Matt in ${Math.abs(whiteToMove ? value : -value)}`
-              : `${((whiteToMove ? value : -value) / 100).toFixed(2)}`;
-        }
-        const bestMoveMatch = line.match(/^bestmove (\S+)/);
-        if (bestMoveMatch) {
-          w.removeEventListener('message', onAnalysis);
-          button.disabled = false;
-          const move = bestMoveMatch[1];
-          if (move && move !== '(none)') {
-            ctrl.ground?.setShapes([
-              { orig: move.slice(0, 2) as Key, dest: move.slice(2, 4) as Key, brush: 'green' },
-            ]);
-          }
-        }
-      };
-      w.addEventListener('message', onAnalysis);
-      w.postMessage(`position fen ${fen}`);
-      w.postMessage('go depth 14');
+      LichessPgnViewer(el, { pgn });
     });
   }
 
@@ -127,16 +41,3 @@ const { pgn, id = 'pgn-viewer', engine = false } = Astro.props;
     renderViewers();
   }
 </script>
-
-<style>
-  .chirpy-pgn-engine {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    margin-top: 0.5rem;
-  }
-  .chirpy-pgn-engine__eval {
-    font-family: var(--font-mono, monospace);
-    font-weight: bold;
-  }
-</style>
