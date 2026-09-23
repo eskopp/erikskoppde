@@ -18,3 +18,24 @@ Testbeitrag zur Einbindung von [`@lichess-org/pgn-viewer`](https://github.com/li
 />
 
 Der Viewer ist rein clientseitig (Astro-Island mit `client`-Script), interaktiv navigierbar per Klick/Pfeiltasten und lädt sein eigenes CSS.
+
+## Mit Kommentaren und Nebenvarianten
+
+PGN unterstützt Kommentare in `{...}` und Nebenvarianten in `(...)` nativ, und der Viewer stellt beide dar (Nebenvarianten eingerückt, Kommentare kursiv):
+
+<PgnViewer
+  id="ruy-lopez-annotated"
+  pgn='1. e4 e5 2. Nf3 Nc6 3. Bb5 {Die Spanische Partie (Ruy López), eine der ältesten und meistgespielten Eröffnungen.} a6 4. Ba4 Nf6 5. O-O Be7 (5... Nxe4 {Die Offene Variante: Schwarz nimmt den e4-Bauern, muss dafür aber einen Entwicklungsvorsprung von Weiß hinnehmen.} 6. d4 b5 7. Bb3 d5 8. dxe5 Be6) 6. Re1 b5 7. Bb3 d6 8. c3 O-O 9. h3 Nb8 {Der Breyer-Aufbau: der Springer zieht zurück, um später über d7 neu zu manövrieren.} 10. d4 Nbd7 *'
+/>
+
+## Mit Stockfish-Analyse
+
+Auf Knopfdruck lädt das die Single-Thread-Lite-Variante von [Stockfish](https://github.com/nmrugg/stockfish.js) (WASM, ~1,8&nbsp;MB, lazy) in einem Web Worker, schickt die aktuelle Stellung per UCI rein und zeichnet den besten Zug als Pfeil ein. Läuft komplett lokal im Browser, kein Server, keine Drittanbieter-Anfrage — wichtig, weil GitHub Pages keine Custom-Header für die schnellere Multi-Thread-Variante erlaubt.
+
+Navigiere zu einer beliebigen Stellung und klicke dann auf "Stellung analysieren":
+
+<PgnViewer
+  id="engine-demo"
+  engine
+  pgn="1. e4 e5 2. f4 exf4 3. Bc4 Qh4+ 4. Kf1 b5 5. Bxb5 Nf6 6. Nf3 Qh6 7. d3 Nh5 8. Nh4 Qg5 9. Nf5 c6 10. g4 Nf6 11. Rg1 cxb5 12. h4 Qg6 13. h5 Qg5 14. Qf3 Ng8 15. Bxf4 Qf6 16. Nc3 Bc5 17. Nd5 Qxb2 18. Bd6 Bxg1 19. e5 Qxa1+ 20. Ke2 Na6 21. Nxg7+ Kd8 22. Qf6+ Nxf6 23. Be7# 1-0"
+/>
