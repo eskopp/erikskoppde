@@ -32,12 +32,6 @@ images:
   - src: ../../../assets/images/galleries/dreamlight-und-vangogh/2026_01_Dreamlight_VanGogh_0050.jpg
     alt: 'Projiziertes, gerahmtes Van-Gogh-Selbstporträt'
     caption: 'Selbstporträt'
-  - src: ../../../assets/images/galleries/dreamlight-und-vangogh/2026_01_Dreamlight_VanGogh_0061.jpg
-    alt: 'Mandelblüten-Projektion in Nahaufnahme'
-    caption: 'Mandelblüten, Nahaufnahme'
-  - src: ../../../assets/images/galleries/dreamlight-und-vangogh/2026_01_Dreamlight_VanGogh_0067.jpg
-    alt: 'Wellen-Projektion in Blautönen'
-    caption: 'Wellen'
   - src: ../../../assets/images/galleries/dreamlight-und-vangogh/2026_01_Dreamlight_VanGogh_0068.jpg
     alt: 'Wellen-Projektion aus anderer Perspektive'
     caption: 'Wellen, Raumecke'
