@@ -93,6 +93,12 @@ const baseFrontmatter = ({ image }: SchemaContext) =>
      * you control).
      */
     unlistedHideFromSeo: z.boolean().optional(),
+    /**
+     * Opt in to an "AI-assisted" notice on the post. Set this when an AI
+     * tool materially helped write or edit the content (not just spell-
+     * checking) — transparency for readers, not a legal disclaimer.
+     */
+    aiAssisted: z.boolean().default(false),
   });
 
 export type PostFrontmatter = z.infer<ReturnType<typeof baseFrontmatter>>;

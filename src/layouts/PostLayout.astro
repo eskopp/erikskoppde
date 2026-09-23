@@ -163,6 +163,15 @@ if (post.data.mermaid) {
     </header>
 
     {
+      post.data.aiAssisted && (
+        <div role="alert" class="alert alert-info alert-soft mb-8 text-sm">
+          <Icon name="lucide:sparkles" width={18} height={18} class="shrink-0" />
+          <span>{t('post.aiAssisted')}</span>
+        </div>
+      )
+    }
+
+    {
       showHero && heroAsset && (
         <figure class="post-hero mb-8">
           <div class="post-hero__frame">

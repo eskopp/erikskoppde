@@ -41,6 +41,8 @@ export const messages = {
     'post.copyLink': 'Link kopieren',
     'post.copied': 'Kopiert!',
     'post.author': 'Autor',
+    'post.aiAssisted':
+      'Dieser Beitrag ist mit Unterstützung von KI-Werkzeugen entstanden (z. B. Recherche, Formulierung oder Code).',
 
     'list.allPosts': 'Alle Beiträge',
     'list.empty': 'Keine Beiträge gefunden.',
