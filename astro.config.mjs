@@ -17,6 +17,8 @@ import { satteriAsHTML } from './src/plugins/satteri-ashtml';
 import { satteriBaseLinks } from './src/plugins/satteri-base-links';
 import { satteriAutolinkHeadings } from './src/plugins/satteri-autolink-headings.ts';
 import { satteriMermaid } from './src/plugins/satteri-mermaid.ts';
+import { satteriNamedLinks } from './src/plugins/satteri-named-links.ts';
+import { LINKS } from './src/data/links.ts';
 
 import { SITE } from './src/config';
 
@@ -185,6 +187,7 @@ export default defineConfig({
       hastPlugins: [
         satteriHeadingIdsPlugin(),
         satteriAutolinkHeadings(),
+        satteriNamedLinks(LINKS),
         satteriExternalLinks({
           target: '_blank',
           rel: ['nofollow', 'noopener', 'noreferrer']
