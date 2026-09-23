@@ -41,9 +41,6 @@ images:
   - src: ../../../assets/images/galleries/dreamlight-und-vangogh/2026_01_Dreamlight_VanGogh_0050.jpg
     alt: 'Projiziertes, gerahmtes Van-Gogh-Selbstporträt'
     caption: 'Selbstporträt'
-  - src: ../../../assets/images/galleries/dreamlight-und-vangogh/2026_01_Dreamlight_VanGogh_0053.jpg
-    alt: 'Person in einem projizierten Torbogen-Raum'
-    caption: 'Projizierter Torbogen'
   - src: ../../../assets/images/galleries/dreamlight-und-vangogh/2026_01_Dreamlight_VanGogh_0057.jpg
     alt: 'Projiziertes Blumenstillleben, weiter Blick'
     caption: 'Blumenstillleben, Raumansicht'
