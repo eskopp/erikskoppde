@@ -35,7 +35,7 @@ Aber ich freue mich eigentlich schon sehr auf die Experimente.
 
 #### Linux und Programmierung
 
-In meiner Freizeit habe ich einen großen Debian-13 Server. Ich denke, dass das immer ein Debian-Server bleiben wird. Er hat 16 GB RAM und 8 Kerne und ist ein Root-Server. Gehostet ist dieser bei netcup. Dort mache ich selbst viele Experimente und Tests. Aktuell laufen auf dem Server verschiedene Dienste wie bspw. Grafana[^3] oder GitLab[^4]. Über die Reise des Servers möchte ich euch mitnehmen.
+In meiner Freizeit habe ich einen großen Debian-13-Server. Ich denke, dass das immer ein Debian-Server bleiben wird. Er hat 16 GB RAM und 8 Kerne und ist ein Root-Server. Gehostet ist dieser bei netcup. Dort mache ich selbst viele Experimente und Tests. Aktuell laufen auf dem Server verschiedene Dienste wie bspw. Grafana[^3] oder GitLab[^4]. Über die Reise des Servers möchte ich euch mitnehmen.
 
 Es gibt also viele Themen, von denen ich berichten kann. Einen gewissen Fahrplan kann ich hier noch nicht geben, da es zufällig ist, was mich gerade beschäftigt.
 
