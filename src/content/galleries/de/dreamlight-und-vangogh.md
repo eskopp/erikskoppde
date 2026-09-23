@@ -41,9 +41,6 @@ images:
   - src: ../../../assets/images/galleries/dreamlight-und-vangogh/2026_01_Dreamlight_VanGogh_0050.jpg
     alt: 'Projiziertes, gerahmtes Van-Gogh-Selbstporträt'
     caption: 'Selbstporträt'
-  - src: ../../../assets/images/galleries/dreamlight-und-vangogh/2026_01_Dreamlight_VanGogh_0057.jpg
-    alt: 'Projiziertes Blumenstillleben, weiter Blick'
-    caption: 'Blumenstillleben, Raumansicht'
   - src: ../../../assets/images/galleries/dreamlight-und-vangogh/2026_01_Dreamlight_VanGogh_0061.jpg
     alt: 'Mandelblüten-Projektion in Nahaufnahme'
     caption: 'Mandelblüten, Nahaufnahme'
@@ -56,12 +53,6 @@ images:
   - src: ../../../assets/images/galleries/dreamlight-und-vangogh/2026_01_Dreamlight_VanGogh_0069.jpg
     alt: 'Roter Ausstellungsraum mit gerahmten Van-Gogh-Werken'
     caption: 'Roter Ausstellungsraum'
-  - src: ../../../assets/images/galleries/dreamlight-und-vangogh/2026_01_Dreamlight_VanGogh_0070.jpg
-    alt: 'Roter Ausstellungsraum, weiterer Blick mit Iris-Projektion'
-    caption: 'Roter Raum mit Iris'
-  - src: ../../../assets/images/galleries/dreamlight-und-vangogh/2026_01_Dreamlight_VanGogh_0074.jpg
-    alt: 'Ausstellungsraum mit Mandelblüten-Projektion und Besuchern'
-    caption: 'Mandelblüten-Raum'
   - src: ../../../assets/images/galleries/dreamlight-und-vangogh/2026_01_Dreamlight_VanGogh_0076.jpg
     alt: 'Mandelblüten-Projektion, Raumansicht'
     caption: 'Mandelblüten an der Wand'
@@ -86,27 +77,18 @@ images:
   - src: ../../../assets/images/galleries/dreamlight-und-vangogh/2026_01_Dreamlight_VanGogh_0085.jpg
     alt: 'Iris-Feld-Projektion aus anderer Perspektive'
     caption: 'Iris-Feld, Raumansicht'
-  - src: ../../../assets/images/galleries/dreamlight-und-vangogh/2026_01_Dreamlight_VanGogh_0089.jpg
-    alt: 'Nachgebautes Schlafzimmer nach "Vincents Schlafzimmer in Arles"'
-    caption: 'Vincents Schlafzimmer'
   - src: ../../../assets/images/galleries/dreamlight-und-vangogh/2026_01_Dreamlight_VanGogh_0092.jpg
     alt: '"Sternennacht" als raumfüllende Projektion'
     caption: 'Sternennacht'
   - src: ../../../assets/images/galleries/dreamlight-und-vangogh/2026_01_Dreamlight_VanGogh_0093.jpg
     alt: '"The Starry Night, 1889" mit eingeblendetem Bildtitel'
     caption: 'Sternennacht mit Titel'
-  - src: ../../../assets/images/galleries/dreamlight-und-vangogh/2026_01_Dreamlight_VanGogh_0097.jpg
-    alt: '"Sternennacht über der Rhône" als Projektion, Besucher im Vordergrund'
-    caption: 'Sternennacht über der Rhône'
   - src: ../../../assets/images/galleries/dreamlight-und-vangogh/2026_01_Dreamlight_VanGogh_0099.jpg
     alt: 'Projiziertes Baum- und Gartengemälde'
     caption: 'Gartengemälde'
   - src: ../../../assets/images/galleries/dreamlight-und-vangogh/2026_01_Dreamlight_VanGogh_0100.jpg
     alt: 'Zypressen-Gemälde in Nahaufnahme'
     caption: 'Zypressen'
-  - src: ../../../assets/images/galleries/dreamlight-und-vangogh/2026_01_Dreamlight_VanGogh_0102.jpg
-    alt: 'Ausstellungsraum mit Haus-Gemälde-Projektion und Besuchern'
-    caption: 'Ausstellungsraum mit Besuchern'
   - src: ../../../assets/images/galleries/dreamlight-und-vangogh/2026_01_Dreamlight_VanGogh_0103.jpg
     alt: 'Projiziertes Gartenbild mit Haus, Panoramablick'
     caption: 'Gartenbild mit Haus'
