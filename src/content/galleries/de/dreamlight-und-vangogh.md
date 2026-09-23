@@ -6,14 +6,14 @@ Den Artikel dazu finden Sie [HIER](/posts/dreamlight-und-vangogh/).'
 date: 2026-01-31
 images:
   - src: ../../../assets/images/galleries/dreamlight-und-vangogh/2026_01_Dreamlight_VanGogh_0001.jpg
-    alt: 'Zugefrorener See mit verschneiter Uferlandschaft'
-    caption: 'Winterlandschaft'
+    alt: 'Zugefrorene Sösetalsperre mit verschneiter Uferlandschaft'
+    caption: 'Sösetalsperre im Winter'
   - src: ../../../assets/images/galleries/dreamlight-und-vangogh/2026_01_Dreamlight_VanGogh_0002.jpg
-    alt: 'Panoramablick über den zugefrorenen See'
-    caption: 'Zugefrorener See'
+    alt: 'Panoramablick über die zugefrorene Sösetalsperre'
+    caption: 'Sösetalsperre'
   - src: ../../../assets/images/galleries/dreamlight-und-vangogh/2026_01_Dreamlight_VanGogh_0006.jpg
-    alt: 'Zugefrorener See mit bewaldeten Hügeln im Hintergrund'
-    caption: 'Blick über den See'
+    alt: 'Zugefrorene Sösetalsperre mit bewaldeten Hügeln im Hintergrund'
+    caption: 'Blick über die Sösetalsperre'
   - src: ../../../assets/images/galleries/dreamlight-und-vangogh/2026_01_Dreamlight_VanGogh_0016.jpg
     alt: 'Luftaufnahme des Ausstellungsgebäudes mit rundem Zufahrtsweg'
     caption: 'Das Ausstellungsgebäude'
