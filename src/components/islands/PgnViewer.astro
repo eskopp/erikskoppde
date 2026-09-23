@@ -12,9 +12,40 @@ interface Props {
 }
 
 const { pgn, id = 'pgn-viewer' } = Astro.props;
+
+// Word-wrap the PGN at a readable width (same convention chess software
+// uses when exporting PGN files) for the no-JS fallback below, so it's
+// still usable pasted into any PGN reader instead of one giant line.
+function wrapPgn(text: string, width = 80): string {
+  const words = text.split(/\s+/);
+  const lines: string[] = [];
+  let line = '';
+  for (const word of words) {
+    if (line && line.length + word.length + 1 > width) {
+      lines.push(line);
+      line = word;
+    } else {
+      line = line ? `${line} ${word}` : word;
+    }
+  }
+  if (line) lines.push(line);
+  return lines.join('\n');
+}
+
+const wrappedPgn = wrapPgn(pgn);
 ---
 
-<div id={id} class="chirpy-pgn-viewer" data-pgn={pgn}></div>
+<div id={id} class="chirpy-pgn-viewer" data-pgn={pgn}>
+  <noscript>
+    <div class="chirpy-pgn-noscript">
+      <p>
+        Für das interaktive Brett wird JavaScript benötigt. Hier die Partie im PGN-Format zum
+        Nachspielen in einem beliebigen Schachprogramm:
+      </p>
+      <pre>{wrappedPgn}</pre>
+    </div>
+  </noscript>
+</div>
 
 <script>
   import LichessPgnViewer from '@lichess-org/pgn-viewer';
@@ -41,3 +72,12 @@ const { pgn, id = 'pgn-viewer' } = Astro.props;
     renderViewers();
   }
 </script>
+
+<style>
+  .chirpy-pgn-noscript pre {
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-break: break-word;
+    font-size: 0.875em;
+  }
+</style>
