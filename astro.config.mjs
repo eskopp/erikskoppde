@@ -18,6 +18,7 @@ import { satteriBaseLinks } from './src/plugins/satteri-base-links';
 import { satteriAutolinkHeadings } from './src/plugins/satteri-autolink-headings.ts';
 import { satteriMermaid } from './src/plugins/satteri-mermaid.ts';
 import { satteriNamedLinks } from './src/plugins/satteri-named-links.ts';
+import { satteriInternalLinks } from './src/plugins/satteri-internal-links.ts';
 import { LINKS } from './src/data/links.ts';
 
 import { SITE } from './src/config';
@@ -25,6 +26,8 @@ import { SITE } from './src/config';
 const rawBase = (process.env.BASE_PATH ?? '/').replace(/\/$/, '');
 const BASE = rawBase.startsWith('/') ? rawBase : `/${rawBase}`;
 const SITEMAP_XSL_HREF = `${BASE}/sitemap/styles.xsl`;
+const POST_SLUGS = scanContentSlugs('posts');
+const PAGE_SLUGS = scanContentSlugs('pages');
 const SKIP_RSS_SITEMAP = process.env.CI_SKIP_RSS_SITEMAP === 'true';
 
 /**
@@ -36,6 +39,31 @@ const SKIP_RSS_SITEMAP = process.env.CI_SKIP_RSS_SITEMAP === 'true';
  * the check works regardless of `SITE_URL` or `BASE_PATH` values.
  */
 const unlistedPathSegments = new Set();
+
+/**
+ * Scans `src/content/<collection>/<locale>/*.{md,mdx}` synchronously (no
+ * `astro:content`, which isn't available at config-eval time) to build a
+ * slug -> locales index for `satteri-internal-links`.
+ */
+function scanContentSlugs(/** @type {'posts' | 'pages'} */ collection) {
+  const root = fileURLToPath(new URL(`./src/content/${collection}/`, import.meta.url));
+  const bySlug = new Map();
+  for (const locale of SITE.locales) {
+    let files;
+    try {
+      files = readdirSync(join(root, locale));
+    } catch {
+      continue;
+    }
+    for (const file of files) {
+      if (!/\.(md|mdx)$/i.test(file)) continue;
+      const slug = file.replace(/\.(md|mdx)$/i, '');
+      if (!bySlug.has(slug)) bySlug.set(slug, new Set());
+      bySlug.get(slug).add(locale);
+    }
+  }
+  return bySlug;
+}
 
 /**
  * Integration that reads the content collection at build time and
@@ -188,6 +216,12 @@ export default defineConfig({
         satteriHeadingIdsPlugin(),
         satteriAutolinkHeadings(),
         satteriNamedLinks(LINKS),
+        satteriInternalLinks({
+          posts: POST_SLUGS,
+          pages: PAGE_SLUGS,
+          locales: SITE.locales,
+          defaultLocale: SITE.defaultLocale,
+        }),
         satteriExternalLinks({
           target: '_blank',
           rel: ['nofollow', 'noopener', 'noreferrer']
