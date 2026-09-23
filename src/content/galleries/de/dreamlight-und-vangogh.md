@@ -23,12 +23,6 @@ images:
   - src: ../../../assets/images/galleries/dreamlight-und-vangogh/2026_01_Dreamlight_VanGogh_0039.jpg
     alt: 'Projiziertes Van-Gogh-Selbstporträt in Nahaufnahme'
     caption: 'Selbstporträt, projiziert'
-  - src: ../../../assets/images/galleries/dreamlight-und-vangogh/2026_01_Dreamlight_VanGogh_0043.jpg
-    alt: 'Projiziertes Blumenstillleben in Nahaufnahme'
-    caption: 'Blumenstillleben'
-  - src: ../../../assets/images/galleries/dreamlight-und-vangogh/2026_01_Dreamlight_VanGogh_0044.jpg
-    alt: 'Projizierte rote Blumen in Nahaufnahme'
-    caption: 'Rote Blumen'
   - src: ../../../assets/images/galleries/dreamlight-und-vangogh/2026_01_Dreamlight_VanGogh_0045.jpg
     alt: 'Gemälde "Iris" als Projektion'
     caption: 'Iris'
