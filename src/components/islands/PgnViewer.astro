@@ -1,0 +1,43 @@
+---
+/**
+ * Lichess PGN Viewer client island.
+ * Renders a chess game from PGN notation into an interactive, replayable board.
+ */
+import '../../styles/vendor/lichess-pgn-viewer.css';
+
+interface Props {
+  pgn: string;
+  /** Optional stable id if multiple viewers are on the same page. */
+  id?: string;
+}
+
+const { pgn, id = 'pgn-viewer' } = Astro.props;
+---
+
+<div id={id} class="chirpy-pgn-viewer" data-pgn={pgn}></div>
+
+<script>
+  import LichessPgnViewer from '@lichess-org/pgn-viewer';
+
+  // LichessPgnViewer replaces the target element with a new DOM node on
+  // mount, so a `data-rendered` flag on the element itself would be lost
+  // before a second listener (below) can observe it. Guard at module scope
+  // instead, since `astro:page-load` fires once even on a plain page load.
+  let rendered = false;
+
+  function renderViewers() {
+    if (rendered) return;
+    rendered = true;
+    document.querySelectorAll<HTMLElement>('.chirpy-pgn-viewer').forEach((el) => {
+      const pgn = el.dataset.pgn ?? '';
+      LichessPgnViewer(el, { pgn });
+    });
+  }
+
+  document.addEventListener('astro:page-load', renderViewers);
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', renderViewers);
+  } else {
+    renderViewers();
+  }
+</script>
