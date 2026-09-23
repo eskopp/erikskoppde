@@ -105,4 +105,34 @@ const wrappedPgn = [...headerLines, ...(headerLines.length ? [''] : []), ...wrap
   .lpv {
     --board-color: #f0d9b5;
   }
+
+  /* Squares are one repeating background image, not separate elements, so
+     a wood-grain texture can only be layered uniformly on top rather than
+     varied per square. Self-hosted CSS approximation of lichess's wood
+     board themes (no image asset, no external request) — streaks at a
+     slight angle plus a soft light source, blended into --board-color. */
+  .lpv cg-board::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    background-image:
+      repeating-linear-gradient(
+        91deg,
+        rgba(60, 30, 5, 0.07) 0px,
+        rgba(60, 30, 5, 0.07) 1px,
+        transparent 2px,
+        transparent 5px
+      ),
+      repeating-linear-gradient(
+        88deg,
+        rgba(255, 235, 200, 0.08) 0px,
+        rgba(255, 235, 200, 0.08) 1px,
+        transparent 3px,
+        transparent 10px
+      ),
+      radial-gradient(ellipse at 28% 18%, rgba(255, 255, 255, 0.12), transparent 55%);
+    mix-blend-mode: multiply;
+  }
 </style>
