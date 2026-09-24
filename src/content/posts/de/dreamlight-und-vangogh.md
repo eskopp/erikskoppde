@@ -23,7 +23,7 @@ Hallo Welt
 
 Hallo Welt
 
-![Van Gogh – The Immersive Experience](./../../assets/images/galleries/dreamlight-und-vangogh/2026_01_Dreamlight_VanGogh_0109.jpg)
+![Van Gogh – The Immersive Experience](../../../assets/images/posts/dreamlight-und-vangogh/2026_01_Dreamlight_VanGogh_0109.jpg)
 
 ## Bilder
 
