@@ -27,7 +27,7 @@ Bitte vergleiche den Fingerprint nach dem Import mit den oben genannten Werten.
 
 ## Veralteter Schlüssel
 
-Der frühere Schlüssel für `info [at] erik-skopp.de` (alte Domain mit Bindestrich) ist **veraltet** und durch `info [at] erikskopp.de` oben ersetzt. Er wurde nicht widerrufen, sollte aber nicht mehr für neue Verschlüsselung verwendet werden.
+Der frühere Schlüssel für `erik-skopp.de` (alte Domain mit Bindestrich) ist **veraltet** und durch `erikskopp.de` oben ersetzt. Er wurde nicht widerrufen, sollte aber nicht mehr für neue Verschlüsselung verwendet werden.
 
 - **Fingerprint:** `6045 D1CA A4F5 E95A 5A96 F215 F2E1 8624 4813 DD1B`
 - **Download:** [erik-skopp.de.asc](/gpg/erik-skopp.de.asc)
