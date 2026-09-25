@@ -5,6 +5,8 @@ pubDate: 2026-01-31
 tags: [Ausflug, Van-Gogh]
 categories: [Ausflüge]
 toc: false
+heroImage: ../../../assets/images/posts/dreamlight-und-vangogh/starry-night-hero.jpg
+heroImageAlt: '"The Starry Night" bei Van Gogh – The Immersive Experience'
 ---
 
 ## Sösetalsperre
