@@ -23,7 +23,6 @@ Das typische Krankheitsbild von Autismus gibt es. Die Therapiebegleitung spricht
 
 Ich habe diese 4 Stichpunkte direkt aus dem Begleitmaterial für die Autismus Diagnose [^1] übernommen. 
 Ich hoffe, dass das für alle in Ordnung ist. 
-Für mich ist das genauso. Ich habe seit jeher Schwierigkeiten mit sozialen Interaktionen. Wenn jemand mit mir redet, kann ich nicht einschätzen, ob diese Person sauer, glücklich, wütend oder etwas ganz anderes ist. Ich gehe da leider immer vom Negativen aus. 
 
 ### Der Weg zur Diagnose
 2024 war ich für 6 Wochen im ÖHK[^2]. Dort wurde bei mir eine rezidivierende depressive Störung diagnostiziert, mit dem Vermerk, dass ich eine autistische Störung habe. Das war mir da schon bekannt, aber es war die erste öffentliche Instanz, die mir das gesagt hat. Das ÖHK könne das nicht diagnostizieren, verwies mich aber an das Asklepios[^3] in Stadtroda.
