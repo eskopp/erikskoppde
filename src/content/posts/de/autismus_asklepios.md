@@ -24,7 +24,9 @@ Ich hoffe, dass das für alle in Ordnung ist.
 Für mich ist das genauso. Ich habe seit jeher Schwierigkeiten Probleme mit sozialen interaktionen. Wenn jemand mit mir redet kann ich nich einschätzen ob diese Person sauer, glücklich, wütend oder etwas ganz anderes ist. Ich gehe da leider immer von dem negativen aus. 
 
 ### Der Weg zur Diagnose
-2024 war ich für 6 Wochen im ÖHK[^2]
+2024 war ich für 6 Wochen im ÖHK[^2]. Dort wurden bei mir rezidivierende depressive diagnostiziert. 
+
+
 
 ### Der Diagnostikprozess
 <!-- TODO: Welche Tests/Gespräche gab es, wie lief das ab? Welche Differentialdiagnosen wurden geprüft und warum ausgeschlossen? -->
@@ -39,4 +41,5 @@ Für mich ist das genauso. Ich habe seit jeher Schwierigkeiten Probleme mit sozi
 <!-- TODO: Was hat sich seit der Diagnose verändert? Was würdest du anderen empfehlen? -->
 
 [^1]:  https://asklepios-stadtroda.minddistrict.de/ (abgerufen am 25.09.2026)
+
 [^2]:  https://www.oehk.de/ (abgerufen am 25.09.2026)
