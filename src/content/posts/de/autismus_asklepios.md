@@ -5,6 +5,8 @@ pubDate: 2026-09-25
 tags: ['ADS','Autismus', 'Diagnostik', 'Asklepios','Stadtroda']
 categories: ['Autismus', 'Gesundheit']
 toc: false
+heroImage: ../../../assets/images/posts/autismus_asklepios/asklepios-eingang.jpg
+heroImageAlt: 'Haupteingang des Asklepios Fachklinikum Stadtroda'
 ---
 
 In den letzten Jahren hatte ich viele Probleme im Leben, ich möchte hier retrospektiv betrachten, wie ich im Asklepios gelandet bin, was Autismus ist und wie es mich betrifft. Geschrieben ist der Bericht in der Ich-Perspektive. Ich bin kein Psychologe und schon gar kein Arzt. Ich schreibe daher nur über Sachen, die ich mir angelesen habe. Wenn Sie ähnliche Probleme haben, kann ich Ihnen das Asklepios sehr ans Herz legen. 
