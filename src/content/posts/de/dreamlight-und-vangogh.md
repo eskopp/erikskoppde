@@ -9,8 +9,6 @@ toc: false
 
 ## Sösetalsperre
 
-
-
 ![Van Gogh – The Immersive Experience](../../../assets/images/posts/dreamlight-und-vangogh/2026_01_Dreamlight_VanGogh_0002.jpg)
 
 ## Van Gogh Experience
