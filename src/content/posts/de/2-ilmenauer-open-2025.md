@@ -7,6 +7,8 @@ categories: ['Schach']
 sections: ['blog', 'schach']
 draft: true
 toc: false
+heroImage: ../../../assets/images/posts/2-ilmenauer-open-2025/2025_10_Ilmenauer_Open_2_0003.jpg
+heroImageAlt: 'Aufgebauter Turniersaal mit Schachbrettern vor Rundenbeginn'
 ---
 
 <!-- TODO: Kurze Einleitung - worum geht's, wo und wann fand das Turnier statt? -->
