@@ -6,6 +6,8 @@ tags: ['TU-Ilmenau', 'Physik', 'Praktikum']
 categories: ['Experimente']
 draft: false
 math: true
+heroImage: ../../../assets/images/posts/dampfdruck-und-siedetemperatur/labor-hero.jpg
+heroImageAlt: 'Wasser wird im Labor in einen Rundkolben gegossen'
 ---
 
 Ich bin eine Mathematische Formel
