@@ -16,7 +16,7 @@ $$
 \frac{dp_S}{dT} = \frac{Q_{m,v}}{T\left(V_{m,G} - V_{m,Fl}\right)}.
 $$
 
-Titelbild[^1]: Photo by Retha Ferguson from Pexels.
+Titelbild[^1]: Photo by Ivan S from Pexels.
 
-[^1]: [https://www.pexels.com/photo/concentrated-student-doing-practical-training-in-laboratory-3825378/](https://www.pexels.com/photo/concentrated-student-doing-practical-training-in-laboratory-3825378/)
+[^1]: [https://www.pexels.com/photo/a-person-pouring-liquid-in-flat-bottomed-flask-9629702/](https://www.pexels.com/photo/a-person-pouring-liquid-in-flat-bottomed-flask-9629702/)
 
