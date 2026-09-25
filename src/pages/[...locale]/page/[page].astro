@@ -15,7 +15,7 @@ interface Props {
 export async function getStaticPaths() {
   let paths = [];
   for (const locale of SITE.locales) {
-    const allPosts = await getPosts(locale, { section: 'blog' });
+    const allPosts = await getPosts(locale);
     const totalPages = Math.ceil(allPosts.length / SITE.postsPerPage);
     const localeParams = { locale: locale === SITE.defaultLocale ? undefined : locale };
     // Skip page 1 (handled by index.astro)
@@ -32,7 +32,7 @@ export async function getStaticPaths() {
 const { locale } = Astro.props;
 const t = useTranslations(locale);
 const { current, last } = Astro.props as Props;
-const allPosts = await getPosts(locale, { section: 'blog' });
+const allPosts = await getPosts(locale);
 const pageSize = SITE.postsPerPage;
 const start = (current - 1) * pageSize;
 const pagePosts = allPosts.slice(start, start + pageSize);

@@ -10,6 +10,7 @@ export const messages = {
   de: {
     'site.skipToContent': 'Zum Inhalt springen',
     'nav.home': 'Start',
+    'nav.blog': 'Blog',
     'nav.labor': 'Labor',
     'nav.schach': 'Schach',
     'nav.posts': 'Beiträge',
@@ -66,6 +67,10 @@ export const messages = {
 
     'categories.title': 'Kategorien',
     'categories.empty': 'Noch keine Kategorien.',
+
+    'blog.title': 'Blog',
+    'blog.description': 'Persönliche Beiträge.',
+    'blog.empty': 'Noch keine Blog-Beiträge.',
 
     'labor.title': 'Labor',
     'labor.description': 'Experimente, Praktikumsberichte und andere wissenschaftliche Artikel.',
