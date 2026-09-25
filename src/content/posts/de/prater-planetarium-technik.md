@@ -7,6 +7,8 @@ categories: ['Reise']
 draft: false
 math: false
 pinned: false
+heroImage: ../../../assets/images/posts/prater-planetarium-technik/nationalbibliothek-prunksaal.jpg
+heroImageAlt: 'Deckenfresko im Prunksaal der Österreichischen Nationalbibliothek in Wien'
 ---
 
 
