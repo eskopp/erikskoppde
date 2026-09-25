@@ -5,7 +5,7 @@ pubDate: 2025-11-01
 tags: ['Schach', 'Turnier', 'Ilmenau']
 categories: ['Schach']
 sections: ['blog', 'schach']
-draft: true
+draft: false
 toc: false
 heroImage: ../../../assets/images/posts/2-ilmenauer-open-2025/2025_10_Ilmenauer_Open_2_0003.jpg
 heroImageAlt: 'Aufgebauter Turniersaal mit Schachbrettern vor Rundenbeginn'

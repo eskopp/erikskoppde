@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p \"/data/git/erikskoppde/src/pages/[...locale]/schach\")",
+      "Bash(grep -rn \"getPosts\\(locale, { section: 'blog' }\\)\" \"src/pages/[...locale]/index.astro\" \"src/pages/[...locale]/archives.astro\" \"src/pages/[...locale]/rss.xml.ts\" \"src/pages/[...locale]/page/[page].astro\")",
+      "Bash(sed -i \"s/getPosts\\(locale, { section: 'blog' }\\)/getPosts\\(locale\\)/\" \"src/pages/[...locale]/index.astro\" \"src/pages/[...locale]/archives.astro\" \"src/pages/[...locale]/rss.xml.ts\" \"src/pages/[...locale]/page/[page].astro\" *)",
+      "Bash(mkdir -p \"/data/git/erikskoppde/src/pages/[...locale]/blog\")",
+      "Bash(mkdir -p \"/data/git/erikskoppde/src/assets/images/posts/2-ilmenauer-open-2025\" *)"
+    ],
+    "additionalDirectories": [
+      "/data/git/erikskoppde/src/pages/[...locale]",
+      "/data/vault/memories/2025/2025_10_Ilmenauer_Open_2"
+    ]
+  }
+}
