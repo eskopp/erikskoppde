@@ -215,7 +215,7 @@ const t = useTranslations(locale);
 
       appendChildren(null, listEl!, 0);
       emptyEl?.classList.toggle('hidden', comments.length !== 0);
-      if (countEl) countEl.textContent = comments.length > 0 ? `(${comments.length})` : '';
+      if (countEl) countEl.textContent = comments.length > 0 ? ` (${comments.length})` : '';
     }
 
     function startReply(id: string, name: string) {
