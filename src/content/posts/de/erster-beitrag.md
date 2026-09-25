@@ -7,6 +7,8 @@ categories: []
 draft: false
 math: false
 pinned: true
+heroImage: ../../../assets/images/posts/erster-beitrag/erinnerungen-hero.jpg
+heroImageAlt: 'Smartphone mit einem Naturfoto auf dem Display, umgeben von ausgedruckten Erinnerungsfotos'
 ---
 
 Ich bin aktuell Student, arbeite als Hiwi und bin im Schach aktiv. In allen drei Positionen sehe ich sehr viel. Aufgrund meiner Eigenheiten und Depressionen sehe ich viele Dinge deutlich anders als andere. Das können sowohl schöne, traurige als auch interessante Gedanken oder Emotionen sein.
