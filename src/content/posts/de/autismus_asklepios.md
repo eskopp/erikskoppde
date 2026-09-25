@@ -25,11 +25,23 @@ Ich habe diese 4 Stichpunkte direkt aus dem Begleitmaterial für die Autismus Di
 Ich hoffe, dass das für alle in Ordnung ist. 
 
 ### Der Weg zur Diagnose
+
+#### Überweisung durchs ÖHK
 2024 war ich für 6 Wochen im ÖHK[^2]. Dort wurde bei mir eine rezidivierende depressive Störung diagnostiziert, mit dem Vermerk, dass ich eine autistische Störung habe. Das war mir da schon bekannt, aber es war die erste öffentliche Instanz, die mir das gesagt hat. Das ÖHK könne das nicht diagnostizieren, verwies mich aber an das Asklepios[^3] in Stadtroda. Die Wartezeit zwischen "Bewerbung" und dem tatsächlichen Aufenthalt lag bei circa 1,5 bis 2 Jahren. Ich kann das gut nachvollziehen, die Station ist stark frequentiert und schließt an die allgemeine psychologische Station an. Mir wurde mal gesagt, dass hier kein Bett kalt wird. Ich kann das bestätigen. 
+
+#### Der Fragebogen
 Circa 1-2 Monate nach der Anmeldung bekam ich einen Fragebogen. Dieser hatte ungefähr 10 Seiten. Meine Mutter hatte auch einen eigenen von ähnlichem Umfang bekommen. Es war ein Vorscreening-Fragebogen zur Indikationsüberprüfung. In diesem wurde so ziemlich alles abgefragt, was für eine Diagnostik notwendig ist. Das beginnt bei aktueller Medikation und geht über das aktuelle Verhalten und das Verhalten in der Kindheit. Ich schreibe über diesen Fragebogen nach etwas mehr als 2 Jahren. Bitte seht mir nach, dass ich nicht mehr alle Fragen kenne. 
 
+#### Anreise und Aufnahme
+Als ich den Fragebogen abgeschickt hatte, habe ich lange nichts mehr gehört. Circa 2 Monate vor der Aufnahme schrieb mir das Asklepios und teilte mir den Aufnahmetermin mit. Am 10.09. konnte ich dann nach Stadtroda fahren. Ich wurde direkt freundlich in der ZAP[^4] aufgenommen und auf Station gebracht. 
+
+#### Alltag auf Station
+Die Zimmer sind groß geschnitten und Zweibettzimmer mit einer Nasszelle. Ein Unterschied zu anderen Psychiatrien ist die Größe. Das Asklepios ist deutlich kleiner. So gibt es hier keine zentrale Essensausgabe für alle Stationen, sondern es wird auf den einzelnen Stationen gegessen. Was ich etwas vermisse, ist ein Lebensmittelladen auf dem Gelände, allerdings sind fußläufig der Netto und der Norma erreichbar. Bitte nicht dem Navi folgen, sondern der Hauptstraße (Stadtroda ist sehr hügelig).
+
 ### Der Diagnostikprozess
-<!-- TODO: Welche Tests/Gespräche gab es, wie lief das ab? Welche Differentialdiagnosen wurden geprüft und warum ausgeschlossen? -->
+Wenn man hier ankommt hat man zu erst keine Therapien. Man soll sich erstmal in Ruhe ankommen und dann an diese gewöhnen. Der entschlackte Alltag hat mir sehr zu schaffen gemacht. Aufstehen um 06:30 finde ich bis heute viel zu früh. Ich bin aber noch nie gerne frühs aufgestanden :)
+Um 07:30 gibt es Frühstück, dann finden die meisten Therapien statt. 
+
 
 ### Wie sich die Merkmale bei mir zeigen
 <!-- TODO: Spezialinteressen, Routinen/Flexibilität, sensorische (Un)Empfindlichkeit - jeweils konkret an dir. -->
@@ -45,3 +57,5 @@ Circa 1-2 Monate nach der Anmeldung bekam ich einen Fragebogen. Dieser hatte ung
 [^2]:  https://www.oehk.de/ (abgerufen am 25.09.2026)
 
 [^3]:  https://www.asklepios.com/stadtroda (abgerufen am 25.09.2026)
+
+[^4]:  ZAP = Zentrale Aufnahme Psychotherapie
