@@ -18,9 +18,11 @@ Erik Skopp
 
 ## 2. Allgemeines
 
-Diese Website ist eine statische Seite ohne eigenes Backend und ohne
-Datenbank. Es findet keine Registrierung statt, es gibt kein Nutzerkonto
-und keine Formulare, über die Daten an den Betreiber übermittelt werden.
+Diese Website ist im Wesentlichen eine statische Seite ohne eigenes
+Backend und ohne Datenbank. Es findet keine Registrierung statt und es
+gibt kein Nutzerkonto. Die einzige Ausnahme ist die Kommentarfunktion
+unter Blogbeiträgen (siehe Abschnitt 9), über die freiwillig Daten an
+einen selbst betriebenen Server übermittelt werden können.
 
 ## 3. Hosting
 
@@ -69,9 +71,34 @@ Google: <https://policies.google.com/privacy>
 
 ## 9. Kommentarfunktion
 
-Diese Website bietet derzeit keine Kommentarfunktion an. Sollte eine
-Kommentarfunktion eingeführt werden, wird diese Datenschutzerklärung
-entsprechend aktualisiert.
+Unter Blogbeiträgen besteht die Möglichkeit, anonym einen Kommentar zu
+hinterlassen. Ein Nutzerkonto oder eine Registrierung ist dafür nicht
+erforderlich.
+
+Beim Absenden eines Kommentars werden folgende Daten verarbeitet und
+gespeichert:
+
+- der von Ihnen frei gewählte Name (es besteht keine Pflicht, den echten
+  Namen anzugeben)
+- der Kommentartext
+- die IP-Adresse, von der aus der Kommentar abgesendet wurde
+- Datum und Uhrzeit der Abgabe
+
+Die IP-Adresse wird ausschließlich zur Spam- und Missbrauchsabwehr (u. a.
+Begrenzung der Anzahl an Kommentaren pro Zeitraum) verarbeitet und nicht
+öffentlich angezeigt. Name, Kommentartext sowie Datum und Uhrzeit werden
+öffentlich auf der Seite dargestellt.
+
+Es findet keine Vorabprüfung (Moderation) der Kommentare statt, sie
+werden also sofort sichtbar. Die Daten werden auf einem von mir selbst
+betriebenen Server verarbeitet und gespeichert, nicht bei GitHub oder
+einem sonstigen Drittanbieter.
+
+Rechtsgrundlage der Verarbeitung ist Art. 6 Abs. 1 lit. f DSGVO
+(berechtigtes Interesse an der Bereitstellung einer funktionierenden,
+missbrauchsgeschützten Kommentarfunktion). Wenn Sie die Löschung eines
+von Ihnen verfassten Kommentars wünschen, kontaktieren Sie mich bitte
+über die im Footer dieser Seite hinterlegten Kontaktmöglichkeiten.
 
 ## 10. Ihre Rechte
 
