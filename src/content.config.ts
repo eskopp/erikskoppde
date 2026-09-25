@@ -40,6 +40,14 @@ const baseFrontmatter = ({ image }: SchemaContext) =>
     updatedDate: z.coerce.date().optional(),
     tags: z.array(z.string()).default([]),
     categories: z.array(z.string()).default([]),
+    /**
+     * Which listing a post belongs to: personal `blog` posts (default) vs.
+     * `wissenschaft` (science/experiment write-ups). The main feed
+     * (home, archives, RSS, sidebar) only shows `blog`; `/wissenschaft`
+     * only shows `wissenschaft`. Both still get their own permalink and
+     * still appear under tags/categories regardless of section.
+     */
+    section: z.enum(['blog', 'wissenschaft']).default('blog'),
     draft: z.boolean().default(false),
     heroImage: z.union([image(), z.string()]).optional(),
     /** Optional alt-text for the hero/featured image. */

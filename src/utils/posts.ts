@@ -89,12 +89,24 @@ export function sortPostsByDate(posts: Post[]): Post[] {
   });
 }
 
-/** Get all posts for a locale (drafts + unlisted hidden in prod, sorted). */
-export async function getPosts(locale: Locale): Promise<Post[]> {
+/**
+ * Get all posts for a locale (drafts + unlisted hidden in prod, sorted).
+ *
+ * Pass `opts.section` to restrict to `blog` or `wissenschaft` posts — used
+ * by the main feed (home, archives, RSS, sidebar) and the `/wissenschaft`
+ * listing respectively. Omit it (the default) to get posts from every
+ * section, e.g. for individual post pages, tags, and categories, which
+ * stay section-agnostic.
+ */
+export async function getPosts(
+  locale: Locale,
+  opts?: { section?: 'blog' | 'wissenschaft' },
+): Promise<Post[]> {
   if (skipPostCollections) return [];
   const all = await getCollection('posts', (entry) => {
     if (isProd && entry.data.draft) return false;
     if (entry.data.unlisted) return false;
+    if (opts?.section && entry.data.section !== opts.section) return false;
     const lang = entry.data.lang ?? localeFromId(entry.id);
     return lang === locale;
   });

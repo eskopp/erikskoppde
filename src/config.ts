@@ -116,6 +116,7 @@ export const SITE: SiteConfig = {
 
 export const NAV: readonly NavItem[] = [
   { key: 'home', href: '/', icon: 'lucide:home' },
+  { key: 'wissenschaft', href: '/wissenschaft', icon: 'lucide:flask-conical' },
   { key: 'categories', href: '/categories', icon: 'lucide:layers' },
   { key: 'tags', href: '/tags', icon: 'lucide:tag' },
   { key: 'archives', href: '/archives', icon: 'lucide:archive' },
