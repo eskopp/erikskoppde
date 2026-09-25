@@ -17,8 +17,9 @@ Das typische Krankheitsbild von Autismus gibt es. Die Therapiebegleitung spricht
 - bestimmte Spezialinteressen
 - der Wunsch nach festen Routinen und eine verminderte Flexibilität gegenüber Veränderungen
 - eine besondere (Un)Empfindlichkeit hinsichtlich sensorischer Reize oder Schmerzen 
-Ich habe diese 4 Stichpunkte direkt aus dem Begleitmaterial für die Autismus Diagnose [^1] übernommen. 
 
+
+Ich habe diese 4 Stichpunkte direkt aus dem Begleitmaterial für die Autismus Diagnose [^1] übernommen. 
 Ich hoffe, dass das für alle in Ordnung ist. 
 Für mich ist das genauso. Ich habe seit jeher Schwierigkeiten Probleme mit sozialen interaktionen. Wenn jemand mit mir redet kann ich nich einschätzen ob diese Person sauer, glücklich, wütend oder etwas ganz anderes ist. Ich gehe da leider immer von dem negativen aus. 
 
