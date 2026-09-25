@@ -1,11 +1,11 @@
 ---
-title: 'Autismus-Diagnose im Asklepios Stadtroda'
-description: 'Mein Weg zu einer Autismus Diagnose im Asklepios Stadtroda.'
+title: 'Mein Aufenthalt im Asklepios Stadtroda'
+description: 'Ablauf und Stationsalltag während meines Aufenthalts im Asklepios Stadtroda.'
 pubDate: 2026-09-25
 tags: ['ADS','Autismus', 'Diagnostik', 'Asklepios','Stadtroda']
 categories: ['Autismus', 'Gesundheit']
 toc: false
-heroImage: ../../../assets/images/posts/autismus_asklepios/asklepios-eingang.jpg
+heroImage: ../../../assets/images/posts/aufenthalt_asklepios/asklepios-eingang.jpg
 heroImageAlt: 'Haupteingang des Asklepios Fachklinikum Stadtroda'
 ---
 
@@ -24,7 +24,7 @@ Das typische Krankheitsbild von Autismus gibt es. Die Therapiebegleitung spricht
 Ich habe diese 4 Stichpunkte direkt aus dem Begleitmaterial für die Autismus Diagnose [^1] übernommen. 
 Ich hoffe, dass das für alle in Ordnung ist. 
 
-### Der Weg zur Diagnose
+### Der Weg ins Asklepios
 
 #### Überweisung durchs ÖHK
 2024 war ich für 6 Wochen im ÖHK[^2]. Dort wurde bei mir eine rezidivierende depressive Störung diagnostiziert, mit dem Vermerk, dass ich eine autistische Störung habe. Das war mir da schon bekannt, aber es war die erste öffentliche Instanz, die mir das gesagt hat. Das ÖHK könne das nicht diagnostizieren, verwies mich aber an das Asklepios[^3] in Stadtroda. Die Wartezeit zwischen "Bewerbung" und dem tatsächlichen Aufenthalt lag bei circa 1,5 bis 2 Jahren. Ich kann das gut nachvollziehen, die Station ist stark frequentiert und schließt an die allgemeine psychologische Station an. Mir wurde mal gesagt, dass hier kein Bett kalt wird. Ich kann das bestätigen. 
@@ -38,10 +38,25 @@ Als ich den Fragebogen abgeschickt hatte, habe ich lange nichts mehr gehört. Ci
 #### Alltag auf Station
 Die Zimmer sind groß geschnitten und Zweibettzimmer mit einer Nasszelle. Ein Unterschied zu anderen Psychiatrien ist die Größe. Das Asklepios ist deutlich kleiner. So gibt es hier keine zentrale Essensausgabe für alle Stationen, sondern es wird auf den einzelnen Stationen gegessen. Was ich etwas vermisse, ist ein Lebensmittelladen auf dem Gelände, allerdings sind fußläufig der Netto und der Norma erreichbar. Bitte nicht dem Navi folgen, sondern der Hauptstraße (Stadtroda ist sehr hügelig).
 
-### Der Diagnostikprozess
-Wenn man hier ankommt, hat man zuerst keine Therapien. Man soll sich erstmal in Ruhe ankommen und dann an diese gewöhnen. Der entschlackte Alltag hat mir sehr zu schaffen gemacht. Aufstehen um 06:30 finde ich bis heute viel zu früh. Ich bin aber noch nie gerne früh aufgestanden :)
-Um 07:30 gibt es Frühstück, dann finden die meisten Therapien statt. Um 11:30 gibt es dann im Aufenthaltsraum Mittagessen aus der Stationsküche. Um 15:30 gibt es Kaffee und um 18:00 dann Abendessen. Das Essen ist ausreichend, und wenn ich das sage, wird wohl jeder satt. Zum Abendessen eines jeden Tages bekommt man einen Zettel, wo die Therapien für den nächsten Tag drin stehen. Im Großen und Ganzen sind die meisten Therapien Ergotherapie und Physiotherapie neben der Diagnostik. Ich habe relativ viel Freizeit, was daran liegt, dass ich mich für keine zusätzlichen Therapien begeistern konnte. Es wurde aber genug angeboten. In der Ergotherapie habe ich Enkaustik ausprobiert. Dazu nimmt man Fotopapier, ein heißes Bügeleisen und Wachsstifte. Die Stifte lässt man auf dem Bügeleisen schmelzen und erzeugt darüber ein Muster bzw. ein Bild auf dem Papier. Ich muss aber zugeben, dass ich so gar nicht künstlerisch oder motorisch begabt war, dass ich immer sehr froh war, wenn die Ergotherapie zu Ende war. Es gab noch andere Angebote, aber mit zwei linken Händen liegt mir das alles nicht wirklich. 
+### Der Stationsalltag
 
+#### Ankommen
+Wenn man hier ankommt, hat man zuerst keine Therapien. Man soll sich erstmal in Ruhe ankommen und dann an diese gewöhnen. Der entschlackte Alltag hat mir sehr zu schaffen gemacht. Aufstehen um 06:30 finde ich bis heute viel zu früh. Ich bin aber noch nie gerne früh aufgestanden :)
+
+#### Tagesablauf
+Um 07:30 gibt es Frühstück, dann finden die meisten Therapien statt. Um 11:30 gibt es dann im Aufenthaltsraum Mittagessen aus der Stationsküche. Um 15:30 gibt es Kaffee und um 18:00 dann Abendessen. Das Essen ist ausreichend, und wenn ich das sage, wird wohl jeder satt. Zum Abendessen eines jeden Tages bekommt man einen Zettel, wo die Therapien für den nächsten Tag drin stehen. Im Großen und Ganzen sind die meisten Therapien Ergotherapie und Physiotherapie neben der Diagnostik. Ich habe relativ viel Freizeit, was daran liegt, dass ich mich für keine zusätzlichen Therapien begeistern konnte. Es wurde aber genug angeboten. 
+
+#### Ergotherapie
+In der Ergotherapie habe ich Enkaustik ausprobiert. Dazu nimmt man Fotopapier, ein heißes Bügeleisen und Wachsstifte. Die Stifte lässt man auf dem Bügeleisen schmelzen und erzeugt darüber ein Muster bzw. ein Bild auf dem Papier. Ich muss aber zugeben, dass ich so gar nicht künstlerisch oder motorisch begabt war, dass ich immer sehr froh war, wenn die Ergotherapie zu Ende war. Es gab noch andere Angebote, aber mit zwei linken Händen liegt mir das alles nicht wirklich. 
+
+#### Physiotherapie
+Die zweite Therapieform ist die Physiotherapie, also Sport. Auch hier habe ich mich wahrscheinlich unglaublich schlecht angestellt. Auf dem Stepper hatte ich nach kurzer Zeit Probleme mit den Knien. Allerdings hat das Radfahren recht viel Spaß gemacht. Es war ein Liegerad und man konnte dort den Widerstand selber einstellen. 
+
+
+
+# Für Claude: Der Block geht über die verschiedenen Visiten
+Am Montag haben wir eine Zimmervisite, wo alle wichtigen Leute wie Pflegeteam, Psychologen und die Ärztin zu mir ins Zimmer kommen und mit mir und meinem Bettnachbarn sprechen. Die Person, die jeweils nicht dran war, musste so lange draußen warten. Das waren nie mehr als 5 Minuten. 
+Mittwochs war die Schwesternvisite, dort haben wir besprochen, welche anderen Therapieformen wir noch wollten (wie bspw. Trommeln, tiergestützte Therapie, Akupunktur und so weiter) und wie es uns geht. Anschließend sagte jeder, ob er am Wochenende nach Hause geht oder nicht. Man kann ab dem zweiten Wochenende eine Nacht nach Hause fahren.
 
 ### Wie sich die Merkmale bei mir zeigen
 <!-- TODO: Spezialinteressen, Routinen/Flexibilität, sensorische (Un)Empfindlichkeit - jeweils konkret an dir. -->
