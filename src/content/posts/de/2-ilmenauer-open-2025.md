@@ -3,7 +3,7 @@ title: '2. Ilmenauer Open 2025'
 description: 'Mein Bericht vom 2. Ilmenauer Open 2025.'
 pubDate: 2025-11-01
 tags: ['Schach', 'Turnier', 'Ilmenau']
-categories: ['Schach']
+categories: ['Schach', 'Blog']
 sections: ['blog', 'schach']
 draft: false
 toc: false
