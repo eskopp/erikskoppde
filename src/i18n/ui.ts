@@ -119,6 +119,22 @@ export const messages = {
 
     'panel.recentlyUpdated': 'Zuletzt aktualisiert',
     'panel.trendingTags': 'Beliebte Tags',
+
+    'comments.title': 'Kommentare',
+    'comments.empty': 'Noch keine Kommentare. Sei der Erste!',
+    'comments.name': 'Name',
+    'comments.namePlaceholder': 'Dein Name',
+    'comments.content': 'Kommentar',
+    'comments.contentPlaceholder': 'Was möchtest du sagen?',
+    'comments.submit': 'Kommentar absenden',
+    'comments.submitting': 'Wird gesendet…',
+    'comments.reply': 'Antworten',
+    'comments.replyingTo': 'Antwort an',
+    'comments.cancelReply': 'Abbrechen',
+    'comments.error': 'Der Kommentar konnte nicht gespeichert werden. Bitte versuch es später erneut.',
+    'comments.rateLimit': 'Zu viele Kommentare. Bitte warte kurz und versuch es dann erneut.',
+    'comments.loading': 'Kommentare werden geladen…',
+    'comments.noscript': 'Zum Lesen und Schreiben von Kommentaren wird JavaScript benötigt.',
   },
 } as const satisfies Record<Locale, Record<string, string>>;
 

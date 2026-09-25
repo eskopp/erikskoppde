@@ -36,6 +36,8 @@ export interface SiteConfig {
   locales: readonly Locale[];
   defaultLocale: Locale;
   multilingual: boolean;
+  /** Base URL of the comments API (no trailing slash). */
+  commentsApiUrl: string;
 }
 
 export interface NavItem {

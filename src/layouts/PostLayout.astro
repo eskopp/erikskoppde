@@ -3,6 +3,7 @@ import BaseLayout from './BaseLayout.astro';
 import PostNav from '../components/PostNav.astro';
 import SmartImage from '../components/SmartImage.astro';
 import TableOfContents from '../components/islands/TableOfContents.astro';
+import Comments from '../components/islands/Comments.astro';
 import { Icon } from 'astro-icon/components';
 import { SITE, type Locale } from '../config';
 import { useTranslations, stripLocale, formatDate, isoDate, localizedPath } from '../i18n/utils';
@@ -212,6 +213,8 @@ if (post.data.mermaid) {
     }
 
     <PostNav prev={prev} next={next} locale={locale} />
+
+    <Comments postSlug={ogSlug} locale={locale} />
   </article>
 </BaseLayout>
 
