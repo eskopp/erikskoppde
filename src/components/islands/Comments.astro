@@ -23,6 +23,7 @@ const t = useTranslations(locale);
 >
   <h2 class="text-base-content mb-6 text-xl font-bold tracking-tight">
     {t('comments.title')}
+    <span class="text-base-content/50 text-base font-normal" data-comments-count></span>
   </h2>
 
   <noscript>
@@ -124,6 +125,9 @@ const t = useTranslations(locale);
   }
 
   function setupComments(root: HTMLElement) {
+    if (root.dataset.commentsBound === 'true') return;
+    root.dataset.commentsBound = 'true';
+
     const postSlug = root.dataset.postSlug;
     const apiUrl = root.dataset.apiUrl;
     if (!postSlug || !apiUrl) return;
@@ -135,6 +139,7 @@ const t = useTranslations(locale);
     const locale = document.documentElement.lang || 'de';
 
     const listEl = root.querySelector<HTMLUListElement>('[data-comments-list]');
+    const countEl = root.querySelector<HTMLElement>('[data-comments-count]');
     const loadingEl = root.querySelector<HTMLElement>('[data-comments-loading]');
     const emptyEl = root.querySelector<HTMLElement>('[data-comments-empty]');
     const listErrorEl = root.querySelector<HTMLElement>('[data-comments-list-error]');
@@ -164,10 +169,12 @@ const t = useTranslations(locale);
       const date = document.createElement('time');
       date.className = 'text-base-content/60 text-xs';
       date.dateTime = comment.created_at;
-      date.textContent = new Date(comment.created_at).toLocaleDateString(locale, {
+      date.textContent = new Date(comment.created_at).toLocaleString(locale, {
         year: 'numeric',
         month: 'short',
         day: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
       });
 
       header.append(name, date);
@@ -208,6 +215,7 @@ const t = useTranslations(locale);
 
       appendChildren(null, listEl!, 0);
       emptyEl?.classList.toggle('hidden', comments.length !== 0);
+      if (countEl) countEl.textContent = comments.length > 0 ? `(${comments.length})` : '';
     }
 
     function startReply(id: string, name: string) {
