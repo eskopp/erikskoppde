@@ -10,7 +10,8 @@ export const messages = {
   de: {
     'site.skipToContent': 'Zum Inhalt springen',
     'nav.home': 'Start',
-    'nav.wissenschaft': 'Wissenschaft',
+    'nav.labor': 'Labor',
+    'nav.schach': 'Schach',
     'nav.posts': 'Beiträge',
     'nav.tags': 'Tags',
     'nav.categories': 'Kategorien',
@@ -66,9 +67,13 @@ export const messages = {
     'categories.title': 'Kategorien',
     'categories.empty': 'Noch keine Kategorien.',
 
-    'wissenschaft.title': 'Wissenschaft',
-    'wissenschaft.description': 'Experimente, Praktikumsberichte und andere wissenschaftliche Artikel.',
-    'wissenschaft.empty': 'Noch keine wissenschaftlichen Artikel.',
+    'labor.title': 'Labor',
+    'labor.description': 'Experimente, Praktikumsberichte und andere wissenschaftliche Artikel.',
+    'labor.empty': 'Noch keine Artikel im Labor.',
+
+    'schach.title': 'Schach',
+    'schach.description': 'Turniere, Partien und alles rund ums Schach.',
+    'schach.empty': 'Noch keine Schach-Artikel.',
 
     'gallery.title': 'Galerie',
     'gallery.empty': 'Noch keine Alben.',

@@ -4,7 +4,7 @@ description: 'Versuch W1 im Physikalischen Grundpraktikum: Dampfdruckkurve von W
 pubDate: 2025-10-15
 tags: ['TU-Ilmenau', 'Physik', 'Praktikum']
 categories: ['Experimente']
-section: 'wissenschaft'
+sections: ['blog', 'labor']
 draft: false
 math: true
 heroImage: ../../../assets/images/posts/dampfdruck-und-siedetemperatur/labor-hero.jpg

@@ -41,13 +41,15 @@ const baseFrontmatter = ({ image }: SchemaContext) =>
     tags: z.array(z.string()).default([]),
     categories: z.array(z.string()).default([]),
     /**
-     * Which listing a post belongs to: personal `blog` posts (default) vs.
-     * `wissenschaft` (science/experiment write-ups). The main feed
-     * (home, archives, RSS, sidebar) only shows `blog`; `/wissenschaft`
-     * only shows `wissenschaft`. Both still get their own permalink and
-     * still appear under tags/categories regardless of section.
+     * Which listing(s) a post belongs to: personal `blog` posts (default),
+     * `labor` (science/experiment write-ups), and/or `schach` (chess). A
+     * post can belong to several, e.g. a personal account of a lab
+     * experiment. The main feed (home, archives, RSS, sidebar) shows posts
+     * with `blog`; `/labor` shows posts with `labor`; `/schach` shows posts
+     * with `schach`. All still get their own permalink and still appear
+     * under tags/categories regardless of section.
      */
-    section: z.enum(['blog', 'wissenschaft']).default('blog'),
+    sections: z.array(z.enum(['blog', 'labor', 'schach'])).min(1).default(['blog']),
     draft: z.boolean().default(false),
     heroImage: z.union([image(), z.string()]).optional(),
     /** Optional alt-text for the hero/featured image. */

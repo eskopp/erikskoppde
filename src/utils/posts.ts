@@ -100,13 +100,13 @@ export function sortPostsByDate(posts: Post[]): Post[] {
  */
 export async function getPosts(
   locale: Locale,
-  opts?: { section?: 'blog' | 'wissenschaft' },
+  opts?: { section?: 'blog' | 'labor' | 'schach' },
 ): Promise<Post[]> {
   if (skipPostCollections) return [];
   const all = await getCollection('posts', (entry) => {
     if (isProd && entry.data.draft) return false;
     if (entry.data.unlisted) return false;
-    if (opts?.section && entry.data.section !== opts.section) return false;
+    if (opts?.section && !entry.data.sections.includes(opts.section)) return false;
     const lang = entry.data.lang ?? localeFromId(entry.id);
     return lang === locale;
   });

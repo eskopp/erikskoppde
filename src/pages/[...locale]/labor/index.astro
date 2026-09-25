@@ -14,22 +14,22 @@ export function getStaticPaths() {
 const { locale } = Astro.props;
 const t = useTranslations(locale);
 
-const posts = await getPosts(locale, { section: 'wissenschaft' });
+const posts = await getPosts(locale, { section: 'labor' });
 ---
 
 <BaseLayout
-  title={t('wissenschaft.title')}
-  description={t('wissenschaft.description')}
-  pathWithoutLocale="/wissenschaft/"
-  crumbs={[{ label: t('wissenschaft.title') }]}
+  title={t('labor.title')}
+  description={t('labor.description')}
+  pathWithoutLocale="/labor/"
+  crumbs={[{ label: t('labor.title') }]}
 >
   <header class="mb-6">
-    <h1 class="text-3xl font-bold tracking-tight">{t('wissenschaft.title')}</h1>
-    <p class="text-base-content/70 mt-1 text-sm">{t('wissenschaft.description')}</p>
+    <h1 class="text-3xl font-bold tracking-tight">{t('labor.title')}</h1>
+    <p class="text-base-content/70 mt-1 text-sm">{t('labor.description')}</p>
   </header>
   {
     posts.length === 0 ? (
-      <p class="text-base-content/70">{t('wissenschaft.empty')}</p>
+      <p class="text-base-content/70">{t('labor.empty')}</p>
     ) : (
       <PostList posts={posts} locale={locale} />
     )
