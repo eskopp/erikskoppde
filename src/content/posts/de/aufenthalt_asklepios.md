@@ -52,9 +52,7 @@ In der Ergotherapie habe ich Enkaustik ausprobiert. Dazu nimmt man Fotopapier, e
 #### Physiotherapie
 Die zweite Therapieform ist die Physiotherapie, also Sport. Auch hier habe ich mich wahrscheinlich unglaublich schlecht angestellt. Auf dem Stepper hatte ich nach kurzer Zeit Probleme mit den Knien. Allerdings hat das Radfahren recht viel Spaß gemacht. Es war ein Liegerad und man konnte dort den Widerstand selber einstellen. 
 
-
-
-# Für Claude: Der Block geht über die verschiedenen Visiten
+#### Visiten
 Am Montag haben wir eine Zimmervisite, wo alle wichtigen Leute wie Pflegeteam, Psychologen und die Ärztin zu mir ins Zimmer kommen und mit mir und meinem Bettnachbarn sprechen. Die Person, die jeweils nicht dran war, musste so lange draußen warten. Das waren nie mehr als 5 Minuten. 
 Mittwochs war die Schwesternvisite, dort haben wir besprochen, welche anderen Therapieformen wir noch wollten (wie bspw. Trommeln, tiergestützte Therapie, Akupunktur und so weiter) und wie es uns geht. Anschließend sagte jeder, ob er am Wochenende nach Hause geht oder nicht. Man kann ab dem zweiten Wochenende eine Nacht nach Hause fahren.
 
