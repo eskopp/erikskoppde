@@ -11,3 +11,12 @@
  */
 import 'katex/dist/katex.min.css';
 ---
+
+<style is:global>
+  /* KaTeX's default 1em top/bottom margin is too tight when two display
+     formulas follow each other closely, causing sub-/superscripts of
+     adjacent equations to visually overlap. */
+  .katex-display {
+    margin: 1.75em 0;
+  }
+</style>
