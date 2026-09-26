@@ -11,7 +11,7 @@ heroImage: ../../../assets/images/posts/dampfdruck-und-siedetemperatur/labor-her
 heroImageAlt: 'Wasser wird im Labor in einen Rundkolben gegossen'
 ---
 
-Für das Fach Grundpraktikum der Physik 1[^2] dürfen wir verschiedene Experimente im Physiklabor absolvieren. Der Artikel wird kein Protokoll. Ich möchte eig nur ein wenig über das Experiment schreiben. Leider habe ich damals vergessen Bilder von dem Experiment zu machen.
+Für das Fach Grundpraktikum der Physik 1[^2] dürfen wir verschiedene Experimente im Physiklabor absolvieren. Der Artikel wird kein Protokoll. Ich möchte eig nur ein wenig über das Experiment schreiben. Leider habe ich damals vergessen, Bilder von dem Experiment zu machen.
 
 ![Versuchsapparatur des Experiments W1 – Dampfdruck](../../../assets/images/posts/dampfdruck-und-siedetemperatur/csm_W1_aaf90b82c4.jpg)[^3]
 
@@ -28,12 +28,14 @@ $$
 \left[Q_{m,v}\right] = \frac{\text{J}}{\text{mol}}
 $$
 
-ist eig nur die Energie die man benötigt um 1 Mol Flüssigkeit vollständig in einen gasförmigen Zustand zu überführen.
+ist eig nur die Energie, die man benötigt, um 1 Mol Flüssigkeit vollständig in einen gasförmigen Zustand zu überführen. Bei isobarer und isothermer Prozessführung entspricht $Q_{m,v}$ der molaren Verdampfungsenthalpie $\Delta H_v$.
+Als Ausgangspunkt nimmt man die Clausius-Clapeyron-Gleichung
 
+$$\frac{dp_S}{dT} = \frac{Q_{m,v}}{T\left(V_{m,G} - V_{m,Fl}\right)}$$
 
-$$
-\frac{dp_S}{dT} = \frac{Q_{m,v}}{T\left(V_{m,G} - V_{m,Fl}\right)}.
-$$
+Hinreichend weit unterhalb des kritischen Punktes ist das Molvolumen der Flüssigkeit gegenüber dem des Dampfes vernachlässigbar, also $V_{m,G} - V_{m,Fl} \approx V_{m,G}$. Nimmt man zusätzlich an, dass sich der Wasserdampf wie ein ideales Gas verhält ($p_S V_{m,G} = RT$), bekommt man die Gleichung
+$$\frac{dp_S}{dT} = \frac{\Delta H_v}{R}\frac{p_S}{T^2}$$
+Diese Gleichung ist die für unser Experiment relevante.
 
 Titelbild[^1]: Photo by Ivan S from Pexels.
 
