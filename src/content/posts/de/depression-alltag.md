@@ -4,7 +4,7 @@ description: 'Ein persönlicher Einblick, wie sich meine Depression im Alltag ä
 pubDate: 2026-09-26
 tags: ['Depression', 'Mental Health']
 categories: ['Autismus', 'Gesundheit']
-draft: true
+draft: false
 toc: false
 ---
 
