@@ -17,8 +17,16 @@ Im Grunde ging es um zwei Punkte:
 1. molare Verdampfungsenthalpie
 2. Höhenbestimmung über die Wassertemperatur
 
+
 ### molare Verdampfungsenthalpie
-Die molare Verdampfungsenthalpie ($\left[Q_{m,v}\right] = \frac{\text{J}}{\text{mol}}$) ist eig nur die Energie die man benötigt um 1 Mol Flüssigkeit vollständig in einen gasförmigen Zustand zu überführen.
+Die molare Verdampfungsenthalpie
+
+$$
+\left[Q_{m,v}\right] = \frac{\text{J}}{\text{mol}}
+$$
+
+ist eig nur die Energie die man benötigt um 1 Mol Flüssigkeit vollständig in einen gasförmigen Zustand zu überführen.
+
 
 $$
 \frac{dp_S}{dT} = \frac{Q_{m,v}}{T\left(V_{m,G} - V_{m,Fl}\right)}.
