@@ -11,16 +11,7 @@ heroImage: ../../../assets/images/posts/2-ilmenauer-open-2025/2025_10_Ilmenauer_
 heroImageAlt: 'Aufgebauter Turniersaal mit Schachbrettern vor Rundenbeginn'
 ---
 
-<!-- TODO: Kurze Einleitung - worum geht's, wo und wann fand das Turnier statt? -->
-
-### Das Turnier
-<!-- TODO: Rahmenbedingungen - Teilnehmerzahl, Modus, Bedenkzeit, Austragungsort. -->
-
-### Meine Partien
-<!-- TODO: Verlauf der eigenen Partien, Highlights, evtl. mit PgnViewer eingebettet. -->
-
-### Fazit
-<!-- TODO: Wie ist es gelaufen, Platzierung, was nimmst du mit? -->
+Über Reformationstag fand 2025 das Ilmenauer Open in der zweiten Ausführung statt. 
 
 #### Abschlusstabelle[^1]
 

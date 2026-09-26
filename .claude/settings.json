@@ -37,7 +37,12 @@
       "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" https://erikskopp.de/posts/dampfdruck-und-siedetemperatur/)",
       "Bash(curl -s \"https://api.erikskopp.de/api/comments?post_slug=dampfdruck-und-siedetemperatur\")",
       "Bash(curl -s http://localhost:4321/datenschutz)",
-      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(d[0]['id'][:10], d[0]['title']\\)\")"
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(d[0]['id'][:10], d[0]['title']\\)\")",
+      "Bash(curl -s http://localhost:4321/posts/2-ilmenauer-open-2025/)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:4321/posts/2-ilmenauer-open-2025/)",
+      "Bash(awk '/\\\\[Event \"2\\\\. Ilmenauer Open 2025/{f=1} f{print} /^\\\\s*$/{if\\(f && p\\) exit} {p=1}' ~/pgn/all.pgn)",
+      "Bash(find / -iname \"*ilmenauer*open*2025*\" -not -path \"/proc/*\")",
+      "Bash(find / -iname \"*ilmenauer*\" -iname \"*.pgn\" -not -path \"/proc/*\")"
     ],
     "additionalDirectories": [
       "/data/git/erikskoppde/src/pages/[...locale]",

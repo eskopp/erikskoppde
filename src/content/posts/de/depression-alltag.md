@@ -10,4 +10,4 @@ heroImage: ../../../assets/images/posts/depression-alltag/pexels-justyna-serafin
 heroImageAlt: 'Nebliger, dunkler Teich im Dämmerlicht mit zwei Enten und kahlen Bäumen am Ufer'
 ---
 
-Hallo Welt
+TBA
