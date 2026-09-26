@@ -24,6 +24,7 @@ pnpm-debug.log*
 
 # editor
 .idea/
+.claude/
 
 # os
 .DS_Store
