@@ -11,7 +11,8 @@ heroImage: ../../../assets/images/posts/dampfdruck-und-siedetemperatur/labor-her
 heroImageAlt: 'Wasser wird im Labor in einen Rundkolben gegossen'
 ---
 
-Ich bin eine Mathematische Formel
+Für das Fach Grundpraktikum der Physik 1[^2] dürfen wir verschiedenen Experimente im Physiklabor absolvieren. Der Artikel wird kein Protokoll. Ich möchte eig nur ein wenig über das Experiment schreiben. 
+
 
 $$
 \frac{dp_S}{dT} = \frac{Q_{m,v}}{T\left(V_{m,G} - V_{m,Fl}\right)}.
@@ -20,4 +21,6 @@ $$
 Titelbild[^1]: Photo by Ivan S from Pexels.
 
 [^1]: [https://www.pexels.com/photo/a-person-pouring-liquid-in-flat-bottomed-flask-9629702/](https://www.pexels.com/photo/a-person-pouring-liquid-in-flat-bottomed-flask-9629702/) (abgerufen am 25.09.2026)
+
+[^2]: [https://www.tu-ilmenau.de/universitaet/fakultaeten/fakultaet-mathematik-und-naturwissenschaften/profil/institute-und-fachgebiete/institut-fuer-physik/profil/physikalisches-grundpraktikum](https://www.tu-ilmenau.de/universitaet/fakultaeten/fakultaet-mathematik-und-naturwissenschaften/profil/institute-und-fachgebiete/institut-fuer-physik/profil/physikalisches-grundpraktikum)
 
