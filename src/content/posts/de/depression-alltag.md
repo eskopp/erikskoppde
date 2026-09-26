@@ -6,8 +6,12 @@ tags: ['Depression', 'Mental Health']
 categories: ['Autismus', 'Gesundheit']
 draft: false
 toc: false
-heroImage: ../../../assets/images/posts/depression-alltag/pexels-justyna-serafin-127253298-10283402.jpg
-heroImageAlt: 'Nebliger, dunkler Teich im Dämmerlicht mit zwei Enten und kahlen Bäumen am Ufer'
+heroImage: ../../../assets/images/posts/depression-alltag/pexels-korfotografci-4249282.jpg
+heroImageAlt: 'Silhouette von Bäumen vor einer Landschaft im Dämmerlicht'
 ---
 
 TBA
+
+Titelbild[^1]: Photo by Furkan İnce from Pexels.
+
+[^1]: [https://www.pexels.com/de-de/foto/landschaft-baume-silhouette-draussen-4249282/](https://www.pexels.com/de-de/foto/landschaft-baume-silhouette-draussen-4249282/) (abgerufen am 26.09.2026)
