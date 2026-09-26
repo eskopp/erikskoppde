@@ -11,8 +11,14 @@ heroImage: ../../../assets/images/posts/dampfdruck-und-siedetemperatur/labor-her
 heroImageAlt: 'Wasser wird im Labor in einen Rundkolben gegossen'
 ---
 
-Für das Fach Grundpraktikum der Physik 1[^2] dürfen wir verschiedenen Experimente im Physiklabor absolvieren. Der Artikel wird kein Protokoll. Ich möchte eig nur ein wenig über das Experiment schreiben. 
+Für das Fach Grundpraktikum der Physik 1[^2] dürfen wir verschiedene Experimente im Physiklabor absolvieren. Der Artikel wird kein Protokoll. Ich möchte eig nur ein wenig über das Experiment schreiben. Leider habe ich damals vergessen Bilder von dem Experiment zu machen. 
+Im Grunde ging es um zwei Punkte:
 
+1. molare Verdampfungsenthalpie
+2. Höhenbestimmung über die Wassertemperatur
+
+### molare Verdampfungsenthalpie
+Die molare Verdampfungsenthalpie ($\left[Q_{m,v}\right] = \frac{\text{J}}{\text{mol}}$) ist eig nur die Energie die man benötigt um 1 Mol Flüssigkeit vollständig in einen gasförmigen Zustand zu überführen.
 
 $$
 \frac{dp_S}{dT} = \frac{Q_{m,v}}{T\left(V_{m,G} - V_{m,Fl}\right)}.
