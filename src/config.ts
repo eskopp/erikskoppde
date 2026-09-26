@@ -112,8 +112,6 @@ export const SITE: SiteConfig = {
   defaultLocale: 'de',
   /** Show the language switcher and link to translated pages. */
   multilingual: false,
-  /** Base URL of the comments API (no trailing slash). */
-  commentsApiUrl: import.meta.env.PUBLIC_COMMENTS_API_URL || 'https://api.erikskopp.de/api',
 };
 
 export const NAV: readonly NavItem[] = [
