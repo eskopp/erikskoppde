@@ -13,7 +13,7 @@ heroImageAlt: 'Smartphone mit einem Naturfoto auf dem Display, umgeben von ausge
 
 Ich bin aktuell Student, arbeite als Hiwi und bin im Schach aktiv. In allen drei Positionen sehe ich sehr viel. Aufgrund meiner Eigenheiten und Depressionen sehe ich viele Dinge deutlich anders als andere. Das können sowohl schöne, traurige als auch interessante Gedanken oder Emotionen sein.
 
-In diesem Blog möchte ich hauptsächlich eine Art Erinnerung für das Erlebte und Gesehene schaffen. Auf der anderen Seite möchte ich aber auch auf diese Weise meine Depressionen und Gefühle besser kontrollieren? Ist denn immer alles so schlecht, wie ich es mir denke, oder bin ich wirklich so rückständig, wie ich mich selbst sehe? Ich habe vieles in meinem Leben falsch gemacht. Daran bin ich alleine schuld. Ich möchte hier Erinnerungen sammeln und in die Zukunft schauen.
+In diesem Blog möchte ich hauptsächlich eine Art Erinnerung für das Erlebte und Gesehene schaffen. Auf der anderen Seite möchte ich aber auch auf diese Weise meine Depressionen und Gefühle besser kontrollieren. Ist denn immer alles so schlecht, wie ich es mir denke, oder bin ich wirklich so rückständig, wie ich mich selbst sehe? Ich habe vieles in meinem Leben falsch gemacht. Daran bin ich alleine schuld. Ich möchte hier Erinnerungen sammeln und in die Zukunft schauen.
 
 Ich habe im Krankenhaus angefangen, den Blog zu schreiben. Ehrlich gesagt gab es dafür keinen Anlass. Keiner wird gezwungen, das Ganze hier zu lesen. Ehrlich gesagt kann ich auch nicht gut schreiben. Ich weiß nicht, warum ihr da seid :)
 
@@ -23,7 +23,7 @@ Ich möchte hier über alles schreiben, was mich so beschäftigt, was ich erlebe
 
 #### Schach
 
-Aktuell spiele ich Schach nur online. Das möchte ich in den kommenden Monaten und Jahren wieder ändern. Zusammen mit dem Ilmenauer Schachverein[^1] haben wir schon viele Turniere ausgerichtet. Ich werde auch dort von Events berichten. Ein weiteres jährliches Turnier ist das Schach Open in Bad Königshofen[^2] zwischen den Feiertagen.
+Aktuell spiele ich Schach nur online. Das möchte ich in den kommenden Monaten und Jahren wieder ändern. Zusammen mit dem Ilmenauer Schachverein[^1] haben wir schon viele Turniere ausgerichtet. Ich werde auch dort von Events berichten. Ein weiteres jährliches Turnier ist das Schach-Open in Bad Königshofen[^2] zwischen den Feiertagen.
 
 #### Schachtraining
 
@@ -31,19 +31,21 @@ Nicht nur möchte ich mich im Schach nach Jahren wieder deutlich verbessern, son
 
 #### Experimente
 
-Im Rahmen des Studiums haben wir sehr viele Experimente in verschiedenen Bereichen der Physik und der Chemie. Gerne möchte ich hier darüber berichten. Mir ist bekannt, dass ich Student bin. Manches wird auch inhaltlich falsch oder nicht ganz sauber sein. Seht mir das bitte nach.
+Im Rahmen des Studiums machen wir sehr viele Experimente in verschiedenen Bereichen der Physik und der Chemie. Gerne möchte ich hier darüber berichten. Mir ist bekannt, dass ich Student bin. Manches wird auch inhaltlich falsch oder nicht ganz sauber sein. Seht mir das bitte nach.
 
 Aber ich freue mich eigentlich schon sehr auf die Experimente.
 
 #### Linux und Programmierung
 
-In meiner Freizeit habe ich einen großen Debian-13-Server. Ich denke, dass das immer ein Debian-Server bleiben wird. Er hat 16 GB RAM und 8 Kerne und ist ein Root-Server. Gehostet ist dieser bei netcup. Dort mache ich selbst viele Experimente und Tests. Aktuell laufen auf dem Server verschiedene Dienste wie bspw. Grafana[^3] oder GitLab[^4]. Über die Reise des Servers möchte ich euch mitnehmen.
+In meiner Freizeit habe ich einen großen Debian-13-Server. Ich denke, dass das immer ein Debian-Server bleiben wird. Er hat 16 GB RAM und 8 Kerne und ist ein Root-Server. Gehostet ist dieser bei Netcup. Dort mache ich selbst viele Experimente und Tests. Aktuell laufen auf dem Server verschiedene Dienste wie bspw. Grafana[^3] oder GitLab[^4]. Über die Reise des Servers möchte ich euch mitnehmen.
 
 Es gibt also viele Themen, von denen ich berichten kann. Einen gewissen Fahrplan kann ich hier noch nicht geben, da es zufällig ist, was mich gerade beschäftigt.
 
 Gerne könnt ihr mich auch auf Themen ansprechen oder mir Fehler bzw. Probleme aufzeigen.
 
 ### Kommentare
+
+*Update: Inzwischen gibt es doch eine Kommentarfunktion unter jedem Beitrag. Der folgende Abschnitt ist als historischer Gedanke stehen geblieben.*
 
 Jeder Blog hat Kommentare? Dieser nicht. Das liegt weniger daran, dass ich das nicht kann, sondern daran, dass ich das nicht möchte. An der Stelle möchte ich den Blog von dem Uni-Bekannten Marco Gonzalez loben[^5]. Er hat eine der besten Ideen für Kommentare zu statischen Blogs, die ich je gesehen habe.
 
