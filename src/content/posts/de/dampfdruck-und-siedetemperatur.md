@@ -31,11 +31,19 @@ $$
 ist eig nur die Energie, die man benötigt, um 1 Mol Flüssigkeit vollständig in einen gasförmigen Zustand zu überführen. Bei isobarer und isothermer Prozessführung entspricht $Q_{m,v}$ der molaren Verdampfungsenthalpie $\Delta H_v$.
 Als Ausgangspunkt nimmt man die Clausius-Clapeyron-Gleichung
 
-$$\frac{dp_S}{dT} = \frac{Q_{m,v}}{T\left(V_{m,G} - V_{m,Fl}\right)}$$
+$$
+\frac{dp_S}{dT} = \frac{Q_{m,v}}{T\left(V_{m,G} - V_{m,Fl}\right)}
+$$
 
 Hinreichend weit unterhalb des kritischen Punktes ist das Molvolumen der Flüssigkeit gegenüber dem des Dampfes vernachlässigbar, also $V_{m,G} - V_{m,Fl} \approx V_{m,G}$. Nimmt man zusätzlich an, dass sich der Wasserdampf wie ein ideales Gas verhält ($p_S V_{m,G} = RT$), bekommt man die Gleichung
-$$\frac{dp_S}{dT} = \frac{\Delta H_v}{R}\frac{p_S}{T^2}$$
-Diese Gleichung ist die für unser Experiment relevante.
+
+$$
+\frac{dp_S}{dT} = \frac{\Delta H_v}{R}\frac{p_S}{T^2}
+$$
+
+Diese Gleichung ist die für unser Experiment relevante. Integriert man diese mit den Anfangsbedingungen $p_{S,0} = p_S(T_0)$, erhält man daraus
+
+$$p_S(T) = p_{S,0} \exp\left[-\frac{\Delta H_v}{R}\left(\frac{1}{T} - \frac{1}{T_0}\right)\right]$$
 
 Titelbild[^1]: Photo by Ivan S from Pexels.
 
