@@ -1,6 +1,6 @@
 # erikskopp.de
 
-Mein privater Blog, erreichbar unter [erikskopp.de](https://erikskopp.de/).
+Mein privater Blog, erreichbar unter [erikskopp.de](https://erikskopp.de/). Themen sind unter anderem Gesundheit und Autismus, Reisen und Ausflüge, Schach sowie technische Experimente.
 
 Gebaut mit [Astro](https://astro.build) auf Basis des [Chirping Astro](https://github.com/kannansuresh/chirping-astro) Themes, deployed automatisch per GitHub Actions auf GitHub Pages.
 
