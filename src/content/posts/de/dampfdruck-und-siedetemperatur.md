@@ -24,16 +24,23 @@ Im Grunde ging es um zwei Punkte:
 ### molare Verdampfungsenthalpie
 Die molare Verdampfungsenthalpie
 
-$$
-\left[Q_{m,v}\right] = \frac{\text{J}}{\text{mol}}
-$$
-
-ist eig nur die Energie die man benötigt um 1 Mol Flüssigkeit vollständig in einen gasförmigen Zustand zu überführen.
-
+<span id="eq-1-1">
 
 $$
-\frac{dp_S}{dT} = \frac{Q_{m,v}}{T\left(V_{m,G} - V_{m,Fl}\right)}.
+\left[Q_{m,v}\right] = \frac{\text{J}}{\text{mol}} \tag{1.1}
 $$
+
+</span>
+
+ist eig nur die Energie die man benötigt um 1 Mol Flüssigkeit vollständig in einen gasförmigen Zustand zu überführen. Sie steckt in der Clausius-Clapeyron-Gleichung [Gl. (1.2)](#eq-1-2):
+
+<span id="eq-1-2">
+
+$$
+\frac{dp_S}{dT} = \frac{Q_{m,v}}{T\left(V_{m,G} - V_{m,Fl}\right)} \tag{1.2}
+$$
+
+</span>
 
 Titelbild[^1]: Photo by Ivan S from Pexels.
 
