@@ -112,6 +112,15 @@ const meta: SeoMeta =
         document.addEventListener('astro:after-swap', applyTheme);
       })();
     </script>
+    {
+      import.meta.env.PROD && (
+        <script
+          defer
+          src="https://umami.erikskopp.de/script.js"
+          data-website-id="2852f2f7-6100-46d2-8d0b-bb615bca55f5"
+        />
+      )
+    }
   </head>
 
   <body>
