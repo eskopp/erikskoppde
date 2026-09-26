@@ -11,17 +11,3 @@
  */
 import 'katex/dist/katex.min.css';
 ---
-
-<style is:global>
-  /* Ensure .katex-display spans the full text column so an absolutely
-     positioned \tag{} lands at the actual right margin instead of
-     sticking directly next to the formula. */
-  .katex-display {
-    width: 100%;
-    overflow-x: auto;
-    overflow-y: hidden;
-  }
-  .katex-display > .katex {
-    width: 100%;
-  }
-</style>
