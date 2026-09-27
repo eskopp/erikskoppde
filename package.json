@@ -28,7 +28,7 @@
     "@astrojs/markdown-satteri": "^0.3.3",
     "@astrojs/mdx": "^7.0.1",
     "@astrojs/rss": "^4.0.19",
-    "@astrojs/sitemap": "^3.7.3",
+    "@astrojs/sitemap": "^3.7.4",
     "@lichess-org/pgn-viewer": "^2.6.4",
     "@nullpinter/satteri-katex": "^0.1.2",
     "astro": "^7.0.5",
