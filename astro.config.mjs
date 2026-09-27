@@ -266,7 +266,7 @@ export default defineConfig({
     }),
     // MDX must come after Expressive Code so EC can transform fenced
     // code blocks inside .mdx files too.
-    mdx(),
+    mdx({ optimize: true }),
     ...(SKIP_RSS_SITEMAP
       ? []
       : [
