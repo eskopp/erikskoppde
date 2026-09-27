@@ -11,9 +11,10 @@ heroImage: ../../../assets/images/posts/dampfdruck-und-siedetemperatur/labor-her
 heroImageAlt: 'Wasser wird im Labor in einen Rundkolben gegossen'
 ---
 
-import Callout from '../../../components/Callout.astro';
-
-<Callout type="info">Diesen Artikel habe ich komplett aus dem Kopf geschrieben, in Erinnerung an mein erstes Experiment im Studium.</Callout>
+```alert
+type: info
+description: Diesen Artikel habe ich komplett aus dem Kopf geschrieben, in Erinnerung an mein erstes Experiment im Studium.
+```
 
 Für das Fach Grundpraktikum der Physik 1[^2] dürfen wir verschiedene Experimente im Physiklabor absolvieren. Der Artikel wird kein Protokoll. Ich möchte eig nur ein wenig über das Experiment schreiben. Es war ein sehr warmer und sonniger Tag. Leider habe ich damals vergessen, Bilder von dem Experiment zu machen.
 
