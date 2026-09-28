@@ -114,11 +114,14 @@ const meta: SeoMeta =
     </script>
     {
       import.meta.env.PROD && (
-        <script
-          defer
-          src="https://umami.erikskopp.de/script.js"
-          data-website-id="2852f2f7-6100-46d2-8d0b-bb615bca55f5"
-        />
+        <>
+          <link rel="preconnect" href="https://umami.erikskopp.de" />
+          <script
+            defer
+            src="https://umami.erikskopp.de/script.js"
+            data-website-id="2852f2f7-6100-46d2-8d0b-bb615bca55f5"
+          />
+        </>
       )
     }
   </head>
