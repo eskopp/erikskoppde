@@ -47,6 +47,10 @@ const resolvedLeftText = footerLeftText
         </>
       )
     }
+    {' · '}
+    <a href={localizedPath('/changelog', locale)} class="hover:text-primary">
+      {t('changelog.title')}
+    </a>
   </p>
   {
     shouldRenderRightFooter && (

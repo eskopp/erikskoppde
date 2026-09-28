@@ -125,6 +125,7 @@ export const NAV: readonly NavItem[] = [
   { key: 'gallery', href: '/galerie', icon: 'lucide:image' },
   { key: 'about', href: '/about', icon: 'lucide:info' },
   { key: 'gpg', href: '/gpg', icon: 'lucide:key-round' },
+  { key: 'changelog', href: '/changelog', icon: 'lucide:history' },
 ] as const;
 
 /**

@@ -20,6 +20,7 @@ export const messages = {
     'nav.gallery': 'Galerie',
     'nav.about': 'Über',
     'nav.gpg': 'GPG',
+    'nav.changelog': 'Änderungsverlauf',
     'nav.search': 'Suche',
     'nav.toggleMenu': 'Menü umschalten',
 
