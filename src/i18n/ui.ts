@@ -64,8 +64,6 @@ export const messages = {
 
     'changelog.title': 'Änderungsverlauf',
     'changelog.empty': 'Keine Commit-Historie verfügbar.',
-    'changelog.lastUpdated': 'Zuletzt geändert',
-    'changelog.viewAll': 'Alle Änderungen ansehen',
 
     'tags.title': 'Tags',
     'tags.empty': 'Noch keine Tags.',
