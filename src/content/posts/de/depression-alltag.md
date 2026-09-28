@@ -10,9 +10,11 @@ heroImage: ../../../assets/images/posts/depression-alltag/pexels-korfotografci-4
 heroImageAlt: 'Silhouette von Bäumen vor einer Landschaft im Dämmerlicht'
 ---
 
-Ich habe mich lange davor gesträubt, diesen Artikel zu schreiben. Ich schreibe ihn ehrlich gesagt aus reinem Eigennutz, ich möchte mir selbst erklären, warum ich so bin und so denke, wie ich es tue. Über die Zeit haben sich die Symptome immer stärker Manifestiert und durchaus geändert. 
+Ich habe mich lange davor gesträubt, diesen Artikel zu schreiben. Ich schreibe ihn ehrlich gesagt aus reinem Eigennutz, ich möchte mir selbst erklären, warum ich so bin und so denke, wie ich es tue. Über die Zeit haben sich die Symptome immer stärker manifestiert und durchaus geändert.
 
-Angfangen hat das ganze mit dem Abitur und die Wechsel an die Uni. Ich habe 2018 mein Abitur gemacht und bin anschließend direkt an die [TU Ilmenau](https://www.tu-ilmenau.de/)[^2] gewechselt. Dort habe ich sehr schnell den sozialen Anschluss verloren. Ich habe mich immer weiter zurückgezogen. Das ging soweit, dass ich irgendwann keinen mehr gekannt habe. Meine Freunde die ich damals noch hatte sind im ersten und zweiten Semester von der Uni gegangen. Aufgrund meines ADS und [Autismus](/posts/autismus_diagnose/)[^3] viel es mir immer schwerer in Vorlesungen zu gehen. Folglich hatte ich auch immer mehr Probleme dem Stoff zu folgen.
+Angefangen hat das Ganze mit dem Abitur und dem Wechsel an die Uni. Ich habe 2018 mein Abitur gemacht und bin anschließend direkt an die [TU Ilmenau](https://www.tu-ilmenau.de/)[^2] gewechselt. Dort habe ich sehr schnell den sozialen Anschluss verloren. Ich habe mich immer weiter zurückgezogen. Das ging so weit, dass ich irgendwann keinen mehr gekannt habe. Meine Freunde, die ich damals noch hatte, sind im ersten und zweiten Semester von der Uni gegangen. Aufgrund meines ADS und [Autismus](/posts/autismus_diagnose/)[^3] fiel es mir immer schwerer, in Vorlesungen zu gehen. Folglich hatte ich auch immer mehr Probleme, dem Inhalt der Vorlesungen zu folgen. Ich hatte Angst vor den Dozenten und auch Angst vor den Kommilitonen. Sie haben mir nie etwas getan. Es fing mit Angst an und hat sich im Laufe der Zeit immer mehr zu Scham gewandelt.
+
+Im Rahmen des Informatik-Studiums müssen wir (wie auch bei den Physikern) verschiedene Praktika durchführen. Das fängt bei Elektrotechnik an und geht über Rechnerarchitektur bis zum Softwareprojekt. Bei keinem der Projekte hat es mir gutgetan.
 
 Titelbild[^1]: Photo by Furkan İnce from Pexels.
 
