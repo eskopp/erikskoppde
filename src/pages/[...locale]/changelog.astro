@@ -1,0 +1,58 @@
+---
+import { getEntry, render } from 'astro:content';
+import PageLayout from '~/layouts/PageLayout.astro';
+import { SITE, REPO } from '~/config';
+import { useTranslations, formatDate } from '~/i18n/utils';
+import { getRecentCommits } from '~/utils/git';
+
+export function getStaticPaths() {
+  return SITE.locales.map((l) => ({
+    params: { locale: l === SITE.defaultLocale ? undefined : l },
+    props: { locale: l },
+  }));
+}
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+const entry = await getEntry('pages', `${locale}/changelog`);
+if (!entry) return Astro.rewrite('/404');
+const { Content } = await render(entry);
+
+const commits = getRecentCommits(20);
+---
+
+<PageLayout
+  title={entry.data.title}
+  description={entry.data.description ?? SITE.description}
+  locale={locale}
+  math={entry.data.math}
+>
+  <Content />
+
+  {
+    commits.length === 0 ? (
+      <p class="text-base-content/70 mt-6">{t('changelog.empty')}</p>
+    ) : (
+      <ul class="mt-8 space-y-3">
+        {commits.map((c) => (
+          <li class="border-base-300 flex flex-wrap items-baseline gap-x-3 gap-y-1 border-b pb-3">
+            <time
+              class="text-base-content/60 w-28 shrink-0 text-sm tabular-nums"
+              datetime={c.date.toISOString()}
+            >
+              {formatDate(c.date, locale, { year: 'numeric', month: '2-digit', day: '2-digit' })}
+            </time>
+            <a
+              href={`${REPO.url}/commit/${c.hash}`}
+              rel="noopener"
+              target="_blank"
+              class="text-base-content/50 shrink-0 font-mono text-xs"
+            >
+              {c.shortHash}
+            </a>
+            <span>{c.message}</span>
+          </li>
+        ))}
+      </ul>
+    )
+  }
+</PageLayout>

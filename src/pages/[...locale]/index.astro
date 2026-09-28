@@ -2,9 +2,10 @@
 import BaseLayout from '~/layouts/BaseLayout.astro';
 import PostList from '~/components/PostList.astro';
 import Pagination from '~/components/Pagination.astro';
-import { SITE } from '~/config';
-import { localizedPath } from '~/i18n/utils';
+import { SITE, REPO } from '~/config';
+import { localizedPath, useTranslations, formatDate } from '~/i18n/utils';
 import { getPosts } from '~/utils/posts';
+import { getRecentCommits } from '~/utils/git';
 
 export function getStaticPaths() {
   return SITE.locales.map((l) => ({
@@ -13,6 +14,8 @@ export function getStaticPaths() {
   }));
 }
 const { locale } = Astro.props;
+const t = useTranslations(locale);
+const [lastCommit] = getRecentCommits(1);
 
 const posts = await getPosts(locale);
 const pageSize = SITE.postsPerPage;
@@ -24,6 +27,17 @@ const hrefForPage = (n: number) => localizedPath(n === 1 ? '/' : `/page/${n}/`, 
 ---
 
 <BaseLayout title={SITE.title} description={SITE.description} pathWithoutLocale="/">
+  {
+    lastCommit && (
+      <p class="text-base-content/60 mb-6 text-sm">
+        {t('changelog.lastUpdated')}: {formatDate(lastCommit.date, locale)} –{' '}
+        {lastCommit.message}{' '}
+        <a href={localizedPath('/changelog/', locale)} class="link">
+          {t('changelog.viewAll')}
+        </a>
+      </p>
+    )
+  }
   <PostList posts={pagePosts} locale={locale} />
   <Pagination
     currentPage={currentPage}
