@@ -129,7 +129,22 @@ Inhalte selbst stammen aus meinen eigenen Gedanken und Erfahrungen. Dabei
 werden keine personenbezogenen Daten von Besuchern dieser Website an
 diese Dienste übermittelt.
 
-## 12. Änderungen dieser Erklärung
+## 12. Haftungsausschluss für externe Links
+
+Diese Website enthält Links zu externen Websites Dritter, auf deren
+Inhalte kein Einfluss besteht. Für diese fremden Inhalte kann daher
+keine Gewähr übernommen werden. Für die Inhalte der verlinkten Seiten
+ist stets der jeweilige Anbieter oder Betreiber der Seite verantwortlich.
+Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche
+Rechtsverstöße überprüft, rechtswidrige Inhalte waren zu diesem
+Zeitpunkt nicht erkennbar.
+
+Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist ohne
+konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei
+Bekanntwerden von Rechtsverletzungen werden entsprechende Links
+umgehend entfernt.
+
+## 13. Änderungen dieser Erklärung
 
 Diese Datenschutzerklärung kann angepasst werden, wenn sich die
 Datenverarbeitung auf dieser Website ändert.
