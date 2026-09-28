@@ -23,7 +23,7 @@ Ich möchte hier über alles schreiben, was mich so beschäftigt, was ich erlebe
 
 #### Schach
 
-Aktuell spiele ich Schach nur online. Das möchte ich in den kommenden Monaten und Jahren wieder ändern. Zusammen mit dem Ilmenauer Schachverein[^1] haben wir schon viele Turniere ausgerichtet. Ich werde auch dort von Events berichten. Ein weiteres jährliches Turnier ist das Schach-Open in Bad Königshofen[^2] zwischen den Feiertagen.
+Aktuell spiele ich Schach nur online. Das möchte ich in den kommenden Monaten und Jahren wieder ändern. Zusammen mit dem [Ilmenauer Schachverein](https://ilmenauer-schachverein.de)[^1] haben wir schon viele Turniere ausgerichtet. Ich werde auch dort von Events berichten. Ein weiteres jährliches Turnier ist das [Schach-Open in Bad Königshofen](https://schachclub1957.de/turniere/turnier-archiv/bad-koenigshofen-open-2026/)[^2] zwischen den Feiertagen.
 
 #### Schachtraining
 
@@ -37,7 +37,7 @@ Aber ich freue mich eigentlich schon sehr auf die Experimente.
 
 #### Linux und Programmierung
 
-In meiner Freizeit habe ich einen großen Debian-13-Server. Ich denke, dass das immer ein Debian-Server bleiben wird. Er hat 16 GB RAM und 8 Kerne und ist ein Root-Server. Gehostet ist dieser bei Netcup. Dort mache ich selbst viele Experimente und Tests. Aktuell laufen auf dem Server verschiedene Dienste wie bspw. Grafana[^3] oder GitLab[^4]. Über die Reise des Servers möchte ich euch mitnehmen.
+In meiner Freizeit habe ich einen großen Debian-13-Server. Ich denke, dass das immer ein Debian-Server bleiben wird. Er hat 16 GB RAM und 8 Kerne und ist ein Root-Server. Gehostet ist dieser bei Netcup. Dort mache ich selbst viele Experimente und Tests. Aktuell laufen auf dem Server verschiedene Dienste wie bspw. [Grafana](https://grafana.erikskopp.de)[^3] oder [GitLab](https://gitlab.erikskopp.de)[^4]. Über die Reise des Servers möchte ich euch mitnehmen.
 
 Es gibt also viele Themen, von denen ich berichten kann. Einen gewissen Fahrplan kann ich hier noch nicht geben, da es zufällig ist, was mich gerade beschäftigt.
 
@@ -47,13 +47,13 @@ Gerne könnt ihr mich auch auf Themen ansprechen oder mir Fehler bzw. Probleme a
 
 *Update: Inzwischen gibt es doch eine Kommentarfunktion unter jedem Beitrag. Der folgende Abschnitt ist als historischer Gedanke stehen geblieben.*
 
-Jeder Blog hat Kommentare? Dieser nicht. Das liegt weniger daran, dass ich das nicht kann, sondern daran, dass ich das nicht möchte. An der Stelle möchte ich den Blog von dem Uni-Bekannten Marco Gonzalez loben[^5]. Er hat eine der besten Ideen für Kommentare zu statischen Blogs, die ich je gesehen habe.
+Jeder Blog hat Kommentare? Dieser nicht. Das liegt weniger daran, dass ich das nicht kann, sondern daran, dass ich das nicht möchte. An der Stelle möchte ich den Blog von dem Uni-Bekannten [Marco Gonzalez](https://blog.mrgonzalez.de/)[^5] loben. Er hat eine der besten Ideen für Kommentare zu statischen Blogs, die ich je gesehen habe.
 
 #### Kommentare ohne JS
 
 Er hat in seinem JS-freien Hugo-Blog ein sehr einfaches Formular erstellt. In diesem kann jeder seinen Kommentar eingeben und ihn abschicken. Auf dem Server nimmt dann ein kleiner Go-Handler die Anfrage an und schreibt diese in eine JSON-Datei. Danach baut er die Seite neu und jeder kann den Kommentar lesen. Das ist sehr effizient und muss gelobt werden.
 
-Den Artikel von ihm findet ihr hier[^6].
+Den Artikel von ihm findet ihr [hier](https://blog.mrgonzalez.de/posts/post-10/#das-kommentarsystem)[^6].
 
 #### Warum gibt es dann hier keine?
 
