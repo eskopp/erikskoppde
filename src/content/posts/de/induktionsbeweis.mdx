@@ -15,6 +15,32 @@ import Callout from '../../../components/Callout.astro';
 
 <Callout type="error">Dieser Artikel ist noch nicht fertig. Der Inhalt wird noch ergänzt.</Callout>
 
+## Wie mächtig ist die vollständige Induktion?
+
+Die vollständige Induktion beweist eine Aussage für unendlich viele Fälle mit nur zwei endlichen Schritten: dem Induktionsanfang (die Aussage gilt für den kleinsten Fall, etwa $n = 1$) und dem Induktionsschritt (gilt sie für $n$, dann auch für $n + 1$). Sie ist das Standardwerkzeug für Aussagen über die natürlichen Zahlen, zum Beispiel für Summenformeln, Teilbarkeit, Ungleichungen, die Korrektheit rekursiver Algorithmen und Schleifeninvarianten.
+
+Die starke Induktion, bei der man im Schritt alle Fälle bis $n$ voraussetzen darf, ist dabei nicht mächtiger, sondern nur bequemer.
+
+## Vorteile
+
+- **Wenige Schritte für unendlich viele Fälle:** Zwei endliche Nachweise reichen für alle natürlichen Zahlen.
+- **Klare Struktur:** Das Schema ist immer gleich, und die Beweise lassen sich leicht nachprüfen.
+- **Oft mechanisch anwendbar:** Steht die Behauptung fest, führt der Beweis häufig fast von selbst zum Ziel, besonders bei Summenformeln und Teilbarkeit.
+- **Breit einsetzbar:** Auch Rekursion, Schleifeninvarianten und Aussagen über Bäume oder Formeln (strukturelle Induktion) lassen sich so beweisen.
+- **Exakt:** Er liefert einen vollständigen Beweis und keine bloße Plausibilität wie ein Test mit vielen Beispielen.
+
+## Nachteile
+
+- **Die Formel muss man schon kennen:** Die Induktion bestätigt eine Vermutung, sie findet sie nicht.
+- **Sie erklärt nicht, warum:** Der Beweis zeigt, dass die Aussage stimmt, aber oft nicht, was dahintersteckt. Direkte oder kombinatorische Beweise sind meist anschaulicher.
+- **Der Schritt kann knifflig sein:** Manchmal muss man die Behauptung verstärken, damit die Induktionsvoraussetzung stark genug ist.
+- **Fehleranfällig:** Ein vergessener Anfang oder ein Schritt, der erst ab einem bestimmten $n$ funktioniert, macht den Beweis falsch. Bekanntes Beispiel ist der "Beweis", dass alle Pferde dieselbe Farbe haben.
+- **Begrenzter Bereich:** Sie funktioniert für natürliche Zahlen und ähnlich aufgebaute Strukturen. Für überabzählbare Mengen wie die reellen Zahlen reicht sie nicht.
+
+Faustregel: Steht die Behauptung schon fest und geht es um natürliche Zahlen, ist die Induktion meist die beste Wahl. Für die Suche nach der Formel oder für das Verständnis braucht man einen anderen Weg.
+
+
+Der induktionsbeweis ist der erste Beweis überhaupt den man im Informatik Studium lernt. Er beweist eine Aussage für unendlich viele Fälle mit nur 2 endlichen Schritten. 
 Titelbild[^1]: Photo by Gabby K from Pexels.
 
 [^1]: [https://www.pexels.com/de-de/foto/text-6238068/](https://www.pexels.com/de-de/foto/text-6238068/) (abgerufen am 27.09.2026)
