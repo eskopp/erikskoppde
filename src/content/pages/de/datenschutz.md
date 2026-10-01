@@ -4,7 +4,7 @@ description: Wie diese Website mit personenbezogenen Daten umgeht.
 translationKey: datenschutz
 ---
 
-Diese Website setzt keine Cookies und sammelt keine Daten. Es gibt keine
+Diese Website setzt keine Cookies und sammelt selbst keine Daten. Es gibt keine
 Analyse- oder Tracking-Tools, keine Kommentarfunktion und keine
 Formulare (siehe [Abschnitt 5](#5-analyse--und-tracking-tools)). Als Hosting-Dienst wird GitHub Pages
 genutzt, wodurch technische Zugriffsdaten durch den Hosting-Anbieter
@@ -89,9 +89,6 @@ Diese Website enthält Links zu externen Websites Dritter, auf deren
 Inhalte kein Einfluss besteht. Für diese fremden Inhalte kann daher
 keine Gewähr übernommen werden. Für die Inhalte der verlinkten Seiten
 ist stets der jeweilige Anbieter oder Betreiber der Seite verantwortlich.
-Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche
-Rechtsverstöße überprüft, rechtswidrige Inhalte waren zu diesem
-Zeitpunkt nicht erkennbar.
 
 Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist ohne
 konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei
