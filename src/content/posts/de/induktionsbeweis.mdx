@@ -7,7 +7,6 @@ categories: ['Mathematik']
 draft: false
 sections: ['labor']
 math: true
-mermaid: true
 heroImage: ../../../assets/images/posts/induktionsbeweis/pexels-gabby-k-6238068.jpg
 heroImageAlt: 'Mathematische Formeln mit Kreide auf eine Tafel geschrieben'
 ---
@@ -133,38 +132,44 @@ $$
 
 Das ist genau die rechte Seite der Behauptung. Damit gilt die Formel für $n + 1$, wenn sie für $n$ gilt. Zusammen mit dem Induktionsanfang stimmt sie also für alle $n \in \mathbb{N}$.
 
-## Weiteres Beispiel: Bäume
+## Weiteres Beispiel: Briefmarken
 
-Die Induktion funktioniert nicht nur bei Formeln mit Zahlen. Wir können damit auch Aussagen über Strukturen beweisen, die wir Stück für Stück aufbauen. Ein Beispiel dafür sind Bäume aus der Informatik. Ein Baum ist ein Graph, der zusammenhängend ist und keinen Kreis enthält. Wir zeigen:
+Die Induktion funktioniert nicht nur bei Formeln. Wir können damit auch Aussagen über Zahlen beweisen, bei denen gar keine Formel vorkommt. Stellen wir uns vor, wir haben nur Briefmarken zu 3 Cent und zu 5 Cent, so viele wir wollen. Wir zeigen:
 
-Ein Baum mit $n$ Knoten hat genau $n - 1$ Kanten.
+Jeden Betrag ab 8 Cent können wir genau mit diesen beiden Marken bezahlen.
 
-```mermaid
-%%{init: {"flowchart": {"htmlLabels": false, "useMaxWidth": false, "padding": 10, "nodeSpacing": 40, "rankSpacing": 40}}}%%
-graph TD
-    1((1)) --- 2((2))
-    1 --- 3((3))
-    2 --- 4((4))
-    2 --- 5((5))
-```
-
-Hier ist ein Beispiel mit $n = 5$ Knoten und $4$ Kanten. Die Knoten 3, 4 und 5 sind Blätter, sie haben nur eine Kante.
-
-**Induktionsanfang:** Für $n = 1$ gibt es nur einen Knoten und keine Kante. Das sind $1 - 1 = 0$ Kanten, die Aussage stimmt.
-
-**Induktionsvoraussetzung:** Wir nehmen an, dass jeder Baum mit $n$ Knoten genau $n - 1$ Kanten hat.
-
-**Induktionsschritt:** Wir nehmen einen beliebigen Baum mit $n + 1$ Knoten. Jeder Baum mit mindestens zwei Knoten hat ein Blatt, also einen Knoten mit nur einer Kante. Das liegt daran, dass es keinen Kreis gibt. Wenn man im Baum immer weiterläuft, kommt man nie zu einem Knoten zurück und der Weg muss irgendwann an einem Blatt enden. Wenn wir dieses Blatt mit seiner Kante entfernen, bleibt ein Baum mit $n$ Knoten übrig.
-
-**Induktionsbehauptung:** Der Baum mit $n + 1$ Knoten hat genau $n$ Kanten.
-
-**Induktionsbeweis:** Der kleinere Baum hat nach der Voraussetzung $n - 1$ Kanten. Dazu kommt die eine Kante, die wir mit dem Blatt entfernt haben:
+**Induktionsanfang:** Hier fangen wir bei 8 an. Wir prüfen die ersten drei Beträge, denn im Schritt brauchen wir später einen Wert, der drei Cent kleiner ist:
 
 $$
-(n-1) + 1 = n
+\begin{aligned}
+8 &= 3 + 5 \\
+9 &= 3 + 3 + 3 \\
+10 &= 5 + 5
+\end{aligned}
 $$
 
-Das ist genau die Behauptung. Damit stimmt die Aussage für alle Bäume.
+**Induktionsvoraussetzung:** Wir nehmen an, dass die Aussage für alle Beträge von 8 bis $n$ gilt. Das nennt man starke Induktion, weil wir nicht nur den letzten Wert voraussetzen, sondern alle bis dahin.
+
+**Induktionsschritt:** Wir wollen den Betrag $n + 1$ bezahlen, und er ist mindestens 11. Dann ist $n + 1 - 3$ mindestens 8 und höchstens $n$. Dafür gilt die Voraussetzung, wir können diesen Betrag also bezahlen. Dazu legen wir eine 3-Cent-Marke.
+
+**Induktionsbehauptung:** Auch der Betrag $n + 1$ lässt sich mit 3-Cent- und 5-Cent-Marken bezahlen.
+
+**Induktionsbeweis:** Den Betrag $n + 1 - 3$ können wir nach der Voraussetzung bezahlen. Mit einer 3-Cent-Marke mehr sind wir genau bei $n + 1$:
+
+$$
+(n + 1 - 3) + 3 = n + 1
+$$
+
+Das ist die Behauptung. Ein Beispiel mit Zahlen:
+
+$$
+\begin{aligned}
+11 &= 8 + 3 = (3 + 5) + 3 \\
+12 &= 9 + 3 = (3 + 3 + 3) + 3 \\
+13 &= 10 + 3 = (5 + 5) + 3 \\
+14 &= 11 + 3 = (3 + 5 + 3) + 3
+\end{aligned}
+$$
 
 Titelbild[^1]: Photo by Gabby K from Pexels.
 
