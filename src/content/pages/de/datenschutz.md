@@ -6,7 +6,7 @@ translationKey: datenschutz
 
 Diese Website setzt keine Cookies und sammelt keine Daten. Es gibt keine
 Analyse- oder Tracking-Tools, keine Kommentarfunktion und keine
-Formulare (siehe Abschnitt 5). Als Hosting-Dienst wird GitHub Pages
+Formulare (siehe [Abschnitt 5](#5-analyse--und-tracking-tools)). Als Hosting-Dienst wird GitHub Pages
 genutzt, wodurch technische Zugriffsdaten durch den Hosting-Anbieter
 verarbeitet werden (siehe [Abschnitt 3](#3-hosting)).
 
