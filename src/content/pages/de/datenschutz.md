@@ -4,11 +4,10 @@ description: Wie diese Website mit personenbezogenen Daten umgeht.
 translationKey: datenschutz
 ---
 
-Diese Website setzt keine Cookies. Zur anonymen, cookielosen
-Reichweitenmessung wird die selbst gehostete Analyse-Software Umami
-eingesetzt (siehe Abschnitt 5). Als Hosting-Dienst wird GitHub Pages
-genutzt, wodurch technische Zugriffsdaten durch den Hosting-Anbieter
-verarbeitet werden (siehe Abschnitt 3).
+Diese Website setzt keine Cookies und keine Analyse- oder
+Tracking-Tools ein (siehe Abschnitt 5). Als Hosting-Dienst wird
+GitHub Pages genutzt, wodurch technische Zugriffsdaten durch den
+Hosting-Anbieter verarbeitet werden (siehe Abschnitt 3).
 
 ## 1. Verantwortlicher
 
@@ -43,21 +42,8 @@ Diese Information verlässt das Gerät nicht und wird an keinen Server
 
 ## 5. Analyse- und Tracking-Tools
 
-Zur Reichweitenmessung wird die Open-Source-Software
-[Umami](https://umami.is) eingesetzt, die auf einem selbst betriebenen
-Server läuft. Es werden keine Daten an Dritte weitergegeben.
-
-Umami arbeitet cookielos und ohne Fingerprinting. Erfasst werden
-lediglich aggregierte, anonyme Informationen wie aufgerufene Seite,
-Referrer, Land, Browser, Betriebssystem und Gerätetyp. Die IP-Adresse
-wird nur kurzzeitig zur Ermittlung des Landes verarbeitet und
-anschließend nicht gespeichert. Es findet keine Zuordnung zu einzelnen
-Personen und keine Erstellung von Nutzungsprofilen statt, eine
-Nachverfolgung über mehrere Websites hinweg ist nicht möglich.
-
-Rechtsgrundlage der Verarbeitung ist Art. 6 Abs. 1 lit. f DSGVO
-(berechtigtes Interesse an der anonymen statistischen Auswertung der
-Websitenutzung).
+Auf dieser Website werden keine Analyse- oder Tracking-Tools eingesetzt.
+Es findet keine Reichweitenmessung statt.
 
 ## 6. Verwendete Software-Pakete
 
