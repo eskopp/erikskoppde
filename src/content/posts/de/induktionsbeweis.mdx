@@ -14,7 +14,7 @@ heroImageAlt: 'Mathematische Formeln mit Kreide auf eine Tafel geschrieben'
 import VideoEmbed from '../../../components/VideoEmbed.astro';
 
 
-Der induktionsbeweis ist der erste Beweis überhaupt den man im Informatik Studium lernt. Er beweist eine Aussage für unendlich viele Fälle mit nur 2 endlichen Schritten. Der Beweis beruht auf der Induktionseigenschaft der natürlichen Zahlen[^2].
+Der Induktionsbeweis ist der erste Beweis überhaupt, den man im Informatik-Studium lernt. Er beweist eine Aussage für unendlich viele Fälle mit nur zwei endlichen Schritten. Der Beweis beruht auf der Induktionseigenschaft der natürlichen Zahlen[^2].
 
 $$
 1 + 2 + 3 + \dots + n = \frac{n(n+1)}{2}
@@ -55,14 +55,14 @@ Video[^3]: „Die Vermessung der Welt - Der junge Gauß in der Schule“ von Das
 ## Induktionsbeweis
 
 ### Grundlagen
-Der Beweis glieder sich im Grunde in 5 Schritte: 
+Der Beweis gliedert sich im Grunde in fünf Schritte:
 - Induktionsanfang
     - Wir zeigen, dass die Aussage für den kleinsten Fall stimmt.
-- Induktionsvorraussetzung 
+- Induktionsvoraussetzung
     - Wir nehmen an, dass die Aussage für ein beliebiges $n$ gilt.
 - Induktionsschritt
     - Wir zeigen, dass die Aussage dann auch für $n + 1$ gilt.
-- Indukttionsbehauptung
+- Induktionsbehauptung
     - Das ist die Aussage, die wir für $n + 1$ zeigen wollen.
 - Induktionsbeweis
     - Wir rechnen die Behauptung mit Hilfe der Voraussetzung nach.
@@ -92,7 +92,7 @@ $$
 
 In allen drei Fällen sind beide Seiten gleich. Für den Beweis reicht eigentlich schon $n = 1$. Die anderen beiden Fälle zeigen nur, dass die Formel auch weiter stimmt.
 
-### Induktionsvorraussetzung
+### Induktionsvoraussetzung
 
 Jetzt nehmen wir an, dass die Formel für ein beliebiges $n$ stimmt. Das müssen wir nicht beweisen, wir setzen es einfach voraus:
 
@@ -110,7 +110,7 @@ $$
 1 + 2 + 3 + \dots + n + (n+1) = \frac{n(n+1)}{2} + (n+1)
 $$
 
-### Indukttionsbehauptung
+### Induktionsbehauptung
 
 Wenn wir in der Formel überall $n + 1$ statt $n$ einsetzen, bekommen wir die Behauptung. Das ist genau das, was wir zeigen wollen:
 
