@@ -132,44 +132,58 @@ $$
 
 Das ist genau die rechte Seite der Behauptung. Damit gilt die Formel für $n + 1$, wenn sie für $n$ gilt. Zusammen mit dem Induktionsanfang stimmt sie also für alle $n \in \mathbb{N}$.
 
-## Weiteres Beispiel: Briefmarken
+## Weiteres Beispiel: Ungerade Quadratzahlen
 
-Die Induktion funktioniert nicht nur bei Formeln. Wir können damit auch Aussagen über Zahlen beweisen, bei denen gar keine Formel vorkommt. Stellen wir uns vor, wir haben nur Briefmarken zu 3 Cent und zu 5 Cent, so viele wir wollen. Wir zeigen:
+Hier ist wieder eine Summe, aber diesmal mit Quadraten. Wir zeigen: Die Summe der ungeraden Quadratzahlen bis $(2n-1)^2$ ist
 
-Jeden Betrag ab 8 Cent können wir genau mit diesen beiden Marken bezahlen.
+$$
+1^2 + 3^2 + 5^2 + \dots + (2n-1)^2 = \sum_{k=1}^{n} (2k-1)^2 = \frac{n(2n-1)(2n+1)}{3}
+$$
 
-**Induktionsanfang:** Hier fangen wir bei 8 an. Wir prüfen die ersten drei Beträge, denn im Schritt brauchen wir später einen Wert, der drei Cent kleiner ist:
+**Induktionsanfang:** Für $n = 1$ ist die Summe nur $1^2 = 1$. Die Formel liefert
+
+$$
+\frac{1 \cdot (2 \cdot 1 - 1)(2 \cdot 1 + 1)}{3} = \frac{1 \cdot 1 \cdot 3}{3} = 1
+$$
+
+Das stimmt. Zur Probe noch $n = 2$ und $n = 3$:
 
 $$
 \begin{aligned}
-8 &= 3 + 5 \\
-9 &= 3 + 3 + 3 \\
-10 &= 5 + 5
+1^2 + 3^2 = 10 &= \frac{2 \cdot 3 \cdot 5}{3} \\
+1^2 + 3^2 + 5^2 = 35 &= \frac{3 \cdot 5 \cdot 7}{3}
 \end{aligned}
 $$
 
-**Induktionsvoraussetzung:** Wir nehmen an, dass die Aussage für alle Beträge von 8 bis $n$ gilt. Das nennt man starke Induktion, weil wir nicht nur den letzten Wert voraussetzen, sondern alle bis dahin.
-
-**Induktionsschritt:** Wir wollen den Betrag $n + 1$ bezahlen, und er ist mindestens 11. Dann ist $n + 1 - 3$ mindestens 8 und höchstens $n$. Dafür gilt die Voraussetzung, wir können diesen Betrag also bezahlen. Dazu legen wir eine 3-Cent-Marke.
-
-**Induktionsbehauptung:** Auch der Betrag $n + 1$ lässt sich mit 3-Cent- und 5-Cent-Marken bezahlen.
-
-**Induktionsbeweis:** Den Betrag $n + 1 - 3$ können wir nach der Voraussetzung bezahlen. Mit einer 3-Cent-Marke mehr sind wir genau bei $n + 1$:
+**Induktionsvoraussetzung:** Wir nehmen an, dass die Formel für ein beliebiges $n$ gilt:
 
 $$
-(n + 1 - 3) + 3 = n + 1
+\sum_{k=1}^{n} (2k-1)^2 = \frac{n(2n-1)(2n+1)}{3}
 $$
 
-Das ist die Behauptung. Ein Beispiel mit Zahlen:
+**Induktionsschritt:** Der nächste Summand ist $(2(n+1)-1)^2 = (2n+1)^2$. Den addieren wir auf beiden Seiten der Voraussetzung:
+
+$$
+\sum_{k=1}^{n} (2k-1)^2 + (2n+1)^2 = \frac{n(2n-1)(2n+1)}{3} + (2n+1)^2
+$$
+
+**Induktionsbehauptung:** Wenn wir $n + 1$ statt $n$ einsetzen, wollen wir zeigen:
+
+$$
+\sum_{k=1}^{n+1} (2k-1)^2 = \frac{(n+1)(2n+1)(2n+3)}{3}
+$$
+
+**Induktionsbeweis:** Wir klammern $(2n+1)$ aus und fassen zusammen:
 
 $$
 \begin{aligned}
-11 &= 8 + 3 = (3 + 5) + 3 \\
-12 &= 9 + 3 = (3 + 3 + 3) + 3 \\
-13 &= 10 + 3 = (5 + 5) + 3 \\
-14 &= 11 + 3 = (3 + 5 + 3) + 3
+\frac{n(2n-1)(2n+1)}{3} + (2n+1)^2 &= \frac{(2n+1)\left(n(2n-1) + 3(2n+1)\right)}{3} \\
+&= \frac{(2n+1)(2n^2 + 5n + 3)}{3} \\
+&= \frac{(2n+1)(n+1)(2n+3)}{3}
 \end{aligned}
 $$
+
+Im letzten Schritt haben wir $2n^2 + 5n + 3 = (n+1)(2n+3)$ benutzt. Das ist genau die rechte Seite der Behauptung.
 
 Titelbild[^1]: Photo by Gabby K from Pexels.
 
