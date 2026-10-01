@@ -8,7 +8,7 @@ Diese Website setzt keine Cookies und sammelt keine Daten. Es gibt keine
 Analyse- oder Tracking-Tools, keine Kommentarfunktion und keine
 Formulare (siehe Abschnitt 5). Als Hosting-Dienst wird GitHub Pages
 genutzt, wodurch technische Zugriffsdaten durch den Hosting-Anbieter
-verarbeitet werden (siehe Abschnitt 3).
+verarbeitet werden (siehe [Abschnitt 3](#3-hosting)).
 
 ## 1. Verantwortlicher
 
