@@ -107,12 +107,33 @@ Mit dieser Annahme arbeiten wir im nächsten Schritt weiter.
 
 ### Induktionsschritt
 
+Jetzt wollen wir zeigen, dass die Formel dann auch für den nächsten Wert $n + 1$ stimmt. Dazu addieren wir auf beiden Seiten der Voraussetzung $n + 1$:
+
+$$
+1 + 2 + 3 + \dots + n + (n+1) = \frac{n(n+1)}{2} + (n+1)
+$$
 
 ### Indukttionsbehauptung
 
+Wenn wir in der Formel überall $n + 1$ statt $n$ einsetzen, bekommen wir die Behauptung. Das ist genau das, was wir zeigen wollen:
+
+$$
+1 + 2 + 3 + \dots + (n+1) = \frac{(n+1)\left((n+1)+1\right)}{2} = \frac{(n+1)(n+2)}{2}
+$$
 
 ### Induktionsbeweis
 
+Jetzt müssen wir nur noch zeigen, dass die rechte Seite aus dem Induktionsschritt gleich der rechten Seite der Behauptung ist. Dafür klammern wir $n + 1$ aus und fassen zusammen:
+
+$$
+\begin{aligned}
+\frac{n(n+1)}{2} + (n+1) &= \frac{n(n+1)}{2} + \frac{2(n+1)}{2} \\
+&= \frac{n(n+1) + 2(n+1)}{2} \\
+&= \frac{(n+1)(n+2)}{2}
+\end{aligned}
+$$
+
+Das ist genau die rechte Seite der Behauptung. Damit gilt die Formel für $n + 1$, wenn sie für $n$ gilt. Zusammen mit dem Induktionsanfang stimmt sie also für alle $n \in \mathbb{N}$.
 
 Titelbild[^1]: Photo by Gabby K from Pexels.
 
