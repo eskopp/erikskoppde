@@ -132,6 +132,28 @@ $$
 
 Das ist genau die rechte Seite der Behauptung. Damit gilt die Formel für $n + 1$, wenn sie für $n$ gilt. Zusammen mit dem Induktionsanfang stimmt sie also für alle $n \in \mathbb{N}$.
 
+## Weiteres Beispiel: Bäume
+
+Die Induktion funktioniert nicht nur bei Formeln mit Zahlen. Wir können damit auch Aussagen über Strukturen beweisen, die wir Stück für Stück aufbauen. Ein Beispiel dafür sind Bäume aus der Informatik. Ein Baum ist ein Graph, der zusammenhängend ist und keinen Kreis enthält. Wir zeigen:
+
+Ein Baum mit $n$ Knoten hat genau $n - 1$ Kanten.
+
+**Induktionsanfang:** Für $n = 1$ gibt es nur einen Knoten und keine Kante. Das sind $1 - 1 = 0$ Kanten, die Aussage stimmt.
+
+**Induktionsvoraussetzung:** Wir nehmen an, dass jeder Baum mit $n$ Knoten genau $n - 1$ Kanten hat.
+
+**Induktionsschritt:** Wir nehmen einen beliebigen Baum mit $n + 1$ Knoten. Jeder Baum mit mindestens zwei Knoten hat ein Blatt, also einen Knoten mit nur einer Kante. Das liegt daran, dass es keinen Kreis gibt. Wenn man im Baum immer weiterläuft, kommt man nie zu einem Knoten zurück und der Weg muss irgendwann an einem Blatt enden. Wenn wir dieses Blatt mit seiner Kante entfernen, bleibt ein Baum mit $n$ Knoten übrig.
+
+**Induktionsbehauptung:** Der Baum mit $n + 1$ Knoten hat genau $n$ Kanten.
+
+**Induktionsbeweis:** Der kleinere Baum hat nach der Voraussetzung $n - 1$ Kanten. Dazu kommt die eine Kante, die wir mit dem Blatt entfernt haben:
+
+$$
+(n-1) + 1 = n
+$$
+
+Das ist genau die Behauptung. Damit stimmt die Aussage für alle Bäume.
+
 Titelbild[^1]: Photo by Gabby K from Pexels.
 
 [^2]: [https://de.wikipedia.org/wiki/Peano-Axiome](https://de.wikipedia.org/wiki/Peano-Axiome) (abgerufen am 01.10.2026)
