@@ -1,6 +1,6 @@
 ---
 title: 'Beweis durch vollständige Induktion'
-description: 'TODO'
+description: 'Wie die vollständige Induktion funktioniert, gezeigt an der Gaußschen Summenformel 1 + 2 + … + n = n(n+1)/2.'
 pubDate: 2026-09-28
 tags: []
 categories: ['Mathematik']
@@ -11,10 +11,7 @@ heroImage: ../../../assets/images/posts/induktionsbeweis/pexels-gabby-k-6238068.
 heroImageAlt: 'Mathematische Formeln mit Kreide auf eine Tafel geschrieben'
 ---
 
-import Callout from '../../../components/Callout.astro';
 import VideoEmbed from '../../../components/VideoEmbed.astro';
-
-<Callout type="error">Dieser Artikel ist noch nicht fertig. Der Inhalt wird noch ergänzt.</Callout>
 
 
 Der induktionsbeweis ist der erste Beweis überhaupt den man im Informatik Studium lernt. Er beweist eine Aussage für unendlich viele Fälle mit nur 2 endlichen Schritten. Der Beweis beruht auf der Induktionseigenschaft der natürlichen Zahlen[^2].
@@ -78,19 +75,19 @@ Im Induktionsanfang schauen wir, ob die Formel für den kleinsten Fall stimmt. D
 Für $n = 1$:
 
 $$
-1 = \frac{1 \cdot (1+1)}{2} \;\Leftrightarrow\; 1 = \frac{2}{2} \;\Leftrightarrow\; 1 = 1 \;\checkmark
+1 = \frac{1 \cdot (1+1)}{2} \;\Leftrightarrow\; 1 = \frac{2}{2} \;\Leftrightarrow\; 1 = 1
 $$
 
 Für $n = 2$:
 
 $$
-1 + 2 = \frac{2 \cdot (2+1)}{2} \;\Leftrightarrow\; 3 = \frac{6}{2} \;\Leftrightarrow\; 3 = 3 \;\checkmark
+1 + 2 = \frac{2 \cdot (2+1)}{2} \;\Leftrightarrow\; 3 = \frac{6}{2} \;\Leftrightarrow\; 3 = 3
 $$
 
 Für $n = 3$:
 
 $$
-1 + 2 + 3 = \frac{3 \cdot (3+1)}{2} \;\Leftrightarrow\; 6 = \frac{12}{2} \;\Leftrightarrow\; 6 = 6 \;\checkmark
+1 + 2 + 3 = \frac{3 \cdot (3+1)}{2} \;\Leftrightarrow\; 6 = \frac{12}{2} \;\Leftrightarrow\; 6 = 6
 $$
 
 In allen drei Fällen sind beide Seiten gleich. Für den Beweis reicht eigentlich schon $n = 1$. Die anderen beiden Fälle zeigen nur, dass die Formel auch weiter stimmt.
