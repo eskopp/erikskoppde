@@ -17,10 +17,10 @@ import VideoEmbed from '../../../components/VideoEmbed.astro';
 Der Induktionsbeweis ist der erste Beweis überhaupt, den man im Informatik-Studium lernt. Er beweist eine Aussage für unendlich viele Fälle mit nur zwei endlichen Schritten. Der Beweis beruht auf der Induktionseigenschaft der natürlichen Zahlen[^2].
 
 $$
-1 + 2 + 3 + \dots + n = \frac{n(n+1)}{2}
+\sum_{i=1}^{n} i = \frac{n(n+1)}{2}
 $$
 
-für alle $n \in \mathbb{N}$.
+für alle $n \in \mathbb{N}$. Das Summenzeichen ist nur eine Kurzschreibweise für $1 + 2 + 3 + \dots + n$.
 
 ## Herleitung
 
@@ -97,7 +97,7 @@ In allen drei Fällen sind beide Seiten gleich. Für den Beweis reicht eigentlic
 Jetzt nehmen wir an, dass die Formel für ein beliebiges $n$ stimmt. Das müssen wir nicht beweisen, wir setzen es einfach voraus:
 
 $$
-1 + 2 + 3 + \dots + n = \frac{n(n+1)}{2}
+\sum_{i=1}^{n} i = \frac{n(n+1)}{2}
 $$
 
 Mit dieser Annahme arbeiten wir im nächsten Schritt weiter.
@@ -107,7 +107,7 @@ Mit dieser Annahme arbeiten wir im nächsten Schritt weiter.
 Jetzt wollen wir zeigen, dass die Formel dann auch für den nächsten Wert $n + 1$ stimmt. Dazu addieren wir auf beiden Seiten der Voraussetzung $n + 1$:
 
 $$
-1 + 2 + 3 + \dots + n + (n+1) = \frac{n(n+1)}{2} + (n+1)
+\sum_{i=1}^{n} i + (n+1) = \frac{n(n+1)}{2} + (n+1)
 $$
 
 ### Induktionsbehauptung
@@ -115,7 +115,7 @@ $$
 Wenn wir in der Formel überall $n + 1$ statt $n$ einsetzen, bekommen wir die Behauptung. Das ist genau das, was wir zeigen wollen:
 
 $$
-1 + 2 + 3 + \dots + (n+1) = \frac{(n+1)\left((n+1)+1\right)}{2} = \frac{(n+1)(n+2)}{2}
+\sum_{i=1}^{n+1} i = \frac{(n+1)\left((n+1)+1\right)}{2} = \frac{(n+1)(n+2)}{2}
 $$
 
 ### Induktionsbeweis
