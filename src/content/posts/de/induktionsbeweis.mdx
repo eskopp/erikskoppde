@@ -185,6 +185,15 @@ $$
 
 Im letzten Schritt haben wir $2n^2 + 5n + 3 = (n+1)(2n+3)$ benutzt. Das ist genau die rechte Seite der Behauptung.
 
+## Warum ist das ein Beweis?
+
+Wir haben nur den Anfang und den Schritt gezeigt und nicht jeden Fall einzeln nachgerechnet. Trotzdem reicht das, denn man kann es sich wie bei Dominosteinen vorstellen:
+
+- Der Induktionsanfang wirft den ersten Stein um. Die Aussage stimmt für $n = 1$.
+- Der Induktionsschritt sagt, dass jeder Stein den nächsten umwirft. Wenn die Aussage für $n$ stimmt, dann auch für $n + 1$.
+
+Aus $n = 1$ folgt $n = 2$, daraus $n = 3$ und immer so weiter. Jede natürliche Zahl kommt irgendwann dran, weil man bei $1$ anfängt und immer nur um $1$ weiterzählt. Das ist die Induktionseigenschaft der natürlichen Zahlen von oben[^2]. Ohne den Anfang fällt kein Stein um und ohne den Schritt bricht die Kette irgendwo ab. Deswegen braucht man immer beides.
+
 Titelbild[^1]: Photo by Gabby K from Pexels.
 
 [^2]: [https://de.wikipedia.org/wiki/Peano-Axiome](https://de.wikipedia.org/wiki/Peano-Axiome) (abgerufen am 01.10.2026)
