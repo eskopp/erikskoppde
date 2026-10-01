@@ -4,10 +4,11 @@ description: Wie diese Website mit personenbezogenen Daten umgeht.
 translationKey: datenschutz
 ---
 
-Diese Website setzt keine Cookies und keine Analyse- oder
-Tracking-Tools ein (siehe Abschnitt 5). Als Hosting-Dienst wird
-GitHub Pages genutzt, wodurch technische Zugriffsdaten durch den
-Hosting-Anbieter verarbeitet werden (siehe Abschnitt 3).
+Diese Website setzt keine Cookies und sammelt keine Daten. Es gibt keine
+Analyse- oder Tracking-Tools, keine Kommentarfunktion und keine
+Formulare (siehe Abschnitt 5). Als Hosting-Dienst wird GitHub Pages
+genutzt, wodurch technische Zugriffsdaten durch den Hosting-Anbieter
+verarbeitet werden (siehe Abschnitt 3).
 
 ## 1. Verantwortlicher
 
@@ -17,11 +18,10 @@ Erik Skopp
 
 ## 2. Allgemeines
 
-Diese Website ist im Wesentlichen eine statische Seite ohne eigenes
-Backend und ohne Datenbank. Es findet keine Registrierung statt und es
-gibt kein Nutzerkonto. Die einzige Ausnahme ist die Kommentarfunktion
-unter Blogbeiträgen (siehe Abschnitt 9), über die freiwillig Daten an
-einen selbst betriebenen Server übermittelt werden können.
+Diese Website ist eine statische Seite ohne eigenes Backend und ohne
+Datenbank. Es findet keine Registrierung statt, es gibt kein Nutzerkonto
+und keine Möglichkeit, Daten einzugeben. Ich selbst erhebe und speichere
+keine personenbezogenen Daten.
 
 ## 3. Hosting
 
@@ -61,51 +61,20 @@ Fonts) gestellt.
 ## 8. Eingebettete Inhalte
 
 Einzelne Beiträge können YouTube-Videos im datenschutzfreundlichen
-Modus (`youtube-nocookie.com`) einbetten. Beim Abspielen eines solchen
-Videos kann eine Verbindung zu Servern von Google Ireland Limited
+Modus (`youtube-nocookie.com`) einbetten. Beim Laden oder Abspielen eines
+solchen Videos kann eine Verbindung zu Servern von Google Ireland Limited
 aufgebaut werden, wobei technische Daten wie die IP-Adresse übertragen
 werden können. Informationen dazu bietet die Datenschutzerklärung von
 Google: <https://policies.google.com/privacy>
 
-## 9. Kommentarfunktion
-
-Unter Blogbeiträgen besteht die Möglichkeit, anonym einen Kommentar zu
-hinterlassen. Ein Nutzerkonto oder eine Registrierung ist dafür nicht
-erforderlich.
-
-Beim Absenden eines Kommentars werden folgende Daten verarbeitet und
-gespeichert:
-
-- der von Ihnen frei gewählte Name (es besteht keine Pflicht, den echten
-  Namen anzugeben)
-- der Kommentartext
-- die IP-Adresse, von der aus der Kommentar abgesendet wurde
-- Datum und Uhrzeit der Abgabe
-
-Die IP-Adresse wird ausschließlich zur Spam- und Missbrauchsabwehr (u. a.
-Begrenzung der Anzahl an Kommentaren pro Zeitraum) verarbeitet und nicht
-öffentlich angezeigt. Name, Kommentartext sowie Datum und Uhrzeit werden
-öffentlich auf der Seite dargestellt.
-
-Es findet keine Vorabprüfung (Moderation) der Kommentare statt, sie
-werden also sofort sichtbar. Die Daten werden auf einem von mir selbst
-betriebenen Server verarbeitet und gespeichert, nicht bei GitHub oder
-einem sonstigen Drittanbieter.
-
-Rechtsgrundlage der Verarbeitung ist Art. 6 Abs. 1 lit. f DSGVO
-(berechtigtes Interesse an der Bereitstellung einer funktionierenden,
-missbrauchsgeschützten Kommentarfunktion). Wenn Sie die Löschung eines
-von Ihnen verfassten Kommentars wünschen, kontaktieren Sie mich bitte
-über die im Footer dieser Seite hinterlegten Kontaktmöglichkeiten.
-
-## 10. Ihre Rechte
+## 9. Ihre Rechte
 
 Nach der Datenschutz-Grundverordnung (DSGVO) haben Sie unter anderem das
 Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der
 Verarbeitung Ihrer personenbezogenen Daten sowie ein Beschwerderecht bei
 einer Datenschutz-Aufsichtsbehörde.
 
-## 11. KI-Unterstützung bei der Texterstellung
+## 10. KI-Unterstützung bei der Texterstellung
 
 Bei fast allen Texten auf dieser Website nutze ich KI-Werkzeuge (z. B.
 ChatGPT, Claude Code) zur Unterstützung bei Grammatik und Formulierung,
@@ -114,7 +83,7 @@ Inhalte selbst stammen aus meinen eigenen Gedanken und Erfahrungen. Dabei
 werden keine personenbezogenen Daten von Besuchern dieser Website an
 diese Dienste übermittelt.
 
-## 12. Haftungsausschluss für externe Links
+## 11. Haftungsausschluss für externe Links
 
 Diese Website enthält Links zu externen Websites Dritter, auf deren
 Inhalte kein Einfluss besteht. Für diese fremden Inhalte kann daher
@@ -129,7 +98,7 @@ konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei
 Bekanntwerden von Rechtsverletzungen werden entsprechende Links
 umgehend entfernt.
 
-## 13. Änderungen dieser Erklärung
+## 12. Änderungen dieser Erklärung
 
 Diese Datenschutzerklärung kann angepasst werden, wenn sich die
 Datenverarbeitung auf dieser Website ändert.
