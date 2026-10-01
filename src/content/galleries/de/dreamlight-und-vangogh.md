@@ -2,7 +2,7 @@
 title: 'Dreamlight & Van Gogh'
 description: 'Ein Tag zwischen zwei Erlebnissen: die immersive Ausstellung "Van Gogh – The Immersive Experience" und das Candlelight-Konzert "Dreamlight", Januar 2026.
 
-Den Artikel dazu finden Sie [HIER](/posts/dreamlight-und-vangogh/).'
+Den Artikel dazu findet ihr [hier](/posts/dreamlight-und-vangogh/).'
 date: 2026-01-31
 images:
   - src: ../../../assets/images/galleries/dreamlight-und-vangogh/2026_01_Dreamlight_VanGogh_0001.jpg

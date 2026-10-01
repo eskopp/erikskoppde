@@ -37,8 +37,7 @@ Datenschutzerklärung von GitHub:
 
 ## 4. Cookies und lokale Speicherung
 
-Diese Website setzt keine Cookies. Die gewählte Theme-Einstellung (hell/
-dunkel) wird ausschließlich im `localStorage` des Browsers gespeichert.
+Diese Website setzt keine Cookies. Die gewählte Theme-Einstellung (hell oder dunkel) wird ausschließlich im `localStorage` des Browsers gespeichert.
 Diese Information verlässt das Gerät nicht und wird an keinen Server
 übertragen.
 

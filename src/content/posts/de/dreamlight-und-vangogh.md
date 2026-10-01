@@ -11,7 +11,7 @@ heroImageAlt: '"The Starry Night" bei Van Gogh – The Immersive Experience'
 
 ## Sösetalsperre
 
-![Van Gogh – The Immersive Experience](../../../assets/images/posts/dreamlight-und-vangogh/2026_01_Dreamlight_VanGogh_0002.jpg)
+![Zugefrorene Sösetalsperre](../../../assets/images/posts/dreamlight-und-vangogh/2026_01_Dreamlight_VanGogh_0002.jpg)
 
 ## Van Gogh Experience
 
@@ -23,7 +23,7 @@ Hallo Welt
 
 Hallo Welt
 
-![Van Gogh – The Immersive Experience](../../../assets/images/posts/dreamlight-und-vangogh/2026_01_Dreamlight_VanGogh_0109.jpg)
+![Bühne des Dreamlight-Konzerts](../../../assets/images/posts/dreamlight-und-vangogh/2026_01_Dreamlight_VanGogh_0109.jpg)
 
 ## Bilder
 

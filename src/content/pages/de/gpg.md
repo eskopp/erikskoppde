@@ -11,7 +11,7 @@ Für verschlüsselte E-Mails und signierte Commits verwende ich zwei separate GP
 - **Fingerprint:** `27A6 5448 F68D B035 5C77 28BE 1C0C FDC0 33F0 3C17`
 - **Download:** [erikskopp.de.asc](/gpg/erikskopp.de.asc)
 
-## TU-Ilmenau
+## TU Ilmenau
 
 - **Fingerprint:** `70C9 F187 92AA E42F D039 B845 E9CD C972 D4C1 9E8D`
 - **Download:** [tu-ilmenau.de.asc](/gpg/tu-ilmenau.de.asc)

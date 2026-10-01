@@ -11,7 +11,7 @@ heroImage: ../../../assets/images/posts/2-ilmenauer-open-2025/2025_10_Ilmenauer_
 heroImageAlt: 'Aufgebauter Turniersaal mit Schachbrettern vor Rundenbeginn'
 ---
 
-Über Reformationstag fand 2025 das Ilmenauer Open in der zweiten Ausführung statt. 
+Über den Reformationstag fand 2025 das Ilmenauer Open in zweiter Auflage statt.
 
 #### Abschlusstabelle[^1]
 
