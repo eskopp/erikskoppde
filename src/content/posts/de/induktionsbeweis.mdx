@@ -7,6 +7,7 @@ categories: ['Mathematik']
 draft: false
 sections: ['labor']
 math: true
+mermaid: true
 heroImage: ../../../assets/images/posts/induktionsbeweis/pexels-gabby-k-6238068.jpg
 heroImageAlt: 'Mathematische Formeln mit Kreide auf eine Tafel geschrieben'
 ---
@@ -137,6 +138,16 @@ Das ist genau die rechte Seite der Behauptung. Damit gilt die Formel für $n + 1
 Die Induktion funktioniert nicht nur bei Formeln mit Zahlen. Wir können damit auch Aussagen über Strukturen beweisen, die wir Stück für Stück aufbauen. Ein Beispiel dafür sind Bäume aus der Informatik. Ein Baum ist ein Graph, der zusammenhängend ist und keinen Kreis enthält. Wir zeigen:
 
 Ein Baum mit $n$ Knoten hat genau $n - 1$ Kanten.
+
+```mermaid
+graph TD
+    1((1)) --- 2((2))
+    1 --- 3((3))
+    2 --- 4((4))
+    2 --- 5((5))
+```
+
+Hier ist ein Beispiel mit $n = 5$ Knoten und $4$ Kanten. Die Knoten 3, 4 und 5 sind Blätter, sie haben nur eine Kante.
 
 **Induktionsanfang:** Für $n = 1$ gibt es nur einen Knoten und keine Kante. Das sind $1 - 1 = 0$ Kanten, die Aussage stimmt.
 
