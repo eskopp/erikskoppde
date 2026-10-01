@@ -15,7 +15,7 @@ Ich bin aktuell Student, arbeite als Hiwi und bin im Schach aktiv. In allen drei
 
 In diesem Blog möchte ich hauptsächlich eine Art Erinnerung für das Erlebte und Gesehene schaffen. Auf der anderen Seite möchte ich aber auch auf diese Weise meine Depressionen und Gefühle besser kontrollieren. Ist denn immer alles so schlecht, wie ich es mir denke, oder bin ich wirklich so rückständig, wie ich mich selbst sehe? Ich habe vieles in meinem Leben falsch gemacht. Daran bin ich alleine schuld. Ich möchte hier Erinnerungen sammeln und in die Zukunft schauen.
 
-Ich habe im Krankenhaus angefangen, den Blog zu schreiben. Ehrlich gesagt gab es dafür keinen Anlass. Keiner wird gezwungen, das Ganze hier zu lesen. Ehrlich gesagt kann ich auch nicht gut schreiben. Ich weiß nicht, warum ihr da seid :)
+Ich habe im Krankenhaus angefangen, den Blog zu schreiben. Ehrlich gesagt gab es dafür keinen Anlass. Keiner wird gezwungen, das Ganze hier zu lesen. Außerdem kann ich nicht gut schreiben. Ich weiß nicht, warum ihr da seid :)
 
 ### Inhalt
 
@@ -23,11 +23,11 @@ Ich möchte hier über alles schreiben, was mich so beschäftigt, was ich erlebe
 
 #### Schach
 
-Aktuell spiele ich Schach nur online. Das möchte ich in den kommenden Monaten und Jahren wieder ändern. Zusammen mit dem [Ilmenauer Schachverein](https://ilmenauer-schachverein.de)[^1] haben wir schon viele Turniere ausgerichtet. Ich werde auch dort von Events berichten. Ein weiteres jährliches Turnier ist das [Schach-Open in Bad Königshofen](https://schachclub1957.de/turniere/turnier-archiv/bad-koenigshofen-open-2026/)[^2] zwischen den Feiertagen.
+Zurzeit spiele ich Schach nur online. Das möchte ich in den kommenden Monaten und Jahren wieder ändern. Zusammen mit dem [Ilmenauer Schachverein](https://ilmenauer-schachverein.de)[^1] haben wir schon viele Turniere ausgerichtet. Ich werde auch dort von Events berichten. Ein weiteres jährliches Turnier ist das [Schach-Open in Bad Königshofen](https://schachclub1957.de/turniere/turnier-archiv/bad-koenigshofen-open-2026/)[^2] zwischen den Feiertagen.
 
 #### Schachtraining
 
-Nicht nur möchte ich mich im Schach nach Jahren wieder deutlich verbessern, sondern auch den Kindern wieder helfen, sich zu verbessern. Kindertraining ist eine sehr dankbare und lehrreiche Aufgabe. Nur wenn man ein Thema sauber erklären kann, hat man es verstanden. Auf dieser Reise möchte ich euch mitnehmen.
+Nicht nur möchte ich mich im Schach nach Jahren wieder deutlich verbessern, sondern auch den Kindern wieder helfen, sich weiterzuentwickeln. Kindertraining ist eine sehr dankbare und lehrreiche Aufgabe. Nur wenn man ein Thema sauber erklären kann, hat man es verstanden. Auf dieser Reise möchte ich euch mitnehmen.
 
 #### Experimente
 
@@ -37,7 +37,7 @@ Aber ich freue mich eigentlich schon sehr auf die Experimente.
 
 #### Linux und Programmierung
 
-In meiner Freizeit habe ich einen großen Debian-13-Server. Ich denke, dass das immer ein Debian-Server bleiben wird. Er hat 16 GB RAM und 8 Kerne und ist ein Root-Server. Gehostet ist dieser bei Netcup. Dort mache ich selbst viele Experimente und Tests. Aktuell laufen auf dem Server verschiedene Dienste wie bspw. [Grafana](https://grafana.erikskopp.de)[^3] oder [GitLab](https://gitlab.erikskopp.de)[^4]. Über die Reise des Servers möchte ich euch mitnehmen.
+In meiner Freizeit habe ich einen großen Debian-13-Server. Ich denke, dass das immer ein Debian-Server bleiben wird. Er hat 16 GB RAM und 8 Kerne und ist ein Root-Server. Gehostet ist dieser bei Netcup. Dort mache ich selbst viele Experimente und Tests. Derzeit laufen auf dem Server verschiedene Dienste wie bspw. [Grafana](https://grafana.erikskopp.de)[^3] oder [GitLab](https://gitlab.erikskopp.de)[^4]. Über die Reise des Servers möchte ich euch mitnehmen.
 
 Es gibt also viele Themen, von denen ich berichten kann. Einen gewissen Fahrplan kann ich hier noch nicht geben, da es zufällig ist, was mich gerade beschäftigt.
 
@@ -51,7 +51,7 @@ Jeder Blog hat Kommentare? Dieser nicht. Das liegt weniger daran, dass ich das n
 
 #### Kommentare ohne JS
 
-Er hat in seinem JS-freien Hugo-Blog ein sehr einfaches Formular erstellt. In diesem kann jeder seinen Kommentar eingeben und ihn abschicken. Auf dem Server nimmt dann ein kleiner Go-Handler die Anfrage an und schreibt diese in eine JSON-Datei. Danach baut er die Seite neu und jeder kann den Kommentar lesen. Das ist sehr effizient und muss gelobt werden.
+Er hat in seinem JS-freien Hugo-Blog ein sehr einfaches Formular erstellt. In diesem kann jeder seinen Kommentar eingeben und ihn abschicken. Auf dem Server nimmt dann ein kleiner Go-Handler die Anfrage an und schreibt diese in eine JSON-Datei. Danach baut er die Seite neu und jeder kann den Kommentar lesen. Das ist sehr effizient und verdient Anerkennung.
 
 Den Artikel von ihm findet ihr [hier](https://blog.mrgonzalez.de/posts/post-10/#das-kommentarsystem)[^6].
 
