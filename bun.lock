@@ -9,7 +9,7 @@
         "@astrojs/mdx": "^8.0.3",
         "@astrojs/rss": "^4.0.19",
         "@astrojs/sitemap": "^3.7.4",
-        "@lichess-org/pgn-viewer": "^2.6.4",
+        "@lichess-org/pgn-viewer": "^2.7.3",
         "@nullpinter/satteri-katex": "^0.1.4",
         "astro": "^7.3.5",
         "astro-expressive-code": "^0.44.2",
@@ -343,9 +343,9 @@
 
     "@keyv/serialize": ["@keyv/serialize@1.1.1", "", {}, "sha512-dXn3FZhPv0US+7dtJsIi2R+c7qWYiReoEh5zUntWCf4oSpMNib8FDhSoed6m3QyZdx5hK7iLFkYk3rNxwt8vTA=="],
 
-    "@lichess-org/chessground": ["@lichess-org/chessground@10.2.0", "", {}, "sha512-XScWn76u2A+5uNHUfyf9P1DAImGcVs0WjjkGz3tJPXnzsoNVriRXuxm6hpN02DY5LNk/jkCXKeW0raEOXGxPig=="],
+    "@lichess-org/chessground": ["@lichess-org/chessground@10.4.2", "", {}, "sha512-T7j43oF2OIxwUlP42eHtX79drYkzCaSvuW4ENdrooW9pxAvbrse4g8OL3EH2HeA4Rn0tuOGQvAUC71NfK5lsVw=="],
 
-    "@lichess-org/pgn-viewer": ["@lichess-org/pgn-viewer@2.6.4", "", { "dependencies": { "@lichess-org/chessground": "^10.1.1", "chessops": "^0.15.1", "snabbdom": "3.5.1" } }, "sha512-fP/Kppo8tshABNI4WH1YnNQQsWZb7Lm5Qug8/Mpg1qCQIHeXM8AluctrTpjZHPg7sIFIc6J6pf+aAkYunUWrJQ=="],
+    "@lichess-org/pgn-viewer": ["@lichess-org/pgn-viewer@2.7.3", "", { "dependencies": { "@lichess-org/chessground": "^10.4.2", "chessops": "^0.15.1", "snabbdom": "3.5.1" } }, "sha512-5dLELo5STeNpTOVbLtqQVsI97cy62SwYaGmAuexKlIPvZjKEivB5CK5rLTsDuwSiJ3iOBT8k3Wly/rTh+8atRw=="],
 
     "@mermaid-js/parser": ["@mermaid-js/parser@2.0.1", "", { "dependencies": { "@chevrotain/types": "~13.2.0" } }, "sha512-j37dj/h6p6pots1L7pLPPNuABEEu9WP4OYg9pW1g+nYG331j0+3canE9OagtYdytYvdSAMG+2fKU5cxep6LgjA=="],
 
