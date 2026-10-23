@@ -38,7 +38,7 @@
     "satteri-external-links": "^0.1.1"
   },
   "devDependencies": {
-    "@astrojs/check": "^0.9.9",
+    "@astrojs/check": "^0.9.11",
     "@eslint/js": "^10.0.1",
     "@fontsource/inter": "^5.2.8",
     "@fontsource/jetbrains-mono": "5.3.0",
