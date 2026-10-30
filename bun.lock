@@ -10,7 +10,7 @@
         "@astrojs/rss": "^4.0.19",
         "@astrojs/sitemap": "^3.7.4",
         "@lichess-org/pgn-viewer": "^2.7.3",
-        "@nullpinter/satteri-katex": "^0.1.4",
+        "@nullpinter/satteri-katex": "^0.3.0",
         "astro": "^7.3.5",
         "astro-expressive-code": "^0.44.3",
         "astro-icon": "^1.2.0",
@@ -353,7 +353,7 @@
 
     "@nodable/entities": ["@nodable/entities@3.0.0", "", {}, "sha512-8L9xFeTYKhm49xfIypoe2W5wV1m/3Z58kT+7kR9A8OyFxcPduI4VmxaUMQyKYrRjUoLLSXv6EKKID5Tvj9cUVw=="],
 
-    "@nullpinter/satteri-katex": ["@nullpinter/satteri-katex@0.1.4", "", { "dependencies": { "katex": "^0.18.4" }, "peerDependencies": { "satteri": "^0.10.0" } }, "sha512-If636b9Tqvww+NQ9Nq4iLuDNRJjMyrVNpt7+OYkd4AGlcqEfnnm+s7A2IbpORvfqP88ywMoOrydZdp0kVf6hdw=="],
+    "@nullpinter/satteri-katex": ["@nullpinter/satteri-katex@0.3.0", "", { "dependencies": { "katex": "^0.18.4" }, "peerDependencies": { "satteri": "^0.11.5" } }, "sha512-8drrGa5Xz2JdpEhczDWNMh+vohiPNi6v43EONdGop3y/HMkyTNM6pNi7iP1+H4N0fg7tOo365yG/5X8Swgt/aw=="],
 
     "@oslojs/encoding": ["@oslojs/encoding@1.1.0", "", {}, "sha512-70wQhgYmndg4GCPxPPxPGevRKqTIJ2Nh4OkiMWmDAVYsTQ+Ta7Sq+rPevXyXGdzr30/qZBnyOalCszoMxlyldQ=="],
 

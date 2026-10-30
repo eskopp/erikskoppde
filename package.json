@@ -30,7 +30,7 @@
     "@astrojs/rss": "^4.0.19",
     "@astrojs/sitemap": "^3.7.4",
     "@lichess-org/pgn-viewer": "^2.7.3",
-    "@nullpinter/satteri-katex": "^0.1.4",
+    "@nullpinter/satteri-katex": "^0.3.0",
     "astro": "^7.3.5",
     "astro-expressive-code": "^0.44.3",
     "astro-icon": "^1.2.0",
