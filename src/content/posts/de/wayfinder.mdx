@@ -1,0 +1,145 @@
+---
+title: 'Wayfinder'
+description: 'Ein kleines Paper-Plugin für Minecraft: eigene Wegpunkte speichern, dorthin zurückteleportieren und andere Spieler um einen Teleport bitten.'
+pubDate: 2026-11-04
+tags: ['Minecraft', 'Paper', 'Plugin']
+categories: ['Guide']
+sections: ['blog']
+draft: false
+---
+
+import Callout from '../../../components/Callout.astro';
+
+<Callout type="info">Dieser Artikel ist eine Anleitung für Spieler und Server-Betreiber. Der Quellcode ist öffentlich auf [GitHub](https://github.com/eskopp/wayfinder) zu finden.</Callout>
+
+## Wofür das Plugin da ist
+
+In Minecraft verliert man schnell den Überblick. Die Basis, die Mine, das Dorf mit den guten Händlern oder der Eingang zum Nether liegen weit auseinander, und den Rückweg findet man nur mit Koordinaten auf einem Zettel.
+
+**Wayfinder** löst genau das. Jeder Spieler speichert Orte unter einem Namen und teleportiert sich später mit einem Befehl dorthin zurück. Die Wegpunkte gehören dem einzelnen Spieler. Andere sehen sie nicht und können sie nicht benutzen.
+
+Dazu kommt eine zweite Funktion: Man kann einen anderen Spieler fragen, ob man sich zu ihm teleportieren darf, oder ihn bitten, sich zu einem selbst zu teleportieren. Der andere muss die Anfrage annehmen.
+
+Das Plugin ist bewusst klein gehalten. Es hat vier Klassen, eine kleine Konfigurationsdatei und einen einzigen Befehl.
+
+## Voraussetzungen
+
+- ein [Paper](https://papermc.io/)-Server für Minecraft 26.3
+- Java 25 auf dem Server
+
+## Installation
+
+1. Die Datei `Wayfinder-<Version>.jar` aus dem [neuesten Release](https://github.com/eskopp/wayfinder/releases/latest) herunterladen.
+2. Die Datei in den Ordner `plugins` des Servers kopieren.
+3. Den Server neu starten. Ein `/reload` wird nicht unterstützt.
+4. Mit `/plugins` prüfen, ob Wayfinder in der Liste steht, und im Spiel `/wf help` ausführen.
+
+Beim ersten Start legt das Plugin die Datei `plugins/Wayfinder/config.yml` an. Die Wegpunkte liegen in `plugins/Wayfinder/waypoints.yml`.
+
+Für ein Update stoppt man den Server, ersetzt die alte Jar-Datei durch die neue und startet wieder. Einstellungen und Wegpunkte bleiben erhalten. Läuft der Server in Docker, ist `plugins` der Ordner im eingebundenen Datenverzeichnis.
+
+## Wegpunkte benutzen
+
+Der Befehl heißt `/wf`. Als längerer Name geht auch `/wayfinder`.
+
+| Befehl | Was er macht |
+|---|---|
+| `/wf set <Name>` | Speichert deine aktuelle Position |
+| `/wf tp <Name>` | Teleportiert dich zu einem deiner Wegpunkte |
+| `/wf list` | Zeigt deine Wegpunkte mit Welt und Koordinaten |
+| `/wf delete <Name>` | Löscht einen Wegpunkt |
+| `/wf help` | Zeigt die Befehle, die du benutzen darfst |
+
+Ein Beispiel:
+
+```text
+/wf set basis
+/wf set mine
+/wf list
+/wf tp basis
+```
+
+Namen dürfen aus den Buchstaben `a` bis `z`, aus Ziffern sowie `_` und `-` bestehen und sind höchstens 32 Zeichen lang. Jeder Spieler kann standardmäßig 10 Wegpunkte anlegen. Die Wegpunkte funktionieren auch über Dimensionen hinweg. Man kann sich also aus dem Nether zur Basis in der Oberwelt zurückteleportieren.
+
+Wer einen Befehl ohne Argumente oder mit einem unbekannten Wort eingibt, bekommt automatisch die Hilfe angezeigt.
+
+## Zu Koordinaten teleportieren
+
+Mit
+
+```text
+/wf tp <x> <y> <z> [Welt]
+```
+
+geht es direkt zu einer Position. Die Welt ist optional. Dafür braucht man die Berechtigung `wayfinder.tp.coords`, die standardmäßig jeder hat.
+
+## Andere Spieler besuchen
+
+| Befehl | Was er macht |
+|---|---|
+| `/wf tpa <Spieler>` | Du fragst, ob du dich zu diesem Spieler teleportieren darfst |
+| `/wf tpahere <Spieler>` | Du bittest diesen Spieler, sich zu dir zu teleportieren |
+| `/wf accept` | Du nimmst die Anfrage an |
+| `/wf deny` | Du lehnst die Anfrage ab |
+
+Der andere Spieler sieht im Chat die Anfrage mit zwei anklickbaren Schaltflächen, **[Accept]** und **[Deny]**. Er muss also nichts tippen.
+
+Dabei gilt:
+
+- Eine Anfrage läuft nach 30 Sekunden ab.
+- Jeder Spieler hat höchstens eine offene Anfrage. Eine neue ersetzt die alte.
+- Verlässt einer der beiden Spieler den Server, wird die Anfrage gelöscht.
+- Bei `tpa` wird der Fragende zum Angefragten teleportiert. Bei `tpahere` ist es umgekehrt.
+
+## Einstellungen für Server-Betreiber
+
+Die Datei `plugins/Wayfinder/config.yml` enthält vier Werte:
+
+```yaml
+max-waypoints: 10
+teleport-enabled: true
+tpa-enabled: true
+tpa-timeout-seconds: 30
+```
+
+| Einstellung | Bedeutung |
+|---|---|
+| `max-waypoints` | Wie viele Wegpunkte jeder Spieler anlegen darf |
+| `teleport-enabled` | Bei `false` zeigt `/wf tp <Name>` nur die Koordinaten an und teleportiert nicht |
+| `tpa-enabled` | Bei `false` sind Anfragen zwischen Spielern ausgeschaltet |
+| `tpa-timeout-seconds` | Nach wie vielen Sekunden eine Anfrage abläuft |
+
+Änderungen an der Konfiguration gelten erst nach einem Neustart des Servers.
+
+Mit `teleport-enabled: false` wird aus dem Plugin ein reines Koordinaten-Notizbuch. Das ist praktisch für Server, auf denen Teleportieren nicht gewollt ist, man aber trotzdem seine Orte speichern soll.
+
+## Berechtigungen
+
+Standardmäßig darf jeder Spieler alles benutzen. Wer einzelne Funktionen sperren will, nimmt sie über ein Berechtigungs-Plugin wie LuckPerms weg.
+
+| Berechtigung | Erlaubt |
+|---|---|
+| `wayfinder.use` | den Befehl überhaupt benutzen |
+| `wayfinder.set` | Wegpunkte anlegen |
+| `wayfinder.tp` | zu Wegpunkten teleportieren |
+| `wayfinder.delete` | Wegpunkte löschen |
+| `wayfinder.tp.coords` | zu Koordinaten teleportieren |
+| `wayfinder.tpa` | andere Spieler um einen Teleport bitten |
+| `wayfinder.tpahere` | andere Spieler bitten, sich zu einem zu teleportieren |
+| `wayfinder.tpa.accept` | Anfragen annehmen oder ablehnen |
+
+## Warum `/wf`
+
+Der Befehl heißt kurz `/wf`, damit er keinen bekannten Befehl überschreibt. Wayfinder belegt weder `/home` noch `/warp`, `/tpa` oder das eingebaute `/waypoint` von Minecraft. Falls ein anderes Plugin schon `/wf` benutzt, funktioniert immer noch die Form `/wayfinder:wf`.
+
+## Selbst bauen
+
+Wer das Plugin selbst bauen will, braucht Java 25 und führt im Projektordner
+
+```bash
+./gradlew build
+```
+
+aus. Die fertige Jar-Datei liegt danach in `build/libs/`. Bei jedem Push prüft GitHub Actions außerdem, dass das Plugin mit Java 25 und Java 27 baut und die Tests laufen.
+
+Das Plugin steht unter der GPL-3.0. Den Code und die neueste Version gibt es im [GitHub-Repository](https://github.com/eskopp/wayfinder).
