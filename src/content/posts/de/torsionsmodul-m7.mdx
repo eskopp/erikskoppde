@@ -15,27 +15,35 @@ import Callout from '../../../components/Callout.astro';
 
 <Callout type="info">Dieser Artikel ist kein Protokoll. Er beschreibt die physikalische Idee, den Versuchsaufbau und die beiden Messmethoden. Konkrete Messwerte und Ergebnisse sind nicht Bestandteil des Beitrags.</Callout>
 
-Im [Grundpraktikum der Physik](https://www.tu-ilmenau.de/universitaet/fakultaeten/fakultaet-mathematik-und-naturwissenschaften/profil/institute-und-fachgebiete/institut-fuer-physik/profil/physikalisches-grundpraktikum) stand diese Woche der Versuch M7 an, der Torsionsmodul. Dabei bekommt man zwei dünne Metallstäbe und soll herausfinden, wie schwer sie sich verdrehen lassen. Dazu gibt es eine Kennzahl, den Torsionsmodul $G$, auch Schubmodul genannt. Je größer er ist, desto steifer ist das Material gegen Verdrehen.
+Im [Grundpraktikum der Physik](https://www.tu-ilmenau.de/universitaet/fakultaeten/fakultaet-mathematik-und-naturwissenschaften/profil/institute-und-fachgebiete/institut-fuer-physik/profil/physikalisches-grundpraktikum) stand diese Woche der Versuch M7 an, der Torsionsmodul. Dabei bekommt man zwei dünne Metallstäbe und untersucht, wie stark sie sich gegen Verdrehen wehren.
 
 Das Spannende daran: Man soll ihn auf zwei ganz verschiedene Arten bestimmen und am Ende schauen, ob dasselbe herauskommt.
 
-### Was ist der Torsionsmodul?
+### Torsion: Verdrehen um die Längsachse
 
-Wenn man einen Körper schert, gleiten seine Schichten gegeneinander. Bei kleinen Verformungen gilt das Hookesche Gesetz
+**Torsion** bezeichnet eine Belastung, bei der ein Körper um seine Längsachse verdreht wird. Man kann sich einen Stab vorstellen, dessen oberes Ende festgehalten wird, während man das untere Ende dreht. Die einzelnen Querschnitte des Stabes verdrehen sich dabei gegeneinander.
+
+Im Inneren verschieben sich benachbarte Materialschichten seitlich gegeneinander. Diese Art der Verformung heißt **Scherung**. Anschaulich ähnelt sie einem Kartenstapel, dessen unterste Karte liegen bleibt, während die oberste seitlich verschoben wird: Die Karten trennen sich nicht, aber der Stapel wird schräg.
+
+### Was ist der Schubmodul?
+
+Bei einer Scherung wirken Kräfte parallel zu einer Fläche. Die daraus entstehende Kraft pro Fläche heißt **Schubspannung** $\tau$. Der **Scherwinkel** $\gamma$ beschreibt, wie stark sich der Körper dabei verformt. Für kleine, elastische Verformungen gilt
 
 $$
 \tau = G \cdot \gamma
 $$
 
-mit der Schubspannung $\tau$ und dem Scherwinkel $\gamma$. Der Faktor $G$ ist der Torsionsmodul. Verdreht man einen Stab, wird er genau so geschert. Deshalb ist der Torsionsmodul derselbe Wert wie der Schubmodul.
+Der Faktor $G$ ist der **Schubmodul**, bei der Verdrehung eines Stabes auch **Torsionsmodul** genannt. Er ist eine Materialeigenschaft: Ein großer Wert bedeutet, dass für dieselbe Scherung eine große Spannung nötig ist. Das Material setzt der Verformung also einen hohen Widerstand entgegen. Ein kleiner Wert steht entsprechend für ein leichter scherbares Material.
 
-Für einen Stab mit Länge $l$ und Durchmesser $d$ gilt: Um ihn um den Winkel $\varphi$ zu verdrehen, braucht man das Drehmoment
+Der Schubmodul wird in Pascal angegeben und hängt vom Material ab, nicht von der Länge oder Dicke des untersuchten Stabes. Diese Abmessungen beeinflussen allerdings, wie leicht sich der konkrete Stab insgesamt verdrehen lässt.
+
+Um einen Stab zu verdrehen, braucht man ein **Drehmoment** $M$. Es beschreibt die Drehwirkung einer Kraft. Dieselbe Kraft wirkt umso stärker, je weiter außen sie von der Drehachse angreift. Für einen Stab mit Länge $l$ und Durchmesser $d$ gilt bei einer Verdrehung um den Winkel $\varphi$
 
 $$
 M = D \cdot \varphi \qquad \text{mit} \qquad D = \frac{\pi \cdot G \cdot d^4}{32 \cdot l}
 $$
 
-$D$ heißt Direktionsmoment und beschreibt die Steifigkeit des ganzen Stabes. Der Durchmesser geht mit der vierten Potenz ein. Das wird später noch wichtig.
+$D$ heißt **Direktionsmoment**. Anders als der Schubmodul beschreibt es nicht nur das Material, sondern die Verdrehsteifigkeit des gesamten Stabes mit seiner konkreten Länge und Dicke. Ein großes Direktionsmoment bedeutet: Für denselben Verdrehwinkel ist ein größeres Drehmoment erforderlich. Der Durchmesser geht dabei mit der vierten Potenz ein. Das wird später noch wichtig.
 
 ### Der Aufbau
 
@@ -63,13 +71,13 @@ $$
 
 ### Methode 2: dynamisch
 
-Die dynamische Methode ist raffinierter. Der Stab mit der Scheibe schwingt wie ein Pendel hin und her. Für die Periodendauer gilt
+Die dynamische Methode ist raffinierter. Der Stab mit der Scheibe schwingt wie ein Pendel hin und her. Die **Periodendauer** $T$ ist die Zeit für eine vollständige Hin- und Herbewegung. Für sie gilt
 
 $$
 T = 2\pi \sqrt{\frac{J}{D}}
 $$
 
-mit dem Trägheitsmoment $J$ der Scheibe. Das kennt man aber nicht. Der Trick: Man misst ein zweites Mal, diesmal mit einem Hohlzylinder auf der Scheibe. Dessen Trägheitsmoment lässt sich aus Masse und Maßen ausrechnen. Mit den Periodendauern $T_1$ (ohne) und $T_2$ (mit Hohlzylinder) fällt das unbekannte $J$ der Scheibe aus der Rechnung heraus:
+Das **Trägheitsmoment** $J$ beschreibt, wie stark sich ein Körper einer Änderung seiner Drehbewegung widersetzt. Es hängt nicht nur von seiner Masse ab, sondern auch davon, wie weit diese Masse von der Drehachse entfernt ist. Das Trägheitsmoment der Scheibe ist zunächst unbekannt. Der Trick: Man misst ein zweites Mal, diesmal mit einem Hohlzylinder auf der Scheibe. Dessen Trägheitsmoment lässt sich aus Masse und Maßen ausrechnen. Mit den Periodendauern $T_1$ (ohne) und $T_2$ (mit Hohlzylinder) fällt das unbekannte $J$ der Scheibe aus der Rechnung heraus:
 
 $$
 D = \frac{4\pi^2 J^*}{T_2^2 - T_1^2}
