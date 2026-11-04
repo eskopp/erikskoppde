@@ -431,7 +431,7 @@
     @apply order-first overflow-hidden md:order-last md:col-span-5 md:flex md:flex-col;
   }
   .chirpy-card-image {
-    @apply h-44 w-full object-cover md:h-full md:min-h-0 md:rounded-r-md;
+    @apply h-44! w-full object-cover md:h-full! md:min-h-0 md:rounded-r-md;
   }
   @media (min-width: 768px) {
     .chirpy-card-link.has-image.fixed-size {
