@@ -54,6 +54,8 @@ const baseFrontmatter = ({ image }: SchemaContext) =>
     heroImage: z.union([image(), z.string()]).optional(),
     /** Optional alt-text for the hero/featured image. */
     heroImageAlt: z.string().optional(),
+    /** Optional CSS object-position for the cropped card image (e.g. `left bottom`). */
+    heroImagePosition: z.string().optional(),
     /** Per-post override of SITE.showFeaturedImages (cards + hero). */
     showFeaturedImage: z.boolean().optional(),
     /** Per-post override of SITE.dynamicPostCardHeight on listing cards. */

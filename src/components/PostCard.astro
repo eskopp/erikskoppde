@@ -16,6 +16,7 @@ const href = postPath(post);
 const heroAsset = heroImage(post);
 const hasImage = Boolean(heroAsset) && shouldShowHero(post);
 const heroAlt = post.data.heroImageAlt ?? '';
+const heroPosition = post.data.heroImagePosition;
 const isDynamicCardHeight = post.data.dynamicPostCardHeight ?? SITE.dynamicPostCardHeight;
 ---
 
@@ -40,6 +41,7 @@ const isDynamicCardHeight = post.data.dynamicPostCardHeight ?? SITE.dynamicPostC
             widths={[384, 768, 960]}
             sizes="(max-width: 767px) 100vw, 378px"
             quality={75}
+            style={heroPosition ? `object-position: ${heroPosition}` : undefined}
           />
         </div>
       )
