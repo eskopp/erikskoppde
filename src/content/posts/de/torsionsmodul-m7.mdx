@@ -15,7 +15,7 @@ import Callout from '../../../components/Callout.astro';
 
 <Callout type="info">Dieser Artikel ist kein Protokoll. Er beschreibt die physikalische Idee, den Versuchsaufbau und die beiden Messmethoden. Konkrete Messwerte und Ergebnisse sind nicht Bestandteil des Beitrags.</Callout>
 
-Im [Grundpraktikum der Physik](https://www.tu-ilmenau.de/universitaet/fakultaeten/fakultaet-mathematik-und-naturwissenschaften/profil/institute-und-fachgebiete/institut-fuer-physik/profil/physikalisches-grundpraktikum)[^1] stand diese Woche der Versuch M7 an, der Torsionsmodul. Dabei bekommt man zwei dünne Metallstäbe und untersucht, wie stark sie sich gegen Verdrehen wehren.
+Im [Grundpraktikum der Physik](https://www.tu-ilmenau.de/universitaet/fakultaeten/fakultaet-mathematik-und-naturwissenschaften/profil/institute-und-fachgebiete/institut-fuer-physik/profil/physikalisches-grundpraktikum)[^1] stand im November 2026 der Versuch M7 an, der Torsionsmodul. Dabei bekommt man zwei dünne Metallstäbe und untersucht, wie stark sie sich gegen Verdrehen wehren.
 
 Die TU Ilmenau stellt dazu eine [offizielle Versuchsanleitung für den Versuch M7](https://www.tu-ilmenau.de/fileadmin/Bereiche/MN/phys/Grundpraktikum/Dokumente/Anleitungen/M7.pdf)[^2] als PDF bereit.
 
@@ -26,6 +26,8 @@ Das Spannende daran: Man soll ihn auf zwei ganz verschiedene Arten bestimmen und
 **Torsion** bezeichnet eine Belastung, bei der ein Körper um seine Längsachse verdreht wird. Man kann sich einen Stab vorstellen, dessen oberes Ende festgehalten wird, während man das untere Ende dreht. Die einzelnen Querschnitte des Stabes verdrehen sich dabei gegeneinander.
 
 Im Inneren verschieben sich benachbarte Materialschichten seitlich gegeneinander. Diese Art der Verformung heißt **Scherung**. Anschaulich ähnelt sie einem Kartenstapel, dessen unterste Karte liegen bleibt, während die oberste seitlich verschoben wird: Die Karten trennen sich nicht, aber der Stapel wird schräg.
+
+![Schematische Gegenüberstellung von Torsion an einem Stab und Scherung an einem Kartenstapel](../../../assets/images/posts/torsionsmodul-m7/torsion-und-scherung.png)
 
 ### Was ist der Schubmodul?
 
@@ -99,10 +101,10 @@ $$
 
 Nach dem Auflegen eines Massestücks dreht sich die Scheibe so lange, bis das von der Gewichtskraft erzeugte Drehmoment und das entgegenwirkende Drehmoment des Stabes im Gleichgewicht sind. Dann liest man den Verdrehwinkel an der Skala ab. Die Belastung darf dabei nicht zu groß werden, damit sich der Stab nur elastisch verformt und anschließend wieder in seine Ausgangslage zurückkehrt.
 
-Trägt man $M$ über $\varphi$ auf, liegen die Punkte auf einer Geraden. Ihre Steigung ist das Direktionsmoment $D$, und daraus folgt
+Trägt man $M$ über $\varphi$ auf, liegen die Punkte auf einer Geraden. Ihre Steigung ist das Direktionsmoment $D$. Löst man $D = \frac{\pi \cdot G \cdot d^4}{32 \cdot l}$ nach $G$ auf, folgt
 
 $$
-G = \frac{32 \cdot S \cdot l}{\pi \cdot d^4}
+G = \frac{32 \cdot D \cdot l}{\pi \cdot d^4}
 $$
 
 ### Methode 2: dynamisch
@@ -157,7 +159,7 @@ Gerade der Vergleich der beiden Methoden zeigt, warum Messunsicherheiten nicht n
 
 Die vierte Potenz beim Durchmesser ist gnadenlos: Kleine Abweichungen können sich stark auf die Berechnung auswirken. Auch eine manuelle Periodenmessung über viele Schwingungen ist empfindlicher gegenüber systematischen Einflüssen, als es zunächst scheint.
 
-Den Quellcode für Auswertung und Diagramme gibt es in einem privaten GitHub-Repository. Wenn jemand daran Interesse hat, sagt mir einfach Bescheid.
+Den Quellcode für Auswertung und Diagramme behalte ich vorerst in einem privaten GitHub-Repository.
 
 [^1]: [Grundpraktikum der Physik – TU Ilmenau](https://www.tu-ilmenau.de/universitaet/fakultaeten/fakultaet-mathematik-und-naturwissenschaften/profil/institute-und-fachgebiete/institut-fuer-physik/profil/physikalisches-grundpraktikum) (abgerufen am 04.11.2026)
 
