@@ -37,13 +37,37 @@ Der Faktor $G$ ist der **Schubmodul**, bei der Verdrehung eines Stabes auch **To
 
 Der Schubmodul wird in Pascal angegeben und hängt vom Material ab, nicht von der Länge oder Dicke des untersuchten Stabes. Diese Abmessungen beeinflussen allerdings, wie leicht sich der konkrete Stab insgesamt verdrehen lässt.
 
-Um einen Stab zu verdrehen, braucht man ein **Drehmoment** $M$. Es beschreibt die Drehwirkung einer Kraft. Dieselbe Kraft wirkt umso stärker, je weiter außen sie von der Drehachse angreift. Für einen Stab mit Länge $l$ und Durchmesser $d$ gilt bei einer Verdrehung um den Winkel $\varphi$
+### Was ist ein Drehmoment?
+
+Das **Drehmoment** $M$ beschreibt die Drehwirkung einer Kraft. Ein bekanntes Beispiel ist eine Tür: Drückt man direkt neben dem Scharnier, lässt sie sich nur schwer öffnen. Dieselbe Kraft am Türgriff wirkt deutlich stärker, weil der Abstand zur Drehachse größer ist.
+
+Greift eine Kraft $F$ senkrecht im Abstand $r$ von der Drehachse an, gilt vereinfacht
 
 $$
-M = D \cdot \varphi \qquad \text{mit} \qquad D = \frac{\pi \cdot G \cdot d^4}{32 \cdot l}
+M = F \cdot r
 $$
 
-$D$ heißt **Direktionsmoment**. Anders als der Schubmodul beschreibt es nicht nur das Material, sondern die Verdrehsteifigkeit des gesamten Stabes mit seiner konkreten Länge und Dicke. Ein großes Direktionsmoment bedeutet: Für denselben Verdrehwinkel ist ein größeres Drehmoment erforderlich. Der Durchmesser geht dabei mit der vierten Potenz ein. Das wird später noch wichtig.
+Das Drehmoment wird in Newtonmeter angegeben. Es ist keine Materialeigenschaft, sondern beschreibt, wie stark in einer bestimmten Situation gedreht wird.
+
+### Was ist das Direktionsmoment?
+
+Das **Direktionsmoment** $D$ beschreibt, wie stark sich ein konkreter Stab gegen eine Verdrehung wehrt. Man kann es sich als Federkonstante für eine Drehbewegung vorstellen: Bei einer normalen Feder verbindet die Federkonstante eine Kraft mit einer Auslenkung. Beim verdrehten Stab verbindet das Direktionsmoment ein Drehmoment mit einem Verdrehwinkel.
+
+Für kleine Verdrehungen gilt
+
+$$
+M = D \cdot \varphi
+$$
+
+Ein großes Direktionsmoment bedeutet, dass für denselben Verdrehwinkel $\varphi$ ein größeres Drehmoment nötig ist. Der Stab ist also verdrehsteifer. Die Einheit ist Newtonmeter pro Radiant.
+
+Anders als der Schubmodul hängt das Direktionsmoment nicht nur vom Material, sondern auch von der Form des Stabes ab. Für einen runden Stab mit Länge $l$ und Durchmesser $d$ gilt
+
+$$
+D = \frac{\pi \cdot G \cdot d^4}{32 \cdot l}
+$$
+
+Damit wird der Unterschied deutlich: Der Schubmodul $G$ kennzeichnet das Material, das Direktionsmoment $D$ den gesamten Stab. Ein dickerer oder kürzerer Stab lässt sich schwerer verdrehen, selbst wenn er aus demselben Material besteht. Besonders stark wirkt sich der Durchmesser aus, weil er mit der vierten Potenz eingeht.
 
 ### Der Aufbau
 
