@@ -431,7 +431,15 @@
     @apply order-first overflow-hidden md:order-last md:col-span-5 md:flex md:flex-col;
   }
   .chirpy-card-image {
-    @apply h-44 w-full object-cover md:min-h-0 md:flex-1 md:rounded-r-md;
+    @apply h-44 w-full object-cover md:h-full md:min-h-0 md:rounded-r-md;
+  }
+  @media (min-width: 768px) {
+    .chirpy-card-link.has-image.fixed-size {
+      height: 16rem;
+    }
+    .chirpy-card-link.has-image.fixed-size .chirpy-card-image-wrap {
+      height: 16rem;
+    }
   }
 }
 
@@ -572,7 +580,10 @@
   .prose-chirpy img {
     @apply border-base-300 mx-auto my-6 rounded-md border;
     max-width: 100%;
+    width: auto;
     height: auto;
+    max-height: min(72vh, 48rem);
+    object-fit: contain;
   }
 
   /* Figures — mirror the hero image treatment so the caption feels
@@ -586,7 +597,10 @@
     margin-top: 0;
     margin-bottom: 0;
     max-width: 100%;
+    width: auto;
     height: auto;
+    max-height: min(72vh, 48rem);
+    object-fit: contain;
     display: block;
   }
   .prose-chirpy figcaption {
@@ -630,13 +644,15 @@
     max-width: 100%;
   }
   .post-hero__frame {
-    @apply relative overflow-hidden rounded-md;
+    @apply relative flex items-center justify-center overflow-hidden rounded-md;
     background: var(--color-sidebar-to);
   }
   .post-hero__img {
-    @apply block w-full;
+    @apply block max-w-full;
+    width: auto;
     height: auto;
-    object-fit: cover;
+    max-height: min(72vh, 48rem);
+    object-fit: contain;
   }
   .prose-chirpy table {
     @apply my-6 w-full border-collapse text-left text-sm;
