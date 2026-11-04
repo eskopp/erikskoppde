@@ -19,7 +19,7 @@ Im [Grundpraktikum der Physik](https://www.tu-ilmenau.de/universitaet/fakultaete
 
 Die TU Ilmenau stellt dazu eine [offizielle Versuchsanleitung für den Versuch M7](https://www.tu-ilmenau.de/fileadmin/Bereiche/MN/phys/Grundpraktikum/Dokumente/Anleitungen/M7.pdf)[^2] als PDF bereit.
 
-Das Spannende daran: Man soll ihn auf zwei ganz verschiedene Arten bestimmen und am Ende schauen, ob dasselbe herauskommt.
+Das Ziel ist ein Materialwert, mit dem sich abschätzen lässt, aus welchem Metall die Stäbe bestehen. Das Spannende daran: Man soll ihn auf zwei ganz verschiedene Arten bestimmen und am Ende schauen, ob dasselbe herauskommt.
 
 ### Torsion: Verdrehen um die Längsachse
 
@@ -99,7 +99,7 @@ $$
 
 Nach dem Auflegen eines Massestücks dreht sich die Scheibe so lange, bis das von der Gewichtskraft erzeugte Drehmoment und das entgegenwirkende Drehmoment des Stabes im Gleichgewicht sind. Dann liest man den Verdrehwinkel an der Skala ab. Die Belastung darf dabei nicht zu groß werden, damit sich der Stab nur elastisch verformt und anschließend wieder in seine Ausgangslage zurückkehrt.
 
-Trägt man $M$ über $\varphi$ auf, liegen die Punkte auf einer Geraden. Ihre Steigung ist das Direktionsmoment $D$. Löst man $D = \frac{\pi \cdot G \cdot d^4}{32 \cdot l}$ nach $G$ auf, folgt
+Trägt man $M$ über $\varphi$ auf, liegen die Punkte auf einer Geraden. Das liegt daran, dass sich der Stab wie eine Feder verhält: Doppelte Last bedeutet doppeltes Drehmoment und damit auch den doppelten Winkel. Die Gleichung $M = D \cdot \varphi$ ist genau die Gleichung dieser Geraden, deshalb ist ihre Steigung das Direktionsmoment $D$. Je steifer der Stab, desto steiler verläuft die Gerade. Löst man $D = \frac{\pi \cdot G \cdot d^4}{32 \cdot l}$ nach $G$ auf, folgt
 
 $$
 G = \frac{32 \cdot D \cdot l}{\pi \cdot d^4}
@@ -107,13 +107,17 @@ $$
 
 ### Methode 2: dynamisch
 
-Die dynamische Methode ist raffinierter. Der Stab mit der Scheibe schwingt wie ein Pendel hin und her. Die **Periodendauer** $T$ ist die Zeit für eine vollständige Hin- und Herbewegung. Für sie gilt
+Die dynamische Methode ist raffinierter. Man dreht die Scheibe ein Stück und lässt sie los. Der Stab will sich zurückdrehen, die Scheibe schwingt über die Ausgangslage hinaus und wieder zurück, wie ein Pendel. Die **Periodendauer** $T$ ist die Zeit für eine vollständige Hin- und Herbewegung.
+
+Zwei Dinge bestimmen, wie schnell das geht. Ein steiferer Stab zieht die Scheibe kräftiger zurück, also schwingt sie schneller. Eine Scheibe, die sich schwer in Drehung bringen lässt, schwingt dagegen langsamer. Dieser Widerstand gegen Drehbewegung heißt **Trägheitsmoment** $J$. Er hängt nicht nur von der Masse ab, sondern auch davon, wie weit sie von der Drehachse entfernt ist. Man kennt das von der Pirouette: Mit ausgestreckten Armen dreht man sich langsamer als mit angelegten, obwohl die Masse dieselbe ist.
+
+Beides steckt in der Formel
 
 $$
 T = 2\pi \sqrt{\frac{J}{D}}
 $$
 
-Das **Trägheitsmoment** $J$ beschreibt, wie stark sich ein Körper einer Änderung seiner Drehbewegung widersetzt. Es hängt nicht nur von seiner Masse ab, sondern auch davon, wie weit diese Masse von der Drehachse entfernt ist. Das Trägheitsmoment der Scheibe ist zunächst unbekannt.
+Ein großes $D$ macht $T$ kleiner, ein großes $J$ macht $T$ größer. Das Trägheitsmoment der Scheibe ist allerdings zunächst unbekannt.
 
 Der Trick: Man misst ein zweites Mal, diesmal mit einem Hohlzylinder auf der Scheibe. Mit $J^*$ wird das **zusätzliche Trägheitsmoment dieses Hohlzylinders** bezeichnet. Weil seine Masse $m_H$ sowie sein Innenradius $r_i$ und Außenradius $r_a$ messbar sind, lässt es sich berechnen:
 
