@@ -71,7 +71,7 @@ Damit wird der Unterschied deutlich: Der Schubmodul $G$ kennzeichnet das Materia
 
 ### Der Aufbau
 
-Oben ist ein Stab (etwa 0,9 m lang) eingespannt. Unten sitzt eine Kreisscheibe mit einer Winkelskala. Am Rand der Scheibe liegt eine Schnur, an die man Massestücke hängen kann.
+Oben ist ein Stab (etwa 0,9 m lang) eingespannt. Unten sitzt eine Kreisscheibe mit einer Winkelskala. Eine Schnur liegt tangential am Rand der Scheibe, läuft über eine Umlenkrolle und trägt an ihrem freien Ende einen Gewichtshalter für die Massestücke.
 
 ![Einspannung des Stabes](../../../assets/images/posts/torsionsmodul-m7/einspannung.jpg)
 
@@ -79,13 +79,23 @@ Es gab zwei Stäbe, die beide goldbraun aussahen. Welches Material sie haben, st
 
 ### Methode 1: statisch
 
-Die statische Methode ist die einfache. Man hängt nacheinander Gewichte an die Schnur. Sie ziehen am Rand der Scheibe und erzeugen das Drehmoment
+Die statische Methode nutzt die Gewichtskraft der Massestücke. Ohne Umlenkrolle würde diese Kraft senkrecht nach unten wirken und könnte nicht in der benötigten Richtung am Rand der waagerechten Scheibe ziehen. Die Umlenkrolle ändert deshalb die Richtung der Schnur: Auf der einen Seite hängt der Gewichtshalter nach unten, auf der anderen Seite zieht die Schnur tangential am Scheibenrand.
+
+Im idealen Fall ist die Rolle reibungsfrei und die Schnur masselos. Dann ist die Zugkraft $F_S$ in der gesamten Schnur gleich groß und entspricht der Gewichtskraft der angehängten Gesamtmasse:
 
 $$
-M = m_\text{ges} \cdot g \cdot R_S
+F_S = m_\text{ges} \cdot g
 $$
 
-mit dem Scheibenradius $R_S = 88{,}0\ \text{mm}$. Nach jedem Gewicht liest man den Winkel an der Skala ab. Mehr als 45° sollte man nicht gehen, sonst verformt sich der Stab bleibend.
+$m_\text{ges}$ umfasst dabei den Gewichtshalter und alle aufgelegten Massestücke. Die Umlenkrolle vergrößert die Kraft nicht; sie ändert nur ihre Richtung.
+
+Am Rand der Scheibe greift die Schnur senkrecht zum Radius an. Dadurch entsteht mit dem Scheibenradius $R_S$ als Hebelarm das Drehmoment
+
+$$
+M = F_S \cdot R_S = m_\text{ges} \cdot g \cdot R_S
+$$
+
+Nach dem Auflegen eines Massestücks dreht sich die Scheibe so lange, bis das von der Gewichtskraft erzeugte Drehmoment und das entgegenwirkende Drehmoment des Stabes im Gleichgewicht sind. Dann liest man den Verdrehwinkel an der Skala ab. Die Belastung darf dabei nicht zu groß werden, damit sich der Stab nur elastisch verformt und anschließend wieder in seine Ausgangslage zurückkehrt.
 
 Trägt man $M$ über $\varphi$ auf, liegen die Punkte auf einer Geraden. Ihre Steigung ist das Direktionsmoment $D$, und daraus folgt
 
@@ -120,6 +130,7 @@ Bei beiden Methoden wirken sich kleine Unsicherheiten deutlich auf die Auswertun
 - **Stabdurchmesser:** Er geht mit der vierten Potenz in die Berechnung ein. Schon eine kleine Abweichung bei der Messung verändert den berechneten Torsionsmodul merklich.
 - **Hohlzylinder:** Masse und Abmessungen bestimmen sein Trägheitsmoment und müssen deshalb möglichst genau bekannt sein.
 - **Winkel:** Die begrenzte Auflösung der Skala beeinflusst die Steigung der Geraden bei der statischen Methode.
+- **Umlenkrolle:** Reibung in der Rolle und zwischen Schnur und Rolle kann dazu führen, dass die tatsächliche Zugkraft etwas von der ideal angenommenen Gewichtskraft abweicht.
 - **Periodendauer:** Bei einer manuellen Messung können Reaktionszeit, Zählweise und die Abgrenzung einer vollständigen Schwingung das Ergebnis beeinflussen.
 
 Gerade der Vergleich der beiden Methoden zeigt, warum Messunsicherheiten nicht nur am Ende ergänzt, sondern während der gesamten Auswertung berücksichtigt werden müssen.
