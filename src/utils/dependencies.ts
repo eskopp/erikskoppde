@@ -1,3 +1,4 @@
+/* global process */
 /**
  * Reads the project's direct dependencies (package.json + bun.lock) and
  * enriches them with the description already shipped inside each

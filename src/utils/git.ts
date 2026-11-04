@@ -1,3 +1,4 @@
+/* global process */
 /**
  * Reads recent commits straight from the local Git history. Runs at build
  * time only — no GitHub API, no network access. On GitHub Actions this

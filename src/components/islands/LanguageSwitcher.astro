@@ -66,7 +66,7 @@ const fallbackBase = stripLocale(Astro.url.pathname);
         {otherLocales.map((target) => (
           <li>
             <a href={localizedPath(fallbackBase, target)} data-lang-target={target}>
-              <span class="badge badge-ghost badge-sm">{target.toUpperCase()}</span>
+              <span class="badge badge-ghost badge-sm">{String(target).toUpperCase()}</span>
               {localeLabel(target)}
             </a>
           </li>

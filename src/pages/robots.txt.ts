@@ -1,4 +1,4 @@
-/* global URL */
+/* global Response, URL */
 import type { APIRoute } from 'astro';
 import { SITE } from '~/config';
 

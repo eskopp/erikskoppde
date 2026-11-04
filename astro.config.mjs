@@ -1,3 +1,4 @@
+/* global URL */
 // @ts-check
 import { satteri, satteriHeadingIdsPlugin } from '@astrojs/markdown-satteri';
 import mdx from '@astrojs/mdx';

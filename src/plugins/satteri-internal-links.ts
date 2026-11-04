@@ -1,3 +1,4 @@
+/* global URL */
 /**
  * satteri-internal-links — Resolves `[text](post:slug)` and
  * `[text](page:slug)` links to the actual (locale-aware, base-path-aware)

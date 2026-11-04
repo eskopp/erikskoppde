@@ -137,7 +137,7 @@ export async function getPostBySlug(locale: Locale, slug: string): Promise<Post 
 
 /** All translation siblings of a post (other locales sharing translationKey). */
 export async function getTranslations(entry: Post): Promise<Record<Locale, Post | undefined>> {
-  const out: Partial<Record<Locale, Post | undefined>> = {};
+  const out: Record<string, Post | undefined> = {};
   for (const locale of SITE.locales) {
     if (locale === entry.data.lang) {
       out[locale] = entry;
