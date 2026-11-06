@@ -47,7 +47,7 @@
     "@iconify-json/lucide": "^1.2.150",
     "@iconify-json/simple-icons": "^1.2.101",
     "@resvg/resvg-js": "^2.6.2",
-    "@tailwindcss/vite": "^4.3.2",
+    "@tailwindcss/vite": "^4.3.4",
     "@types/bun": "^1.4.4",
     "@typescript-eslint/eslint-plugin": "^8.72.1",
     "@typescript-eslint/parser": "^8.72.1",
