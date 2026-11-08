@@ -34,7 +34,7 @@
     "astro": "^7.4.5",
     "astro-expressive-code": "^0.44.3",
     "astro-icon": "^1.2.0",
-    "mermaid": "^12.2.0",
+    "mermaid": "^12.3.0",
     "satteri-external-links": "^0.1.1"
   },
   "devDependencies": {
