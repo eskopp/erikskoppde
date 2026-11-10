@@ -100,7 +100,7 @@ export function sortPostsByDate(posts: Post[]): Post[] {
  */
 export async function getPosts(
   locale: Locale,
-  opts?: { section?: 'blog' | 'labor' | 'schach' },
+  opts?: { section?: 'blog' | 'labor' | 'schach' | 'code' },
 ): Promise<Post[]> {
   if (skipPostCollections) return [];
   const all = await getCollection('posts', (entry) => {

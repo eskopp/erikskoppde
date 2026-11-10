@@ -13,6 +13,7 @@ export const messages = {
     'nav.blog': 'Blog',
     'nav.labor': 'Labor',
     'nav.schach': 'Schach',
+    'nav.code': 'Code',
     'nav.posts': 'Beiträge',
     'nav.tags': 'Tags',
     'nav.categories': 'Kategorien',
@@ -82,6 +83,9 @@ export const messages = {
     'schach.title': 'Schach',
     'schach.description': 'Turniere, Partien und alles rund ums Schach.',
     'schach.empty': 'Noch keine Schach-Artikel.',
+    'code.title': 'Code',
+    'code.description': 'Kurze Code-Snippets mit Erklärung zum Nachschlagen und Kopieren.',
+    'code.empty': 'Noch keine Snippets.',
 
     'gallery.title': 'Galerie',
     'gallery.empty': 'Noch keine Alben.',
