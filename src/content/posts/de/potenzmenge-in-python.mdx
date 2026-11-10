@@ -1,0 +1,108 @@
+---
+title: 'Die Potenzmenge in Python'
+description: 'Alle Teilmengen einer Liste berechnen, Schritt für Schritt erklärt.'
+pubDate: 2026-11-10
+tags: ['Python', 'Mathe', 'Mengenlehre']
+categories: []
+sections: ['code']
+math: true
+---
+
+## Was ist die Potenzmenge?
+
+Die Potenzmenge einer Menge $M$ ist die Menge aller Teilmengen von $M$. Man schreibt sie als $\mathcal{P}(M)$.
+
+Zwei Teilmengen gehören immer dazu: die leere Menge $\emptyset$ und die Menge $M$ selbst.
+
+Für $M = \{1, 2, 3\}$ sieht das so aus:
+
+$$\mathcal{P}(M) = \{\emptyset, \{1\}, \{2\}, \{1, 2\}, \{3\}, \{1, 3\}, \{2, 3\}, \{1, 2, 3\}\}$$
+
+Das sind 8 Teilmengen. Allgemein hat eine Menge mit $n$ Elementen genau $2^n$ Teilmengen. Jedes Element ist in einer Teilmenge entweder dabei oder nicht. Das sind zwei Möglichkeiten pro Element, und sie gelten unabhängig voneinander.
+
+## Die Idee hinter dem Code
+
+Man baut die Potenzmenge Element für Element auf:
+
+1. Man startet mit der leeren Menge. Sie ist immer eine Teilmenge.
+2. Für jedes neue Element gibt es zu jeder bisherigen Teilmenge eine Variante ohne das Element und eine mit.
+3. Die Varianten ohne das Element hat man schon. Man muss nur die mit dem Element neu bauen.
+
+So verdoppelt sich die Anzahl der Teilmengen mit jedem Element. Für $[1, 2, 3]$ läuft das so ab:
+
+| Nach Element | Teilmengen |
+|---|---|
+| Start | `[]` |
+| 1 | `[]`, `[1]` |
+| 2 | `[]`, `[1]`, `[2]`, `[1, 2]` |
+| 3 | die vier von oben plus `[3]`, `[1, 3]`, `[2, 3]`, `[1, 2, 3]` |
+
+## Der Code
+
+```python
+def potenzmenge(elemente):
+    # Die leere Menge ist immer eine Teilmenge
+    alle_teilmengen = [[]]
+
+    for element in elemente:
+        teilmengen_mit_element = []
+
+        for alte_teilmenge in alle_teilmengen:
+            # Kopie, damit die alte Teilmenge unverändert bleibt
+            kopie = list(alte_teilmenge)
+            kopie.append(element)
+            teilmengen_mit_element.append(kopie)
+
+        # Die ohne das Element und die mit dem Element zusammen
+        alle_teilmengen = alle_teilmengen + teilmengen_mit_element
+
+    return alle_teilmengen
+
+
+if __name__ == "__main__":
+    teilmengen = potenzmenge([1, 2, 3])
+    for teilmenge in teilmengen:
+        print(teilmenge)
+    print(f"Anzahl: {len(teilmengen)}")
+```
+
+Die Ausgabe:
+
+```text
+[]
+[1]
+[2]
+[1, 2]
+[3]
+[1, 3]
+[2, 3]
+[1, 2, 3]
+Anzahl: 8
+```
+
+Die Teilmengen kommen in der Reihenfolge heraus, in der sie entstehen, nicht nach Größe sortiert.
+
+## Ein Anwendungsbeispiel: Teilsummen
+
+Welche Teilmengen von $\{1, 2, 3\}$ ergeben zusammen die Summe 3? Dafür geht man alle Teilmengen durch und behält nur die passenden:
+
+```python
+for teilmenge in potenzmenge([1, 2, 3]):
+    if sum(teilmenge) == 3:
+        print(teilmenge)
+```
+
+Die Ausgabe:
+
+```text
+[1, 2]
+[3]
+```
+
+Das ist im Kleinen das Teilsummenproblem. Man sucht Zahlen aus einer Liste, die zusammen einen bestimmten Wert ergeben.
+
+## Grenzen
+
+Die Anzahl der Teilmengen wächst mit $2^n$. Bei 20 Elementen sind das schon über eine Million, bei 30 über eine Milliarde. Für größere Listen sollte man die Teilmengen nicht alle auf einmal in eine Liste schreiben, sondern nacheinander erzeugen. In Python geht das mit `itertools.combinations`.
+
+Wenn die Liste doppelte Elemente enthält, behandelt die Funktion sie als verschieden. Gleiche Teilmengen kommen dann mehrfach vor.
