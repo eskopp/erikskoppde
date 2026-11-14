@@ -14,6 +14,7 @@ export const messages = {
     'nav.labor': 'Labor',
     'nav.schach': 'Schach',
     'nav.code': 'Code',
+    'nav.kramkiste': 'Kramkiste',
     'nav.posts': 'Beiträge',
     'nav.tags': 'Tags',
     'nav.categories': 'Kategorien',
@@ -86,6 +87,9 @@ export const messages = {
     'code.title': 'Code',
     'code.description': 'Kurze Code-Snippets mit Erklärung zum Nachschlagen und Kopieren.',
     'code.empty': 'Noch keine Snippets.',
+    'kramkiste.title': 'Kramkiste',
+    'kramkiste.description': 'Alles, was sonst nirgends hinpasst: kleine Funde, Notizen und Krempel.',
+    'kramkiste.empty': 'Die Kramkiste ist noch leer.',
 
     'gallery.title': 'Galerie',
     'gallery.empty': 'Noch keine Alben.',

@@ -120,6 +120,7 @@ export const NAV: readonly NavItem[] = [
   { key: 'labor', href: '/labor', icon: 'lucide:flask-conical' },
   { key: 'schach', href: '/schach', icon: 'lucide:crown' },
   { key: 'code', href: '/code', icon: 'lucide:code-xml' },
+  { key: 'kramkiste', href: '/kramkiste', icon: 'lucide:package-open' },
   { key: 'categories', href: '/categories', icon: 'lucide:layers' },
   { key: 'tags', href: '/tags', icon: 'lucide:tag' },
   { key: 'archives', href: '/archives', icon: 'lucide:archive' },
