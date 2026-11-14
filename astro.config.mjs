@@ -157,6 +157,11 @@ export default defineConfig({
   // automatically (via `import.meta.env.BASE_URL`).
   base: process.env.BASE_PATH ?? '/',
   trailingSlash: 'ignore',
+  // Old post URLs (renamed in November 2026) keep working.
+  redirects: {
+    '/posts/torsionsmodul-m7': '/posts/torsionsmodul/',
+    '/posts/dichtebestimmung-m1': '/posts/dichtebestimmung/',
+  },
   build: {
     format: 'directory',
   },
