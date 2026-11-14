@@ -14,6 +14,8 @@ math: true
 
 Die Potenzmenge einer Menge $M$ ist die Menge aller Teilmengen von $M$. Man schreibt sie als $\mathcal{P}(M)$.
 
+Die mathematische Erklärung dazu steht ausführlicher auf meiner Studium-Seite.[^1]
+
 Zwei Teilmengen gehören immer dazu: die leere Menge $\emptyset$ und die Menge $M$ selbst.
 
 Für $M = \{1, 2, 3\}$ sieht das so aus:
@@ -108,3 +110,5 @@ Das ist im Kleinen das Teilsummenproblem. Man sucht Zahlen aus einer Liste, die 
 Die Anzahl der Teilmengen wächst mit $2^n$. Bei 20 Elementen sind das schon über eine Million, bei 30 über eine Milliarde. Für größere Listen sollte man die Teilmengen nicht alle auf einmal in eine Liste schreiben, sondern nacheinander erzeugen. In Python geht das mit `itertools.combinations`.
 
 Wenn die Liste doppelte Elemente enthält, behandelt die Funktion sie als verschieden. Gleiche Teilmengen kommen dann mehrfach vor.
+
+[^1]: [Potenzmengen](https://studium.erikskopp.de/mathematik/1/logik-und-mengen/potenzmengen/) auf studium.erikskopp.de (abgerufen am 14.11.2026)
