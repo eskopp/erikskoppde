@@ -13,7 +13,7 @@ heroImageAlt: 'Die Formel Dichte gleich Masse durch Volumen über einem Bechergl
 
 import Callout from '../../../components/Callout.astro';
 
-<Callout type="info">Dieser Artikel ist kein Protokoll. Er beschreibt die physikalische Idee und die Messmethoden. Konkrete Messwerte und Ergebnisse sind nicht Bestandteil des Beitrags.</Callout>
+<Callout type="info">Dieser Artikel ist kein Protokoll. Er beschreibt die physikalische Idee und die Messmethoden. Konkrete Messwerte und Ergebnisse aus dem Praktikum sind nicht Bestandteil des Beitrags. Das Zahlenbeispiel weiter unten verwendet frei gewählte Werte.</Callout>
 
 Zum [Grundpraktikum der Physik](https://www.tu-ilmenau.de/universitaet/fakultaeten/fakultaet-mathematik-und-naturwissenschaften/profil/institute-und-fachgebiete/institut-fuer-physik/profil/physikalisches-grundpraktikum)[^1] gehört im November 2026 der Versuch M1, die Dichtebestimmung. Dabei geht es darum, die Dichte von Körpern auf verschiedenen Wegen zu bestimmen und die Ergebnisse zu vergleichen.
 
@@ -106,6 +106,19 @@ Es ist dieselbe Rechnung mit vertauschten Rollen. Auf diesem Prinzip beruht auch
 ## Die Dichte von Wasser
 
 Alle Formeln brauchen $\rho_W$. Bei $20\,^\circ\mathrm{C}$ hat Wasser eine Dichte von etwa $0{,}998\,\mathrm{g/cm^3}$. Mit der Temperatur ändert sie sich leicht. Für grobe Rechnungen nimmt man $1{,}00\,\mathrm{g/cm^3}$, für genaue Ergebnisse den Tabellenwert zur Wassertemperatur.
+
+## Ein Zahlenbeispiel
+
+Damit man sieht, wie die Formeln zusammenspielen, rechne ich alle Methoden mit demselben Körper durch. Die Zahlen sind frei gewählt und keine Messwerte. Der Körper ist ein Aluminiumzylinder mit dem Durchmesser $d = 2{,}000\,\mathrm{cm}$ und der Höhe $h = 4{,}00\,\mathrm{cm}$. Für Wasser gilt $\rho_W = 0{,}9982\,\mathrm{g/cm^3}$.
+
+- **Aus den Maßen:** $V = \frac{\pi \cdot d^2}{4} \cdot h = 12{,}57\,\mathrm{cm^3}$. Mit $m_K = 33{,}9\,\mathrm{g}$ ist $\rho_K = 2{,}70\,\mathrm{g/cm^3}$.
+- **Auftrieb:** Unter Wasser zeigt die Waage $m_K^* = 21{,}4\,\mathrm{g}$. Das verdrängte Wasser wiegt $m_K - m_K^* = 12{,}5\,\mathrm{g}$, also $\rho_K = \frac{33{,}9\,\mathrm{g}}{12{,}5\,\mathrm{g}} \cdot 0{,}9982\,\mathrm{g/cm^3} = 2{,}71\,\mathrm{g/cm^3}$.
+- **Pyknometer:** Mit $m_1 = 52{,}3\,\mathrm{g}$ und $m_2 = 73{,}7\,\mathrm{g}$ ist $m_W = m_1 + m_K - m_2 = 12{,}5\,\mathrm{g}$. Das ist derselbe Wert wie beim Auftrieb, also ebenfalls $\rho_K = 2{,}71\,\mathrm{g/cm^3}$.
+- **Flüssigkeit:** Unter Ethanol zeigt die Waage $m_K^* = 24{,}0\,\mathrm{g}$. Mit dem Volumen aus den Maßen folgt $\rho_\text{Fl} = \frac{33{,}9\,\mathrm{g} - 24{,}0\,\mathrm{g}}{12{,}57\,\mathrm{cm^3}} = 0{,}79\,\mathrm{g/cm^3}$.
+
+Alle drei Werte für den Körper liegen dicht beieinander und passen zu Aluminium mit etwa $2{,}70\,\mathrm{g/cm^3}$. Der Wert für Ethanol passt zum bekannten Wert von etwa $0{,}79\,\mathrm{g/cm^3}$. Auftrieb und Pyknometer liefern dasselbe Ergebnis, weil beide das verdrängte Wasser messen.
+
+Mit allen Zwischenschritten steht das Beispiel auf meiner [Studium-Seite](https://studium.erikskopp.de/praktika/grundpraktikum-1/dichtebestimmung/#alle-methoden-an-einem-zahlenbeispiel).
 
 ## Messunsicherheiten
 
