@@ -1,6 +1,6 @@
 ---
-title: 'Eine KI baut in meiner Minecraft-Welt'
-description: 'Wie ich mit Datapacks Bauwerke in Minecraft erzeuge, erklärt an einer kleinen Verzauberungsecke.'
+title: 'Bauwerke in Minecraft mit Datapacks'
+description: 'Wie man mit Datapacks ganze Bauwerke in Minecraft erzeugt, erklärt an einer Verzauberungsecke.'
 pubDate: 2026-11-05
 tags: ['Minecraft', 'Datapack', 'KI', 'Python']
 categories: ['Guide']
@@ -12,25 +12,35 @@ heroImageAlt: 'Ein schwebender Eisturm mit Felszapfen und spiralförmigen Glasb�
 
 import Callout from '../../../components/Callout.astro';
 
-<Callout type="info">Ich habe alles mit der Java Edition 26.3 gebaut. Bei anderen Versionen muss man ein paar Blocknamen und eine Zahl in einer Datei anpassen, dazu unten mehr.</Callout>
+*In einem Satz: Ein Datapack ist ein Ordner mit Textdateien voller Befehle, mit denen sich ein ganzes Bauwerk auf einmal in eine Minecraft-Welt setzen lässt.*
 
-Ich wollte wissen, ob eine KI aus einem Foto ein Bauwerk in meiner Minecraft-Welt machen kann. Es geht, aber mit Einschränkungen. Angefangen habe ich mit einem ganz normalen Spielerhaus, und das stand schon beim ersten Versuch. Danach habe ich zwei Bilder genommen, die deutlich schwerer sind: einen schwebenden Eisturm auf einer Felsinsel und einen Eispalast mit Kronleuchtern und Thron.
+<Callout type="info" title="Version">Alles hier gilt für die Java Edition 26.3. Bei anderen Versionen ändern sich Blocknamen und eine Zahl in einer Datei. Das steht weiter unten.</Callout>
+
+## Worum es geht
+
+Eine KI kann aus einem Foto ein Bauwerk für Minecraft erzeugen. Sie sieht das Spiel dabei nicht. Sie schreibt Textdateien mit Befehlen, die man in die Welt legt und ausführt. Ob das Ergebnis gut aussieht, muss man selbst prüfen. Als Test dienten drei Bauwerke: ein einfaches Spielerhaus, ein schwebender Eisturm auf einer Felsinsel und ein Eispalast mit Kronleuchtern und Thron.
 
 ![Das einfache Spielerhaus aus Eichenholz mit Steinsockel, Glasfenstern, Fackeln und einem Weg zur Tür](../../../assets/images/posts/minecraft-ki-datapacks/haus.png)
 
 ![Blick durch den Eispalast: Säulenreihen, ein dunkelblaues Gewölbe, Kronleuchter aus weißen Stäben und ein Thron am Ende des Saals](../../../assets/images/posts/minecraft-ki-datapacks/eispalast.png)
 
-Die KI sieht mein Spiel übrigens gar nicht. Sie schreibt Textdateien mit Befehlen, die lege ich in meine Welt und führe sie aus. Ob es gut aussieht, sehe nur ich, und dann sage ich ihr, was sie ändern soll. Das Prinzip ist so einfach, dass man es auch ohne KI nutzen kann. Deshalb zeige ich es hier an etwas Kleinem, einer Verzauberungsecke.
+Das Prinzip dahinter braucht keine KI. Es lässt sich von Hand benutzen, und deshalb wird es hier an einem kleinen Beispiel erklärt, einer Verzauberungsecke.
 
-## Was ist ein Datapack?
+## Das Datapack
 
-Ein Datapack ist ein Ordner in der Welt mit Textdateien, in denen Befehle stehen. Die Dateien enden auf `.mcfunction`. In jeder Zeile steht ein Befehl, genau so, wie man ihn im Chat tippen würde, nur ohne den Schrägstrich vorne. Mit `#` schreibt man einen Kommentar.
+<Callout type="info" title="Definition">Ein **Datapack** ist ein Ordner in der Welt, in dem Textdateien mit Befehlen liegen. Die Dateien enden auf `.mcfunction`. In jeder Zeile steht ein Befehl, so wie man ihn im Chat eintippt, nur ohne den Schrägstrich am Anfang. Ein `#` leitet einen Kommentar ein.</Callout>
 
-Zum Bauen brauche ich eigentlich nur zwei Befehle. `fill` füllt einen ganzen Quader mit einem Block, `setblock` setzt einen einzelnen. Koordinaten schreibt man mit einer Tilde, zum Beispiel `~3 ~0 ~-2`. Das bedeutet: drei Blöcke nach Osten, gleiche Höhe, zwei Blöcke nach Norden, gemessen von dort, wo man gerade steht. Darum baut dieselbe Datei an jeder Stelle der Welt.
+<Callout type="success" title="In einfachen Worten">Ein Datapack ist eine Liste von Anweisungen für die Welt. Das Spiel arbeitet sie Zeile für Zeile ab, so als hätte man jeden Befehl selbst in den Chat getippt.</Callout>
 
-## Die Verzauberungsecke
+## Die Befehle zum Bauen
 
-Die Ecke ist klein, hat aber eine feste Regel, die sich gut in Befehle übersetzen lässt. Ein Verzauberungstisch wird durch Bücherregale stärker. Für die höchste Stufe braucht man 15 davon. Sie müssen genau zwei Blöcke vom Tisch entfernt stehen, und dazwischen darf nur Luft sein. So entsteht ein Ring um den Tisch.
+<Callout type="info" title="Definition">`fill` füllt einen Quader mit einem Block, `setblock` setzt einen einzelnen Block. Koordinaten gibt man mit einer Tilde relativ zur eigenen Position an, zum Beispiel `~3 ~0 ~-2`. Das bedeutet: drei Blöcke nach Osten, gleiche Höhe, zwei Blöcke nach Norden.</Callout>
+
+<Callout type="success" title="In einfachen Worten">Die Tilde heißt „von hier aus gerechnet“. Darum baut dieselbe Datei an jeder Stelle der Welt, nämlich dort, wo man gerade steht.</Callout>
+
+## Beispiel: die Verzauberungsecke
+
+Die Ecke ist klein und hat eine feste Regel, die sich gut in Befehle übersetzen lässt. Ein Verzauberungstisch wird durch Bücherregale stärker. Für die höchste Stufe braucht man 15 davon. Sie müssen genau zwei Blöcke vom Tisch entfernt stehen, und dazwischen darf nur Luft sein. So entsteht ein Ring um den Tisch.
 
 Das ist die Datei `verzauberungsecke.mcfunction`:
 
@@ -62,9 +72,15 @@ setblock ~4 ~2 ~4 candle[candles=3,lit=true]
 setblock ~2 ~2 ~0 soul_lantern
 ```
 
-Erst räume ich den Platz leer und lege einen Boden, damit kein Baum oder Hügel im Weg ist. Dann bauen vier `fill`-Befehle die Wände, jeweils zwei Blöcke hoch. Zusammen ergibt das einen Ring, in dem innen 3 mal 3 Blöcke frei bleiben. Ein weiterer `fill` mit `air` schlägt auf der Südseite eine Tür hinein, und der Tisch kommt in die Mitte, zwei Blöcke von jeder Wand entfernt. Kerzen und Laterne setze ich ganz zum Schluss, denn sie stehen auf den Regalen, und die müssen vorher da sein.
+Der Ablauf in der Datei:
 
-Mit zwei Lagen sind es 30 Regale. Das ist mehr als nötig, denn für die höchste Stufe würde schon eine Lage reichen.
+1. Der Platz wird leergeräumt und ein Boden gelegt, damit kein Baum oder Hügel im Weg ist.
+2. Vier `fill`-Befehle bauen die Wände, jeweils zwei Blöcke hoch. Zusammen ergeben sie einen Ring, in dem innen 3 mal 3 Blöcke frei bleiben.
+3. Ein weiterer `fill` mit `air` schlägt auf der Südseite eine Tür hinein.
+4. Der Tisch kommt in die Mitte, zwei Blöcke von jeder Wand entfernt.
+5. Kerzen und Laterne kommen zuletzt, denn sie stehen auf den Regalen, und die müssen vorher da sein.
+
+Mit zwei Lagen sind es 30 Regale. Das ist mehr als nötig, denn für die höchste Stufe würde eine Lage reichen.
 
 Eine zweite Datei, `verzauberungsecke_entfernen.mcfunction`, räumt alles wieder weg:
 
@@ -72,9 +88,9 @@ Eine zweite Datei, `verzauberungsecke_entfernen.mcfunction`, räumt alles wieder
 fill ~0 ~-1 ~0 ~4 ~3 ~4 air
 ```
 
-## In die Welt packen
+## Das Datapack in die Welt legen
 
-Das Datapack ist ein Ordner mit fester Struktur. Er liegt im Ordner der Welt unter `saves`. Den findest du unter Windows in `%appdata%\.minecraft` und unter Linux in `~/.minecraft`.
+Das Datapack ist ein Ordner mit fester Struktur. Er liegt im Ordner der Welt unter `saves`. Unter Windows ist das `%appdata%\.minecraft`, unter Linux `~/.minecraft`.
 
 ```text
 saves/<Weltname>/datapacks/beispiel_pack/
@@ -86,7 +102,7 @@ saves/<Weltname>/datapacks/beispiel_pack/
             └── verzauberungsecke_entfernen.mcfunction
 ```
 
-Bei den Namen muss man aufpassen. `beispiel` ist der Namensraum und taucht später im Befehl wieder auf. Der Ordner `function` muss in der Einzahl heißen.
+`beispiel` ist der Namensraum und taucht später im Befehl wieder auf. Der Ordner `function` muss in der Einzahl heißen.
 
 Die Datei `pack.mcmeta` sagt dem Spiel, für welche Version das Datapack gedacht ist:
 
@@ -100,26 +116,26 @@ Die Datei `pack.mcmeta` sagt dem Spiel, für welche Version das Datapack gedacht
 }
 ```
 
-Die 121 gehört zu Minecraft 26.3 und ändert sich mit der Version. Du findest die Zahl in der `version.json` im Spiel-Archiv, also in `versions/26.3/26.3.jar` (das ist ein ganz normales Zip-Archiv), unter `pack_version` im Wert `data_major`. Passt sie nicht zur Spielversion, meldet das Spiel, dass das Datapack nicht passt.
+Die 121 gehört zu Minecraft 26.3 und ändert sich mit der Version. Man findet die Zahl in der Datei `version.json` im Spiel-Archiv, also in `versions/26.3/26.3.jar` (ein normales Zip-Archiv), unter `pack_version` im Wert `data_major`. Passt sie nicht zur Spielversion, meldet das Spiel, dass das Datapack nicht passt.
 
 ## Ausführen
 
-Du brauchst eine Welt, in der Cheats erlaubt sind. Stell dich auf ebenen Boden, an die Nordwest-Ecke der späteren Ecke, und gib im Chat zwei Befehle ein. Der erste lädt alle Datapacks neu, damit das Spiel deins findet, der zweite baut:
+Voraussetzung ist eine Welt, in der Cheats erlaubt sind. Man stellt sich auf ebenen Boden, an die Nordwest-Ecke der späteren Ecke, und gibt im Chat zwei Befehle ein. Der erste lädt alle Datapacks neu, damit das Spiel das neue findet, der zweite baut:
 
 ```text
 /reload
 /function beispiel:verzauberungsecke
 ```
 
-Mit `/function beispiel:verzauberungsecke_entfernen` räumst du die Ecke wieder weg. Der Boden darunter kommt dabei nicht zurück, es bleibt einfach Luft. Bei größeren Bauwerken würde ich deshalb vorher eine Sicherungskopie der Welt machen.
+Mit `/function beispiel:verzauberungsecke_entfernen` wird die Ecke wieder entfernt. Der Boden darunter kommt dabei nicht zurück, es bleibt Luft. Bei größeren Bauwerken ist deshalb vorher eine Sicherungskopie der Welt sinnvoll.
 
-Wenn im Chat `Unknown function` steht, stimmt der Name oder der Ordner nicht. Das ist mir selbst ein paarmal passiert, weil ich mich bei den Namen vertippt habe. Mit `/datapack list` siehst du, ob dein Datapack überhaupt geladen ist.
+<Callout type="warning" title="Stolperstelle">Steht im Chat `Unknown function`, stimmt der Name oder der Ordner nicht, zum Beispiel wegen eines Tippfehlers. Mit `/datapack list` sieht man, ob das Datapack überhaupt geladen ist.</Callout>
 
 ![Die fertige Verzauberungsecke von Süden: ein Ring aus Bücherregalen, in der Mitte der Verzauberungstisch, Kerzen auf den Ecken und eine Seelenlaterne auf der Rückseite](../../../assets/images/posts/minecraft-ki-datapacks/verzauberungsecke.png)
 
-## Wenn es größer wird
+## Große Bauwerke mit Python
 
-Der Eisturm hat etwa 5.300 Blöcke. Die Befehle dafür schreibt niemand von Hand, deshalb lasse ich sie von einem kleinen Programm erzeugen. Bei mir ist das Python. Hier ist ein Turm mit rundem Grundriss:
+Der Eisturm hat etwa 5.300 Blöcke. Die Befehle dafür schreibt niemand von Hand, sondern ein kleines Programm erzeugt sie. Hier ein Turm mit rundem Grundriss in Python:
 
 ```python
 import math
@@ -147,22 +163,26 @@ with open("round_tower.mcfunction", "w") as file:
 print(len(commands), "commands")
 ```
 
-Das Programm geht jede Position in einem Quadrat durch und merkt sich die, die auf dem Kreisring liegen. Danach fasst es Blöcke, die in einer Reihe nebeneinander liegen, zu einem einzigen `fill` zusammen, und zwar gleich in der ganzen Höhe des Turms. Der Ring hat 32 Säulen und kommt mit 20 Befehlen aus. Die Datei legst du genauso in den Ordner `function` wie die Verzauberungsecke.
+Das Programm geht jede Position in einem Quadrat durch und merkt sich die, die auf dem Kreisring liegen. Danach fasst es Blöcke, die in einer Reihe nebeneinander liegen, zu einem einzigen `fill` zusammen, und zwar gleich in der ganzen Höhe des Turms. Der Ring hat 32 Säulen und kommt mit 20 Befehlen aus. Die Datei kommt in den Ordner `function`, genau wie die Verzauberungsecke.
 
-Beim Eisturm sind aus den 5.300 Blöcken etwa 4.300 Befehle geworden, beim Eispalast gut 13.600 Blöcke in rund 5.300 Befehlen. Das Zusammenfassen spart also viel, hilft aber weniger, wenn viele verschiedene Blöcke gemischt sind. Die großen Bauwerke habe ich auf mehrere Dateien verteilt, die eine Hauptdatei nacheinander aufruft.
+Beim Eisturm wurden aus den 5.300 Blöcken etwa 4.300 Befehle, beim Eispalast sind es gut 13.600 Blöcke in rund 5.300 Befehlen. Das Zusammenfassen spart also viel, hilft aber weniger, wenn viele verschiedene Blöcke gemischt sind. Die großen Bauwerke wurden auf mehrere Dateien verteilt, die eine Hauptdatei nacheinander aufruft.
 
-## Ein paar Dinge, die man wissen sollte
+## Stolperstellen
 
-- Blocknamen ändern sich mit der Version. In 26.3 heißt die Kette zum Beispiel `iron_chain`, früher hieß sie `chain`. Die KI hat die Namen deshalb vor dem Bauen mit der Liste im Spiel-Archiv abgeglichen. Ist ein Name oder ein Befehl falsch, lädt das Spiel die ganze Funktion nicht. Den Grund findest du dann in `.minecraft/logs/latest.log`.
-- Alles, was irgendwo dranhängt, setze ich zuletzt: Laternen, Kerzen, Ketten, Leitern und Schnee. Sonst fallen sie ab, weil noch kein Block da ist, an dem sie halten.
-- `fill` und `setblock` funktionieren nur in Bereichen, die gerade geladen sind. Bei sehr großen Bauwerken sollte man sich deshalb in die Nähe stellen.
-- Ein einzelner `fill` darf höchstens 32.768 Blöcke haben. Größere Flächen teilt man auf.
-- Ein Rückgängig gibt es für das Gelände nicht. Die Entfernen-Funktion macht Luft und stellt die alte Landschaft nicht wieder her.
+<Callout type="warning" title="Blocknamen ändern sich mit der Version">In 26.3 heißt die Kette zum Beispiel `iron_chain`, früher hieß sie `chain`. Die KI hat die Namen deshalb vor dem Bauen mit der Liste im Spiel-Archiv abgeglichen. Ist ein Name oder ein Befehl falsch, lädt das Spiel die ganze Funktion nicht. Den Grund findet man in `.minecraft/logs/latest.log`.</Callout>
 
-## Mein Fazit
+<Callout type="warning" title="Was irgendwo dranhängt, kommt zuletzt">Laternen, Kerzen, Ketten, Leitern und Schnee werden zuletzt gesetzt. Sonst fallen sie ab, weil noch kein Block da ist, an dem sie halten.</Callout>
 
-Die KI nimmt mir vor allem die Fleißarbeit ab: das Rechnen mit Koordinaten und das Zusammenfassen von tausenden Blöcken. Was gut aussieht, entscheide ich, und dann sage ich ihr, was sich ändern soll. Aus einem Foto wird dabei keine Kopie, sondern ein Bauwerk, das dem Bild ähnelt. Ornamente an den Säulen oder spiegelnde Böden fehlen zum Beispiel.
+<Callout type="warning" title="Geladene Bereiche">`fill` und `setblock` funktionieren nur in Bereichen, die gerade geladen sind. Bei sehr großen Bauwerken muss man sich in die Nähe stellen.</Callout>
+
+<Callout type="warning" title="Höchstens 32.768 Blöcke pro fill">Größere Flächen teilt man auf mehrere Befehle auf.</Callout>
+
+<Callout type="warning" title="Kein Rückgängig">Die Entfernen-Funktion macht Luft und stellt die alte Landschaft nicht wieder her.</Callout>
+
+## Grenzen
+
+Aus einem Foto wird keine Kopie, sondern ein Bauwerk, das dem Bild ähnelt. Ornamente an den Säulen oder spiegelnde Böden fehlen zum Beispiel. Die KI nimmt vor allem die Fleißarbeit ab, also das Rechnen mit Koordinaten und das Zusammenfassen tausender Blöcke. Was gut aussieht, muss man selbst beurteilen.
 
 Wer mehr Kontrolle will, schreibt die Befehle selbst, so wie bei der Verzauberungsecke. Dafür braucht man nur `fill`, `setblock` und etwas Geduld mit den Koordinaten.
 
-Falls dich Plugins mehr interessieren, schau dir auch mein [Wayfinder](/posts/wayfinder/) an.
+Siehe auch: [Wayfinder](/posts/wayfinder/), ein Plugin für Minecraft.
