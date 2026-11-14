@@ -1,0 +1,73 @@
+---
+title: 'Nabla'
+description: 'Was das Zeichen ∇ bedeutet und was man damit rechnet, kurz und einfach erklärt.'
+pubDate: 2026-11-14
+tags: ['Physik', 'Mathe', 'Mechanik']
+categories: []
+sections: ['kramkiste']
+math: true
+---
+
+In Theoretischer Physik 1 taucht ein Zeichen ständig auf: $\nabla$. Es heißt **Nabla**. Hier schreibe ich kurz auf, was es bedeutet.
+
+## Was ist Nabla?
+
+Nabla ist eine Abkürzung. Es packt die Ableitungen nach $x$, $y$ und $z$ in einen Vektor:
+
+$$
+\nabla = \left( \frac{\partial}{\partial x},\ \frac{\partial}{\partial y},\ \frac{\partial}{\partial z} \right)
+$$
+
+Das ist ein **Operator**. Das heißt, es ist keine Zahl und kein fertiger Vektor. Es ist eine Rechenvorschrift, die auf etwas wirkt, zum Beispiel auf eine Funktion. Allein sagt $\nabla$ nichts, erst mit einer Funktion dahinter kommt etwas heraus.
+
+Der Name kommt übrigens vom griechischen Wort für eine Harfe, weil das Zeichen so aussieht.
+
+Man kann Nabla auf drei Arten benutzen.
+
+## Gradient: $\nabla f$
+
+Man wendet $\nabla$ auf eine Funktion $f(x, y, z)$ an, die jedem Punkt eine Zahl gibt. Heraus kommt ein Vektor. Er zeigt in die Richtung, in der $f$ am stärksten ansteigt.
+
+Beispiel mit $f = x^2 + y^2 + z^2$:
+
+$$
+\nabla f = \left( 2x,\ 2y,\ 2z \right)
+$$
+
+## Divergenz: $\nabla \cdot \vec F$
+
+Hier steht ein Punkt (Skalarprodukt) zwischen $\nabla$ und einem Vektorfeld $\vec F$. Heraus kommt eine Zahl. Sie sagt, ob ein Feld an einem Punkt auseinanderläuft, also ob dort eine Quelle ist.
+
+Beispiel mit $\vec F = (x, y, z)$:
+
+$$
+\nabla \cdot \vec F = \frac{\partial x}{\partial x} + \frac{\partial y}{\partial y} + \frac{\partial z}{\partial z} = 3
+$$
+
+## Rotation: $\nabla \times \vec F$
+
+Hier steht ein Kreuz (Kreuzprodukt). Heraus kommt wieder ein Vektor. Er sagt, wie stark sich das Feld um einen Punkt dreht.
+
+Beispiel mit $\vec F = (-y,\ x,\ 0)$. Das Feld dreht sich um die $z$-Achse, und es kommt heraus:
+
+$$
+\nabla \times \vec F = (0,\ 0,\ 2)
+$$
+
+## Wo ich es in der Mechanik brauche
+
+Bei einer **konservativen Kraft** gibt es eine potentielle Energie $V$, und die Kraft ist der negative Gradient davon:
+
+$$
+\vec F = -\nabla V
+$$
+
+Das Minus sorgt dafür, dass die Kraft in Richtung des abnehmenden Potentials zeigt, also bergab.
+
+Beispiel Feder in einer Dimension mit $V = \frac{1}{2} k x^2$:
+
+$$
+F = -\frac{\mathrm{d}V}{\mathrm{d}x} = -k x
+$$
+
+Das ist genau das Federgesetz.
