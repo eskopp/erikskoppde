@@ -1,0 +1,124 @@
+---
+title: 'Dichtebestimmung'
+description: 'Versuch M1 im Physikalischen Grundpraktikum: Wie bestimmt man die Dichte eines Körpers, wenn man sein Volumen nicht ausmessen kann?'
+pubDate: 2026-11-14
+tags: ['TU-Ilmenau', 'Physik', 'Praktikum']
+categories: ['Experimente']
+sections: ['blog', 'labor']
+draft: true
+math: true
+---
+
+import Callout from '../../../components/Callout.astro';
+
+<Callout type="info">Dieser Artikel ist kein Protokoll. Er beschreibt die physikalische Idee und die Messmethoden. Konkrete Messwerte und Ergebnisse sind nicht Bestandteil des Beitrags.</Callout>
+
+Im [Grundpraktikum der Physik](https://www.tu-ilmenau.de/universitaet/fakultaeten/fakultaet-mathematik-und-naturwissenschaften/profil/institute-und-fachgebiete/institut-fuer-physik/profil/physikalisches-grundpraktikum)[^1] steht im November 2026 der Versuch M1 an, die Dichtebestimmung. Dabei geht es darum, die Dichte von Körpern auf verschiedenen Wegen zu bestimmen und die Ergebnisse zu vergleichen.
+
+Die TU Ilmenau stellt dazu eine [offizielle Versuchsanleitung für den Versuch M1](https://www.tu-ilmenau.de/fileadmin/Bereiche/MN/phys/Grundpraktikum/Dokumente/Anleitungen/M1.pdf)[^2] als PDF bereit.
+
+Das Spannende daran: Die Masse eines Körpers liest man einfach an einer Waage ab. Das Volumen ist das eigentliche Problem. Bei einem unregelmäßigen Körper hilft kein Lineal. Man muss also einen Trick finden, um das Volumen trotzdem zu bekommen.
+
+## Was ist Dichte?
+
+Die **Dichte** $\rho$ eines Körpers ist sein Verhältnis aus Masse $m$ und Volumen $V$:
+
+$$
+\rho = \frac{m}{V}
+$$
+
+Sie wird in $\mathrm{kg/m^3}$ angegeben, im Labor meist in $\mathrm{g/cm^3}$. Es gilt $1\,\mathrm{g/cm^3} = 1000\,\mathrm{kg/m^3}$.
+
+Anschaulich ist die Dichte die Masse von einem Kubikzentimeter des Stoffes. Ein Würfel Aluminium mit der Kantenlänge $1\,\mathrm{cm}$ wiegt etwa $2{,}7\,\mathrm{g}$, ein gleich großer Würfel aus Blei etwa $11{,}3\,\mathrm{g}$. Die Dichte ist eine Eigenschaft des Stoffes. Sie hängt nicht davon ab, wie groß das Stück ist, und lässt deshalb Rückschlüsse darauf zu, aus welchem Material ein Körper besteht.
+
+## Das Volumen bestimmen
+
+Bei einfachen Körpern misst man die Abmessungen und rechnet. Für einen Quader mit den Kantenlängen $a$, $b$, $c$ und einen Zylinder mit Durchmesser $d$ und Höhe $h$ gilt
+
+$$
+V_\text{Quader} = a \cdot b \cdot c
+\qquad \text{und} \qquad
+V_\text{Zylinder} = \frac{\pi \cdot d^2}{4} \cdot h
+$$
+
+Bei unregelmäßigen Körpern geht das nicht. Dann nutzt man aus, dass ein Körper im Wasser Platz wegnimmt. Das verdrängte Wasser hat genau das Volumen des Körpers, und sein Gewicht lässt sich wiegen. Dafür gibt es zwei Wege.
+
+## Methode 1: Auftrieb
+
+Ein Körper, der ganz in eine Flüssigkeit eintaucht, erfährt eine **Auftriebskraft**. Sie ist so groß wie die Gewichtskraft der verdrängten Flüssigkeit (Archimedisches Prinzip):
+
+$$
+F_A = \rho_\text{Fl} \cdot V \cdot g
+$$
+
+Dabei ist $\rho_\text{Fl}$ die Dichte der Flüssigkeit, $V$ das Volumen des Körpers und $g$ die Fallbeschleunigung.
+
+Man wägt den Körper zweimal: einmal in Luft mit der Masse $m_K$, einmal unter Wasser mit der scheinbaren Masse $m_K^*$. Unter Wasser fühlt sich der Körper leichter an, weil der Auftrieb nach oben zieht. Der Unterschied der beiden Gewichtskräfte ist genau der Auftrieb. Mit $m_W$ als Masse des verdrängten Wassers heißt das
+
+$$
+m_K \cdot g - m_K^* \cdot g = m_W \cdot g
+$$
+
+Das $g$ kürzt sich weg. Das verdrängte Wasser hat das Volumen $V$ des Körpers, also gilt $m_W = \rho_W \cdot V$ mit der Dichte $\rho_W$ von Wasser. Daraus folgt das Volumen
+
+$$
+V = \frac{m_K - m_K^*}{\rho_W}
+$$
+
+und eingesetzt in $\rho_K = m_K / V$ die gesuchte Dichte des Körpers:
+
+$$
+\rho_K = \frac{m_K}{m_K - m_K^*} \cdot \rho_W
+$$
+
+Zwei Wägungen reichen, und man muss nichts am Körper ausmessen.
+
+## Methode 2: Pyknometer
+
+Ein **Pyknometer** ist ein Gefäß mit einem festen, genau gefüllten Volumen. Man wiegt es dreimal: mit Wasser gefüllt ($m_1$), den Körper allein ($m_K$) und das Pyknometer mit Wasser und eingelegtem Körper ($m_2$).
+
+Legt man den Körper in das randvolle Gefäß, schiebt er Wasser heraus und es läuft über. Ohne Überlauf wöge das Pyknometer $m_1 + m_K$. Gemessen wird aber $m_2$. Der Unterschied ist die Masse $m_W$ des übergelaufenen Wassers:
+
+$$
+m_W = m_1 + m_K - m_2
+$$
+
+Dieses Wasser hat wieder das Volumen des Körpers, also gilt $V = m_W / \rho_W$. Damit ergibt sich
+
+$$
+\rho_K = \frac{m_K}{m_1 + m_K - m_2} \cdot \rho_W
+$$
+
+Die Idee ist dieselbe wie beim Auftrieb: Man bestimmt das Volumen über das Wasser, das der Körper verdrängt. Nur wird es hier nicht über den Auftrieb, sondern über den Überlauf erfasst.
+
+## Flüssigkeiten messen
+
+Man kann den Auftrieb auch umgekehrt nutzen. Kennt man das Volumen $V_K$ eines Körpers, folgt aus $m_K - m_K^* = \rho_\text{Fl} \cdot V_K$ die Dichte einer Flüssigkeit:
+
+$$
+\rho_\text{Fl} = \frac{m_K - m_K^*}{V_K}
+$$
+
+Es ist dieselbe Rechnung mit vertauschten Rollen. Auf diesem Prinzip beruht auch die Mohr-Westphalsche Waage.
+
+## Die Dichte von Wasser
+
+Alle Formeln brauchen $\rho_W$. Bei $20\,^\circ\mathrm{C}$ hat Wasser eine Dichte von etwa $0{,}998\,\mathrm{g/cm^3}$. Mit der Temperatur ändert sie sich leicht. Für grobe Rechnungen nimmt man $1{,}00\,\mathrm{g/cm^3}$, für genaue Ergebnisse den Tabellenwert zur Wassertemperatur.
+
+## Messunsicherheiten
+
+Bei beiden Methoden wirken sich kleine Fehler auf das Ergebnis aus:
+
+- **Luftblasen:** Hängen Blasen am Körper oder im Pyknometer, wird das verdrängte Volumen größer und die Dichte erscheint kleiner.
+- **Anhaftendes Wasser:** Beim Pyknometer muss das Gefäß außen trocken sein, sonst zählt das Wasser außen mit.
+- **Differenzen:** Im Nenner stehen Unterschiede von Wägungen. Sind die beiden Massen fast gleich, wirkt sich schon ein kleiner Ablesefehler stark aus.
+- **Wasserdichte:** Ein ungenauer Wert für $\rho_W$ geht direkt in das Ergebnis ein.
+- **Auftrieb in Luft:** Luft hat nur etwa $0{,}0012\,\mathrm{g/cm^3}$, also rund tausendmal weniger als Wasser. Bei einer normalen Waage ist das nicht zu bemerken, ganz genau genommen wird er aber vernachlässigt.
+
+Gerade weil im Nenner Differenzen stehen, lohnt es sich, die Unsicherheiten nicht erst am Ende zu ergänzen, sondern von Anfang an mitzudenken.
+
+Den Quellcode für Auswertung und Diagramme behalte ich vorerst in einem privaten GitHub-Repository.
+
+[^1]: [Grundpraktikum der Physik – TU Ilmenau](https://www.tu-ilmenau.de/universitaet/fakultaeten/fakultaet-mathematik-und-naturwissenschaften/profil/institute-und-fachgebiete/institut-fuer-physik/profil/physikalisches-grundpraktikum) (abgerufen am 14.11.2026)
+
+[^2]: [Versuchsanleitung M1 – Dichtebestimmung (PDF)](https://www.tu-ilmenau.de/fileadmin/Bereiche/MN/phys/Grundpraktikum/Dokumente/Anleitungen/M1.pdf) (abgerufen am 14.11.2026)
