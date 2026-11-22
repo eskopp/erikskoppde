@@ -9,21 +9,45 @@ images:
   - src: ../../../assets/images/galleries/lange-nacht-der-wissenschaften-jena/01_beutenberg_campus.jpg
     alt: 'Ein Institutsgebäude am Beutenberg Campus mit Hang und Betonmauer, links ein Haltestellenschild, der Himmel ist grau'
     caption: 'Ankunft am Beutenberg Campus'
+  - src: ../../../assets/images/galleries/lange-nacht-der-wissenschaften-jena/01a_beutenberg_kuppelbau.jpg
+    alt: 'Ein dunkles Gebäude mit einer kleinen Kuppel auf dem Dach am Beutenberg Campus, davor eine Straße und geparkte Autos bei grauem Himmel'
+    caption: 'Gebäude mit Kuppel'
   - src: ../../../assets/images/galleries/lange-nacht-der-wissenschaften-jena/02_fraunhofer_iof_tag.jpg
     alt: 'Das Fraunhofer IOF mit bunter Fassade in Blau- und Violetttönen, davor das Namensschild des Instituts'
     caption: 'Fraunhofer IOF am Tag'
+  - src: ../../../assets/images/galleries/lange-nacht-der-wissenschaften-jena/02a_iof_strasse.jpg
+    alt: 'Eine Straße auf dem Campus zwischen dunklen und bunten Gebäuden, am Ende das Fraunhofer IOF und eine violette Scheibe auf einem Mast'
+    caption: 'Auf dem Weg zum IOF'
   - src: ../../../assets/images/galleries/lange-nacht-der-wissenschaften-jena/03_wegweiser_abbe_center.jpg
     alt: 'Standpfeiler mit den Logos von Abbe Center of Photonics, Lichtwerkstatt Jena und QPhoton Center vor einem Gebäude mit blauer Fassade'
     caption: 'Wegweiser auf dem Campus'
+  - src: ../../../assets/images/galleries/lange-nacht-der-wissenschaften-jena/03a_wegweiser_institute.jpg
+    alt: 'Ein hoher Wegweiser mit den Namen vieler Institute und Firmen auf dem Campus, davor Herbstlaub'
+    caption: 'Wer sitzt wo?'
+  - src: ../../../assets/images/galleries/lange-nacht-der-wissenschaften-jena/03b_campus_blick.jpg
+    alt: 'Blick über ein Gebäude mit hellen und dunklen Streifen auf die Dächer des Campus, rechts ein Baukran'
+    caption: 'Blick über den Campus'
   - src: ../../../assets/images/galleries/lange-nacht-der-wissenschaften-jena/04_mpi_biogeochemie.jpg
     alt: 'Das Max-Planck-Institut für Biogeochemie, ein runder, mehrstöckiger Bau mit bunten Streben an der Fassade und einem Findling mit der Aufschrift davor'
     caption: 'Max-Planck-Institut für Biogeochemie'
   - src: ../../../assets/images/galleries/lange-nacht-der-wissenschaften-jena/05_flora_stand_aufbau.jpg
     alt: 'Ein noch leerer Tisch mit zwei Stühlen, dahinter ein Posteraufsteller mit einem Informationsposter'
     caption: 'Der Flora-Incognita-Stand vor dem Aufbau'
+  - src: ../../../assets/images/galleries/lange-nacht-der-wissenschaften-jena/05a_flora_pflanzen_tisch.jpg
+    alt: 'Ein Holztisch mit kleinen bunten Töpfen, in denen Pflanzen und getrocknetes Gras stehen'
+    caption: 'Pflanzen auf dem Tisch'
+  - src: ../../../assets/images/galleries/lange-nacht-der-wissenschaften-jena/05b_flora_rollup.jpg
+    alt: 'Ein Roll-up mit dem Flora-Incognita-Logo und Text zur Pflanzenvielfalt, davor ein Tisch mit Bildschirm und Infokarten'
+    caption: 'Das Roll-up am Stand'
+  - src: ../../../assets/images/galleries/lange-nacht-der-wissenschaften-jena/05c_flora_blumentisch.jpg
+    alt: 'Ein Tisch mit einem Blumenmosaik als Tischdecke, darauf Topfpflanzen wie Christrosen und ein Bild mit vielen Blüten'
+    caption: 'Blumen und Bilder'
   - src: ../../../assets/images/galleries/lange-nacht-der-wissenschaften-jena/06_flora_pollennet_poster.jpg
     alt: 'Zwei Posterwände nebeneinander, links das Flora-Incognita-Poster als Comic, rechts das Poster zu PollenNet'
     caption: 'Flora Incognita und PollenNet'
+  - src: ../../../assets/images/galleries/lange-nacht-der-wissenschaften-jena/06a_pollennet_poster.jpg
+    alt: 'Ein wissenschaftliches Poster zu PollenNet mit Diagrammen, Texten und Smartphone-Ansichten'
+    caption: 'Das PollenNet-Poster'
   - src: ../../../assets/images/galleries/lange-nacht-der-wissenschaften-jena/07_flora_comic_poster.jpg
     alt: 'Das Comic-Poster von Flora Incognita mit dem Titel "More than plant identification"'
     caption: 'Das Flora-Incognita-Poster'
@@ -36,9 +60,15 @@ images:
   - src: ../../../assets/images/galleries/lange-nacht-der-wissenschaften-jena/10_atom_bastelstation.jpg
     alt: 'Ein Holztisch mit Schälchen voller Perlen, beschriftet mit Neutronen, Protonen und Elektronen, davor Vorlagen mit Atomen und eine Pinzette'
     caption: 'Atome zum Basteln'
+  - src: ../../../assets/images/galleries/lange-nacht-der-wissenschaften-jena/11c_gebaeude_lichtstrahlen.jpg
+    alt: 'Ein dunkles, gebogenes Gebäude bei Nacht mit erleuchteten Fenstern, darüber zwei Lichtstrahlen am Himmel'
+    caption: 'Lichtstrahlen über dem Campus'
   - src: ../../../assets/images/galleries/lange-nacht-der-wissenschaften-jena/11_lichtstrahlen.jpg
     alt: 'Ein Gebäude bei Nacht, rosa und blau angestrahlt, darüber zwei Lichtstrahlen am Himmel, im Vordergrund ein Parkplatz'
     caption: 'Lichtstrahlen am Nachthimmel'
+  - src: ../../../assets/images/galleries/lange-nacht-der-wissenschaften-jena/11b_eah_gebaeude_blau.jpg
+    alt: 'Ein blau angestrahltes Hochschulgebäude bei Nacht mit erleuchteten Fenstern, davor ein Platz'
+    caption: 'Die EAH in Blau'
   - src: ../../../assets/images/galleries/lange-nacht-der-wissenschaften-jena/12_hochhaus_beleuchtet.jpg
     alt: 'Ein Hochhaus bei Nacht, rot und blau angestrahlt'
     caption: 'Ein beleuchtetes Hochhaus'
@@ -51,6 +81,12 @@ images:
   - src: ../../../assets/images/galleries/lange-nacht-der-wissenschaften-jena/15_folie_obertonreihe.jpg
     alt: 'Folie "Viele Klänge enthalten eine Obertonreihe" mit einem Balkendiagramm und der Formel für die Teiltöne'
     caption: 'Musik: die Obertonreihe'
+  - src: ../../../assets/images/galleries/lange-nacht-der-wissenschaften-jena/15a_spektrum_gitarre.jpg
+    alt: 'Ein Frequenzspektrum auf der Leinwand, eine blaue Kurve, die nach rechts abfällt'
+    caption: 'Das Spektrum auf dem Bildschirm'
+  - src: ../../../assets/images/galleries/lange-nacht-der-wissenschaften-jena/15b_folie_intervalle.jpg
+    alt: 'Folie „Intervalle sind Frequenzverhältnisse“ mit Wellenlinien und den Verhältnissen für Oktave, Quinte, Quarte und große Terz'
+    caption: 'Musik: Intervalle'
   - src: ../../../assets/images/galleries/lange-nacht-der-wissenschaften-jena/16_folie_schwebung.jpg
     alt: 'Folie "Fast gleiche Töne erzeugen ein Pulsieren" mit zwei Wellenlinien und ihrer Überlagerung'
     caption: 'Musik: die Schwebung'
@@ -96,6 +132,9 @@ images:
   - src: ../../../assets/images/galleries/lange-nacht-der-wissenschaften-jena/30_iof_eingang_nacht.jpg
     alt: 'Der Eingang des Fraunhofer IOF bei Nacht, eine hell erleuchtete Glasfassade in Violett und Blau mit Besuchern am Eingang'
     caption: 'Der Eingang des IOF am Abend'
+  - src: ../../../assets/images/galleries/lange-nacht-der-wissenschaften-jena/30a_biophotonik_messaufbau.jpg
+    alt: 'Ein Messaufbau hinter Plexiglas mit gelbem Lasermodul, orange Glasfaser, Justierhaltern und bunten Flachbandkabeln, oben der Aufkleber „Biophotonik“'
+    caption: 'Messaufbau zur Biophotonik'
   - src: ../../../assets/images/galleries/lange-nacht-der-wissenschaften-jena/31_kryostat.jpg
     alt: 'Ein Kryostat in einem beleuchteten Glaskasten, mehrere übereinander hängende Ebenen aus Kupfer und Gold, oben ein blaues LED-Band'
     caption: 'Kryostat für Quantenbits'
@@ -105,6 +144,9 @@ images:
   - src: ../../../assets/images/galleries/lange-nacht-der-wissenschaften-jena/33_supraleiter_experiment.jpg
     alt: 'Ein Aufbau mit einem in Folie gewickelten Gegenstand in einer Styroporbox auf einem schwarzen Tisch'
     caption: 'Supraleiter und Magnet'
+  - src: ../../../assets/images/galleries/lange-nacht-der-wissenschaften-jena/33a_supraleiter_aufbau.jpg
+    alt: 'Eine Styroporbox mit einem in Folie gewickelten Gegenstand auf einem schwarzen Tisch, dahinter eine Vitrine'
+    caption: 'Supraleiter, zweiter Blick'
   - src: ../../../assets/images/galleries/lange-nacht-der-wissenschaften-jena/34_glasfaser_aufbau.jpg
     alt: 'Eine optische Platte mit einer dünnen Glasfaser, die einen Ring bildet, daneben ein Laptop'
     caption: 'Licht in der Glasfaser'
