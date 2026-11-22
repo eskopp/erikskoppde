@@ -202,7 +202,21 @@ Als Ziele für MERTIS nannte die Folie drei Dinge: die Besonderheiten der Oberfl
 
 Ein Spektrometer zerlegt Licht nach seiner Wellenlänge, ähnlich wie ein Prisma das Sonnenlicht in Regenbogenfarben aufspaltet. Das ist die Idee dahinter, und sie ist nützlich, weil jeder Stoff Licht auf eine eigene Art zurückwirft oder abstrahlt. Aus dem Spektrum kann man deshalb ablesen, woraus eine Oberfläche besteht. Ein **abbildendes** Spektrometer macht das nicht nur für einen Punkt, sondern für jeden Bildpunkt eines Fotos. Man erhält dann ein Bild, in dem jeder Punkt sein eigenes Spektrum hat, und kann so eine Karte der Minerale zeichnen. Das gilt für MERTIS, das laut Name im thermischen Infrarot misst, also in Wärmestrahlung. Das ist Hintergrundwissen und stand so nicht auf den Folien.
 
-Laut Vortragstitel ging es außerdem um **GALA**. Das ist ein Laserhöhenmesser für eine Mission zum Jupiter. Dazu habe ich keine Bilder, deshalb gehe ich nicht näher darauf ein.
+### JUICE und der Laserhöhenmesser GALA
+
+Laut Titel hatte der Vortrag noch einen zweiten Teil. Neben MERTIS ging es um **JUICE**, die Jupitermission der europäischen Raumfahrtagentur ESA. Der Name steht für *Jupiter Icy Moons Explorer*, auf Deutsch etwa „Jupiter-Eismonde-Erkunder“. Die Raumsonde soll den Jupiter und seine Eismonde Ganymed, Kallisto und Europa genauer untersuchen. Sie ist im April 2023 gestartet und hat zehn wissenschaftliche Instrumente an Bord. Eines davon ist **GALA**, das *Ganymede Laser Altimeter*.[^9][^10]
+
+Ein Laser-Altimeter ist ein Höhenmesser, der mit Laserlicht arbeitet. Er schickt kurze Laserpulse zur Oberfläche und misst, wie lange das Licht für den Hin- und Rückweg braucht. Daraus ergibt sich der Abstand:
+
+$$d = \frac{c \cdot t}{2}$$
+
+Dabei ist $c$ die Lichtgeschwindigkeit und $t$ die gemessene Laufzeit. Der Faktor $2$ steht da, weil das Licht die Strecke zweimal zurücklegt. Das ist eine eigene Rechnung und stand nicht im Vortrag. Aus einer Höhe von 500 Kilometern, so hoch soll die Sonde laut DLR um Ganymed kreisen, braucht ein Puls rund $2 \cdot 500\,000\,\text{m} / (3 \cdot 10^{8}\,\text{m/s}) \approx 3{,}3$ Millisekunden. Damit man die Höhe auf etwa zehn Zentimeter genau bestimmen kann, muss die Zeit auf weniger als eine Nanosekunde genau gemessen werden. Das schreibt auch das DLR. In einer Nanosekunde legt das Licht nämlich 30 Zentimeter zurück, hin und zurück also 15 Zentimeter Höhenunterschied.
+
+![Eine Vitrine mit einer goldenen Spiegelschale auf einem Metallsockel. In der Mitte ragt eine goldene Halterung nach oben.](../../../assets/images/posts/lange-nacht-der-wissenschaften-jena/miniatur-teleskop.jpg)
+
+Das Fraunhofer IOF hat zusammen mit der Firma HENSOLDT Optronics die Empfangseinheit von GALA entwickelt. Dazu gehört ein spezielles **Spiegelteleskop**, das die vom Mond zurückgeworfenen Laserpulse auffängt. Es ist eine hochgenaue Metalloptik. Das Teleskop hat laut DLR einen Durchmesser von 25 Zentimetern. In der Ausstellung stand dazu eine Miniatur in einer Vitrine, die ich oben abgebildet habe. Das Licht, das das Teleskop auffängt, wird von einer Lawinen-Fotodiode gemessen, einem Sensor, der auch sehr schwache Lichtblitze registriert. Die Pulse haben eine Wellenlänge von 1064 Nanometern im nahen Infrarot und kommen 30 bis 50 Mal pro Sekunde. GALA wiegt 25 Kilogramm und braucht 50 Watt.
+
+Was soll damit herauskommen? Das erste Ziel ist eine genaue Karte der Oberfläche von Ganymed. Die Sonde soll in der Zeit um den Jahreswechsel 2034/35 mehrere hundert Millionen Laufzeitmessungen machen. Das zweite Ziel ist eine Frage, die viele interessiert: Gibt es unter dem Eis einen Ozean? Der Mond wird durch die Anziehungskraft des Jupiters ständig leicht verformt, das nennt man **Gezeiten**, wie bei den Ozeanen auf der Erde. Wenn die Eiskruste auf einem tiefen Ozean schwimmt, lässt sie sich leichter verformen, als wenn sie bis ins Innere fest ist. Das DLR nennt dazu Zahlen. Bei einer Verformung von höchstens etwa einem Meter ist wahrscheinlich kein Ozean vorhanden, bei etwa acht Metern müsste einer da sein. Ein Ozean könnte nach dieser Rechnung 100 Kilometer oder mehr unter der Oberfläche liegen. Das Fraunhofer IOF schreibt dazu, dass GALA unter Umständen sogar die Existenz von Wasser nachweisen könnte. GALA wird laut Pressemitteilung das erste Laser-Altimeter sein, das in etwa einer Milliarde Kilometern Entfernung von der Erde arbeitet.
 
 ## Die Ausstellung „Abenteuer Weltraum“
 
@@ -219,6 +233,12 @@ Daneben standen weitere Exponate, zum Beispiel ein vergoldeter Spiegel mit einer
 ## Ein Blick ins Quantenlabor
 
 Eine weitere Station war **„Ein Blick ins Quantenlabor“**. Sie fand im Christiaan-Huygens-Raum des IOF statt.[^6] Der Teaser im Programm lautet: „Mit »verzauberten« Lichtteilchen digitale Daten sicher verschicken oder Bilder aus dem Nichts erschaffen!“ Dahinter steckt die **Quantenverschränkung**. Forschende des IOF nutzen sie, um ein hochsicheres Datennetz der Zukunft zu entwickeln. In der Medizin sollen Quantentechnologien Mikroskopaufnahmen ermöglichen, ohne die Proben zu verändern oder zu beschädigen. Zum Mitmachen gab es ein interaktives Spiel zum Projekt O-PEN, bei dem man einen Sicherheitstest an einem echten Quantenkommunikationssystem durchführen konnte.
+
+Wie ein Bild „aus dem Nichts“ entstehen kann, zeigt ein Projekt des IOF, über das das Institut 2023 berichtet hat. Es heißt QUANCER und will Tumorgewebe mit „Quantenmikroskopie mit nicht-detektiertem Licht“ untersuchen.[^8] Dabei werden Paare von miteinander verbundenen, also korrelierten Photonen erzeugt. Das eine Photon geht durch die Gewebeprobe, das andere wird mit einer Kamera erfasst, ohne die Probe je gesehen zu haben. Durch die Verschränkung wird die Information, die das erste Photon an der Probe aufgenommen hat, auf das zweite übertragen. Die beiden Photonen können unterschiedliche Wellenlängen haben. Das eine liest im mittleren Infrarot Informationen aus der Probe, weil sich dort Stoffe chemisch gut unterscheiden lassen. Das andere liegt im sichtbaren Bereich und kann von einer handelsüblichen, rauscharmen Kamera gelesen werden. Ob das genau der Aufbau war, auf den sich das Programm bezieht, weiß ich nicht. Es ist ein Beispiel für die Richtung, in die das Quantenlabor forscht.
+
+![Ein Laboraufbau in einem Glasgehäuse mit blauen und violetten Laserstrahlen, die über Spiegel und Linsen auf einer optischen Platte laufen. Darüber spiegelt sich grünliches Licht.](../../../assets/images/posts/lange-nacht-der-wissenschaften-jena/pressebild-quantenlabor.jpg)
+
+Das Bild oben ist ein Pressebild des Fraunhofer IOF (QnetQ-Lab-Tour). Es stammt nicht von meinem Besuch.
 
 ### Schwingungen von Licht
 
@@ -250,15 +270,21 @@ Ein weiteres Exponat zeigte einen Chip auf einem dunklen Wafer. Das Schild träg
 
 ![Eine Vitrine mit einer dunklen runden Siliziumscheibe, auf der ein blauer Chip liegt, und einem weißen Gehäuse mit einer grünen Platine. Davor Schilder mit der Aufschrift „Photonic Integrated Circuits (PIC)“ und „4-mode LNOI interferometer“.](../../../assets/images/posts/lange-nacht-der-wissenschaften-jena/chip-wafer.jpg)
 
-LNOI steht für *Lithium Niobate on Insulator*, also Lithiumniobat auf einer isolierenden Schicht (Hintergrundwissen). Lithiumniobat ist ein Kristall, mit dem sich Licht gut steuern lässt. Ein **photonischer integrierter Schaltkreis** macht mit Licht, was ein elektronischer Chip mit Strom macht. Statt Leiterbahnen gibt es winzige Wellenleiter, die das Licht auf dem Chip führen, aufteilen und wieder zusammenführen. Ein Interferometer ist ein Bauteil, in dem sich zwei Lichtwege überlagern. Es ist deshalb die Grundlage für viele Experimente mit Quantenlicht.
+LNOI steht für *Lithium Niobate on Insulator*, also Lithiumniobat auf einer isolierenden Schicht (Hintergrundwissen). Lithiumniobat ist ein Kristall, mit dem sich Licht gut steuern lässt. Er hat einen elektrooptischen Effekt: Legt man eine elektrische Spannung an, ändert sich sein Brechungsindex, und damit kann man die Phase des Lichts gezielt steuern. Ein **photonischer integrierter Schaltkreis** macht mit Licht, was ein elektronischer Chip mit Strom macht. Statt Leiterbahnen gibt es winzige Wellenleiter, die das Licht auf dem Chip führen, aufteilen und wieder zusammenführen. Ein Interferometer ist ein Bauteil, in dem sich zwei Lichtwege überlagern. Es ist deshalb die Grundlage für viele Experimente mit Quantenlicht.
 
 ## Optische Kommunikation
 
-Auch zur **Optischen Kommunikation** haben wir uns etwas angesehen. Dazu habe ich leider kein Bild mehr, deshalb beschreibe ich es nur nach dem Programm. Das IOF hat dazu zwei kurze Vorträge angeboten. Laut Programm können Lasersignale Daten „sehr schnell, sicher und zuverlässig“ übertragen, und diese optische Kommunikation sei eine Grundlage für das Internet der Zukunft. Im zweiten Vortrag ging es um Quantenschlüssel, die vom Flugzeug zu einer Bodenstation geschickt werden. Bei dieser Verschlüsselung werden die Schlüssel so übertragen, dass Abhörversuche erkannt werden können.[^7] Das ist ein Beispiel dafür, wie die Quantenforschung aus dem Quantenlabor in die Praxis kommt.
+Zur **Optischen Kommunikation** hatte das IOF an diesem Abend zwei kurze Vorträge angeboten, um 19:30 und um 20:00 Uhr.[^7] Wir waren erst später dort, die Vorträge waren schon vorbei. Wir haben noch eine Gesprächsrunde mitbekommen, und an der Wand liefen Lichtstrahlen. Bilder habe ich davon nicht mehr, deshalb beschreibe ich den Inhalt nach dem Programm. Laut Programm können Lasersignale Daten „sehr schnell, sicher und zuverlässig“ übertragen, und diese optische Kommunikation sei eine Grundlage für das Internet der Zukunft. Im zweiten Vortrag ging es um Quantenschlüssel, die von einem Flugzeug zu einer Bodenstation geschickt werden. Bei dieser Verschlüsselung werden die Schlüssel so übertragen, dass Abhörversuche erkannt werden können. Das passt zum Quantenlabor: Dort wird die Technik erforscht, hier geht es darum, wie sie in die Praxis kommt.
+
+## Eine Lichtinstallation im Hof
+
+Spät am Abend, gegen 22:45 Uhr, war ich wieder auf dem Campus der EAH. Hinter Haus 2 führt eine Brücke zu den Häusern 4 und 6 und zum Studentenwohnheim in Haus 8. Der Hof dort war zur Langen Nacht gestaltet worden: Eine Lichtinstallation zum Thema Licht verwandelte die Brücke in einen leuchtenden Tunnel aus hellen, gefalteten Bahnen. Das Licht kam von innen, und man ging mitten hindurch.
+
+![Eine Brücke bei Nacht, überspannt von einem Bogen aus hellen, gefalteten Bahnen, die von innen leuchten. Im Hintergrund ein Gebäude mit erleuchteten Fenstern.](../../../assets/images/posts/lange-nacht-der-wissenschaften-jena/lichtinstallation-bruecke.jpg)
 
 ## Wie es weitergeht
 
-Der Abend war damit noch nicht zu Ende. Fotos habe ich noch von weiteren Stationen, über die ich noch schreibe.
+Der Abend war damit noch nicht zu Ende. Es gab an diesem Abend mehr, als in diesen Artikel passt. Zu weiteren Stationen habe ich noch Fotos, über die ich noch schreibe.
 
 [^1]: [Lange Nacht der Wissenschaften Jena, Startseite](https://www.lndw-jena.de/) und [Programmübersicht](https://www.lndw-jena.de/programm) (abgerufen am 22.11.2026)
 [^2]: [Die Vermessung der Musik, Programmseite der Langen Nacht der Wissenschaften Jena](https://www.lndw-jena.de/programm/die-vermessung-der-musik) (abgerufen am 22.11.2026)
@@ -267,3 +293,6 @@ Der Abend war damit noch nicht zu Ende. Fotos habe ich noch von weiteren Station
 [^5]: [Abenteuer Weltraum, Programmseite der Langen Nacht der Wissenschaften Jena](https://www.lndw-jena.de/programm/abenteuer-weltraum) (abgerufen am 22.11.2026)
 [^6]: [Ein Blick ins Quantenlabor, Programmseite der Langen Nacht der Wissenschaften Jena](https://www.lndw-jena.de/programm/ein-blick-ins-quantenlabor) (abgerufen am 22.11.2026)
 [^7]: [Optische Kommunikation für morgen](https://www.lndw-jena.de/programm/optische-kommunikation-fuer-morgen-forschung-europa-und-das-fraunhofer-iof) und [Geheime Schlüssel aus der Luft](https://www.lndw-jena.de/programm/geheime-schluessel-aus-der-luft-quantenkommunikation-zwischen-flugzeug-und-bodenstation), Programmseiten der Langen Nacht der Wissenschaften Jena (abgerufen am 22.11.2026)
+[^8]: [Mit Quantenoptik Tumoren auf der Spur, Fraunhofer IOF, 27.04.2023](https://www.iof.fraunhofer.de/de/presse-medien/Aktuelles/quantenbildgebung.html) (abgerufen am 22.11.2026)
+[^9]: [Der Höhenmesser GALA, Deutsches Zentrum für Luft- und Raumfahrt (DLR)](https://www.dlr.de/de/forschung-und-transfer/projekte-und-missionen/juice/der-hoehenmesser-gala) (abgerufen am 22.11.2026)
+[^10]: [Weltraummission JUICE startet mit Teleskop aus Jena, Pressemitteilung des Fraunhofer IOF vom 05.04.2023](https://www.iof.fraunhofer.de/content/dam/iof/de/documents/Presse/2023/PM-GALA-2023-dt.pdf) (abgerufen am 22.11.2026)
