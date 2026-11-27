@@ -956,3 +956,32 @@
   -webkit-appearance: none;
   appearance: none;
 }
+
+/* ---------- Print ---------- */
+@media print {
+  .chirpy-sidebar,
+  .chirpy-topbar,
+  .chirpy-panel-rail,
+  .back-to-top,
+  footer,
+  .no-print {
+    display: none !important;
+  }
+  .chirpy-main-wrapper {
+    margin: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+  .prose-chirpy img,
+  .prose-chirpy svg,
+  .prose-chirpy pre,
+  .prose-chirpy table,
+  .prose-chirpy blockquote {
+    break-inside: avoid;
+  }
+  .prose-chirpy h2,
+  .prose-chirpy h3 {
+    break-after: avoid;
+  }
+}

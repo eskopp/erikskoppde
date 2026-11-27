@@ -117,6 +117,20 @@ if (post.data.mermaid) {
   }
 
   <article class={articleClass}>
+    <div class="no-print mb-6 flex flex-wrap gap-2">
+      <button type="button" data-print class="btn btn-sm btn-outline">
+        <Icon name="lucide:printer" width={14} height={14} />
+        {t('post.downloadPdf')}
+      </button>
+      <a
+        href={`${postPath(post).replace(/\/$/, '')}.md`}
+        download={`${postSlug(post)}.md`}
+        class="btn btn-sm btn-outline"
+      >
+        <Icon name="lucide:file-text" width={14} height={14} />
+        {t('post.downloadMarkdown')}
+      </a>
+    </div>
     <header class="mb-8">
       <h1
         class="text-base-content text-3xl leading-tight font-extrabold tracking-tight sm:text-[2.25rem]"
@@ -217,6 +231,26 @@ if (post.data.mermaid) {
 </BaseLayout>
 
 {/* Translation links exposed for the LanguageSwitcher to read at runtime */}
+<script is:inline>
+  document.querySelectorAll('[data-print]').forEach((b) => {
+    if (b.dataset.bound) return;
+    b.dataset.bound = '1';
+    b.addEventListener('click', () => window.print());
+  });
+  if (!window.__printHooked) {
+    window.__printHooked = true;
+    let wasDark = false;
+    const root = document.documentElement;
+    window.addEventListener('beforeprint', () => {
+      wasDark = root.dataset.theme === 'chirpy-dark';
+      if (wasDark) root.dataset.theme = 'chirpy-light';
+    });
+    window.addEventListener('afterprint', () => {
+      if (wasDark) root.dataset.theme = 'chirpy-dark';
+    });
+  }
+</script>
+
 <script is:inline define:vars={{ links: translationLinks }}>
   window.__chirpyTranslations = links;
 </script>
