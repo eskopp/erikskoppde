@@ -43,6 +43,8 @@ export const messages = {
     'post.previous': 'Zurück',
     'post.next': 'Weiter',
     'post.share': 'Teilen',
+    'post.downloadPdf': 'Als PDF speichern',
+    'post.downloadMarkdown': 'Markdown herunterladen',
     'post.copyLink': 'Link kopieren',
     'post.copied': 'Kopiert!',
     'post.author': 'Autor',
